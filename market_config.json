@@ -1,0 +1,208 @@
+[
+    {
+        "market": "JP",
+        "name": "Japan 225 Index",
+        "url": "https://scanner.tradingview.com/japan/scan?label-product=heatmap-stock",
+        "payload": { "columns": ["typespecs", "change|60", "change|240", "change", "Perf.W", "Perf.1M", "Perf.3M", "Perf.6M", "Perf.YTD", "Perf.Y", "premarket_change", "postmarket_change", "relative_volume_10d_calc", "Volatility.D", "gap", "Value.Traded", "market_cap_basic", "volume", "volume|1W", "volume|1M", "Value.Traded|1W", "Value.Traded|1M", "sector", "sector.tr", "logo", "close|60", "pricescale", "name", "description", "update_mode"], "filter": [{ "left": "is_blacklisted", "operation": "equal", "right": false }, { "left": "Value.Traded", "operation": "nempty" }], "ignore_unknown_fields": false, "options": { "lang": "en" }, "sort": { "sortBy": "Value.Traded", "sortOrder": "desc" }, "symbols": { "symbolset": ["SYML:TVC;NI225"] }, "markets": ["japan"] }
+    },
+
+    {
+        "market": "JP",
+        "name": "All Japanese companies",
+        "url": "https://scanner.tradingview.com/japan/scan?label-product=heatmap-stock",
+        "payload": { "columns": ["typespecs", "change|60", "change|240", "change", "Perf.W", "Perf.1M", "Perf.3M", "Perf.6M", "Perf.YTD", "Perf.Y", "premarket_change", "postmarket_change", "relative_volume_10d_calc", "Volatility.D", "gap", "Value.Traded", "market_cap_basic", "volume", "volume|1W", "volume|1M", "Value.Traded|1W", "Value.Traded|1M", "sector", "sector.tr", "logo", "close|60", "pricescale", "name", "description", "update_mode"], "filter": [{ "left": "type", "operation": "equal", "right": "stock" }, { "left": "subtype", "operation": "in_range", "right": ["common", "foreign-issuer"] }, { "left": "is_primary", "operation": "equal", "right": true }, { "left": "Value.Traded", "operation": "nempty" }], "ignore_unknown_fields": false, "options": { "lang": "en" }, "sort": { "sortBy": "Value.Traded", "sortOrder": "desc" }, "markets": ["japan"] }
+    },
+
+    {
+        "market": "KR",
+        "name": "All South Korean Companies",
+        "url": "https://scanner.tradingview.com/korea/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"type","operation":"equal","right":"stock"},{"left":"subtype","operation":"in_range","right":["common","foreign-issuer"]},{"left":"is_primary","operation":"equal","right":true},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"markets":["korea"]}
+    },
+
+    {
+        "market": "KR",
+        "name": "KOSPI Composite Index",
+        "url": "https://scanner.tradingview.com/korea/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:KRX;KOSPI"]},"markets":["korea"]}
+    },
+
+    {
+        "market": "TW",
+        "name": "All Taiwan Companies",
+        "url": "https://scanner.tradingview.com/taiwan/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"type","operation":"equal","right":"stock"},{"left":"subtype","operation":"in_range","right":["common","foreign-issuer"]},{"left":"is_primary","operation":"equal","right":true},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"markets":["taiwan"]}
+    },
+
+    {
+        "market": "TW",
+        "name": "FTSE TWSE Taiwan 50 Index",
+        "url": "https://scanner.tradingview.com/taiwan/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:FTSE;TW50"]},"markets":["taiwan"]}
+    },
+
+    {
+        "market": "CN",
+        "name": "All Chinese Companies",
+        "url": "https://scanner.tradingview.com/china/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"type","operation":"equal","right":"stock"},{"left":"subtype","operation":"in_range","right":["common","foreign-issuer"]},{"left":"is_primary","operation":"equal","right":true},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"markets":["china"]}
+    },
+    {
+        "market": "CN",
+        "name": "Shenzhen Component Index",
+        "url": "https://scanner.tradingview.com/china/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:SZSE;399001"]},"markets":["china"]}
+    },
+    {
+        "market": "HK",
+        "name": "All Hong Kong Companies",
+        "url": "https://scanner.tradingview.com/hongkong/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"type","operation":"equal","right":"stock"},{"left":"subtype","operation":"in_range","right":["common","foreign-issuer"]},{"left":"is_primary","operation":"equal","right":true},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"markets":["hongkong"]}
+    },
+    {
+        "market": "HK",
+        "name": "Hang Seng Index",
+        "url": "https://scanner.tradingview.com/hongkong/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:HSI;HSI"]},"markets":["hongkong"]}
+    },
+    {
+        "market": "HK",
+        "name": "Hang Seng China Enterprises Index",
+        "url": "https://scanner.tradingview.com/hongkong/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:HSI;HSCEI"]},"markets":["hongkong"]}
+    },
+    {
+        "market": "HK",
+        "name": "Hang Seng Tech Index",
+        "url": "https://scanner.tradingview.com/hongkong/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:HSI;HSTECH"]},"markets":["hongkong"]}
+    },
+
+    {
+        "market": "SG",
+        "name": "All Singapore Companies",
+        "url": "https://scanner.tradingview.com/singapore/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"type","operation":"equal","right":"stock"},{"left":"subtype","operation":"in_range","right":["common","foreign-issuer"]},{"left":"is_primary","operation":"equal","right":true},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"markets":["singapore"]}
+    },
+
+    {
+        "market": "SG",
+        "name": "Straits Times Index",
+        "url": "https://scanner.tradingview.com/singapore/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:TVC;STI"]},"markets":["singapore"]}
+    },
+
+    {
+        "market": "UK",
+        "name": "All UK Companies",
+        "url": "https://scanner.tradingview.com/uk/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"type","operation":"equal","right":"stock"},{"left":"subtype","operation":"in_range","right":["common","foreign-issuer"]},{"left":"is_primary","operation":"equal","right":true},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"markets":["uk"]}
+    },
+
+    {
+        "market": "UK",
+        "name": "UK 100 Index",
+        "url": "https://scanner.tradingview.com/uk/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"name","operation":"not_in_range","right":["RDSB"]},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:TVC;UKX"]},"markets":["uk"]}
+    },
+
+    {
+        "market": "FR",
+        "name": "All France Companies",
+        "url": "https://scanner.tradingview.com/france/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"type","operation":"equal","right":"stock"},{"left":"subtype","operation":"in_range","right":["common","foreign-issuer"]},{"left":"is_primary","operation":"equal","right":true},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"markets":["france"]}
+    },
+
+    {
+        "market": "FR",
+        "name": "CAC 40 Index",
+        "url": "https://scanner.tradingview.com/france/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:EURONEXT;PX1"]},"markets":["france"]}
+    },
+
+    {
+        "market": "FR",
+        "name": "SBF 120 Index",
+        "url": "https://scanner.tradingview.com/france/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:EURONEXT;PX4"]},"markets":["france"]}
+    },
+
+    {
+        "market": "DE",
+        "name": "All Germany Companies",
+        "url": "https://scanner.tradingview.com/germany/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"type","operation":"equal","right":"stock"},{"left":"subtype","operation":"in_range","right":["common","foreign-issuer"]},{"left":"is_primary","operation":"equal","right":true},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"markets":["germany"]}
+    },
+
+    {
+        "market": "DE",
+        "name": "DAX Index",
+        "url": "https://scanner.tradingview.com/germany/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:XETR;DAX"]},"markets":["germany"]}
+    },
+
+    {
+        "market": "EU",
+        "name": "All European Companies",
+        "url": "https://scanner.tradingview.com/global/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"type","operation":"equal","right":"stock"},{"left":"subtype","operation":"in_range","right":["common","foreign-issuer"]},{"left":"is_primary","operation":"equal","right":true},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"price_conversion":{"to_currency":"USD"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"markets":["belgium","cyprus","denmark","estonia","finland","france","germany","greece","hungary","iceland","italy","latvia","lithuania","luxembourg","netherlands","norway","poland","portugal","romania","russia","serbia","slovakia","spain","sweden","switzerland","turkey","uk"]}
+    },
+
+    {
+        "market": "EU",
+        "name": "Euro Stoxx 50 Index",
+        "url": "https://scanner.tradingview.com/global/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"price_conversion":{"to_currency":"USD"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:TVC;SX5E"]},"markets":["belgium","cyprus","denmark","estonia","finland","france","germany","greece","hungary","iceland","italy","latvia","lithuania","luxembourg","netherlands","norway","poland","portugal","romania","russia","serbia","slovakia","spain","sweden","switzerland","turkey","uk"]}
+    },
+
+    {
+        "market": "EU",
+        "name": "STOXX 600",
+        "url": "https://scanner.tradingview.com/global/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"price_conversion":{"to_currency":"USD"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:TVC;SXXP"]},"markets":["belgium","cyprus","denmark","estonia","finland","france","germany","greece","hungary","iceland","italy","latvia","lithuania","luxembourg","netherlands","norway","poland","portugal","romania","russia","serbia","slovakia","spain","sweden","switzerland","turkey","uk"]}
+
+    },
+
+    {
+        "market": "US",
+        "name": "All US Companies",
+        "url": "https://scanner.tradingview.com/america/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_primary","operation":"equal","right":true},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"markets":["america"]}
+    },
+
+    {
+        "market": "US",
+        "name": "S&P 500 Index",
+        "url": "https://scanner.tradingview.com/america/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"name","operation":"not_in_range","right":["GOOG"]},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:SP;SPX"]},"markets":["america"]}
+    },
+
+    {
+        "market": "US",
+        "name": "Nasdaq 100 Index",
+        "url": "https://scanner.tradingview.com/america/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"name","operation":"not_in_range","right":["GOOG"]},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:NASDAQ;NDX"]},"markets":["america"]}
+    },
+
+    {
+        "market": "US",
+        "name": "Nasdaq Composite Index",
+        "url": "https://scanner.tradingview.com/america/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"name","operation":"not_in_range","right":["GOOG"]},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:NASDAQ;IXIC"]},"markets":["america"]}
+    },
+
+    {
+        "market": "US",
+        "name": "Russell 2000 Index",
+        "url": "https://scanner.tradingview.com/america/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"name","operation":"not_in_range","right":["GOOG"]},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:TVC;RUT"]},"markets":["america"]}
+    },
+
+    {
+        "market": "US",
+        "name": "Dow Jones Composite Index",
+        "url": "https://scanner.tradingview.com/america/scan?label-product=heatmap-stock",
+        "payload": {"columns":["typespecs","change|60","change|240","change","Perf.W","Perf.1M","Perf.3M","Perf.6M","Perf.YTD","Perf.Y","premarket_change","postmarket_change","relative_volume_10d_calc","Volatility.D","gap","Value.Traded","market_cap_basic","volume","volume|1W","volume|1M","Value.Traded|1W","Value.Traded|1M","sector","sector.tr","logo","close|60","pricescale","name","description","update_mode"],"filter":[{"left":"is_blacklisted","operation":"equal","right":false},{"left":"name","operation":"not_in_range","right":["GOOG"]},{"left":"Value.Traded","operation":"nempty"}],"ignore_unknown_fields":false,"options":{"lang":"en"},"sort":{"sortBy":"Value.Traded","sortOrder":"desc"},"symbols":{"symbolset":["SYML:DJ;DJA"]},"markets":["america"]}
+    }
+
+]

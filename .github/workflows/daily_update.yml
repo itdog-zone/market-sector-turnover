@@ -1,0 +1,35 @@
+name: Daily Market Turnover Update
+
+on:
+  schedule:
+    - cron: '20 22 * * *' # 每天 UTC 22:20 運行 (確保美股冬令時收盤後及 15 分鐘數據延遲)
+  workflow_dispatch: # 允許手動觸發
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run fetch script
+      run: python fetch_turnover.py
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add results/
+        git commit -m "Update market turnover data: $(date +'%Y-%m-%d')" || echo "No changes to commit"
+        git push
