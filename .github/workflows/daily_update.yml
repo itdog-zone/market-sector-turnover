@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # 授予寫入權限以允許 commit 和 push
 
     steps:
     - name: Checkout repository
