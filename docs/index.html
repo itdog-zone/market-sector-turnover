@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Sector Turnover</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .container { max-width: 1400px; margin: 0 auto; }
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 24px;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+  }
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .control-group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+  }
+  select, input[type="date"] {
+    background: #1a1d28;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    min-width: 160px;
+    cursor: pointer;
+  }
+  select:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #4a9eff;
+  }
+  select option { background: #1a1d28; }
+  .chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .chart-card {
+    background: #1a1d28;
+    border-radius: 10px;
+    padding: 16px;
+    border: 1px solid #2a2d38;
+  }
+  .chart-card h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #aaa;
+    margin-bottom: 12px;
+  }
+  .chart-card.full-width {
+    grid-column: 1 / -1;
+  }
+  .chart-wrapper {
+    position: relative;
+    width: 100%;
+    height: 380px;
+  }
+  .chart-wrapper.tall {
+    height: 520px;
+  }
+  .legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    padding: 4px 10px;
+    background: #252836;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    user-select: none;
+  }
+  .legend-item:hover { border-color: #555; }
+  .legend-item.selected { border-color: #4a9eff; }
+  .legend-item .color-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .legend-item .remove-btn {
+    margin-left: 4px;
+    color: #777;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .legend-item .remove-btn:hover { color: #ff6b6b; }
+  .stats-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    background: #1a1d28;
+    border-radius: 8px;
+    border: 1px solid #2a2d38;
+  }
+  .stat-item {
+    font-size: 13px;
+  }
+  .stat-item .label {
+    color: #888;
+    margin-right: 6px;
+  }
+  .stat-item .value {
+    color: #fff;
+    font-weight: 500;
+  }
+  .format-toggle {
+    display: flex;
+    gap: 0;
+    align-items: center;
+  }
+  .format-toggle button {
+    background: #252836;
+    color: #888;
+    border: 1px solid #333;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .format-toggle button:first-child {
+    border-radius: 6px 0 0 6px;
+  }
+  .format-toggle button:last-child {
+    border-radius: 0 6px 6px 0;
+  }
+  .format-toggle button.active {
+    background: #4a9eff;
+    color: #fff;
+    border-color: #4a9eff;
+  }
+  @media (max-width: 900px) {
+    .chart-grid { grid-template-columns: 1fr; }
+    .controls { flex-direction: column; }
+    select, input[type="date"] { min-width: 100%; }
+  }
+  .loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: #888;
+    font-size: 16px;
+  }
+  .color-picker-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0;
+  }
+  .color-picker-item {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  .color-picker-item:hover { transform: scale(1.15); }
+  .color-picker-item.active { border-color: #fff; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📊 Market Sector Turnover</h1>
+  <div class="subtitle">
+    Daily sector turnover data across global markets.
+    <span id="data-range"></span>
+  </div>
+
+  <div class="controls">
+    <div class="control-group">
+      <label>Market</label>
+      <select id="market-select"><option value="">-- Select --</option></select>
+    </div>
+    <div class="control-group">
+      <label>Index / Range</label>
+      <select id="index-select"><option value="">-- Select --</option></select>
+    </div>
+    <div class="control-group">
+      <label>Chart Date</label>
+      <input type="date" id="date-picker">
+    </div>
+    <div class="control-group">
+      <label>Value Format</label>
+      <div class="format-toggle">
+        <button class="active" data-unit="raw" id="fmt-raw">Raw</button>
+        <button data-unit="1W" id="fmt-1w">1W</button>
+        <button data-unit="1M" id="fmt-1m">1M</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-bar" id="stats-bar">
+    <div class="stat-item"><span class="label">Market:</span><span class="value" id="stat-market">-</span></div>
+    <div class="stat-item"><span class="label">Total Turnover:</span><span class="value" id="stat-total">-</span></div>
+    <div class="stat-item"><span class="label">Sectors:</span><span class="value" id="stat-sectors">-</span></div>
+    <div class="stat-item"><span class="label">Data Points:</span><span class="value" id="stat-dates">-</span></div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h2>🏆 Sector Turnover Ranking</h2>
+      <div class="chart-wrapper"><canvas id="barChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h2>🧩 Sector Distribution</h2>
+      <div class="chart-wrapper"><canvas id="doughnutChart"></canvas></div>
+    </div>
+    <div class="chart-card full-width">
+      <h2>📈 Time Series Trend</h2>
+      <div class="legend-items" id="trend-legend"></div>
+      <div class="chart-wrapper tall"><canvas id="lineChart"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ========================
+// Color palette
+// ========================
+const COLORS = [
+  '#4a9eff', '#ff6b6b', '#51cf66', '#ffd43b', '#cc5de8',
+  '#20c997', '#ff922b', '#f06595', '#748ffc', '#38d9a9',
+  '#fcc419', '#e599f7', '#69db7c', '#ff8787', '#5c7cfa',
+  '#f783ac', '#a9e34b', '#ffc078', '#4dabf7', '#79c2ff'
+];
+const CHART_DEFAULTS = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+    legend: { display: false },
+    tooltip: {
+      backgroundColor: '#252836',
+      titleColor: '#fff',
+      bodyColor: '#ccc',
+      borderColor: '#333',
+      borderWidth: 1,
+      padding: 10,
+      cornerRadius: 6,
+    }
+  }
+};
+
+// ========================
+// State
+// ========================
+let data = null;
+let selectedMarketCode = null;
+let selectedIndexName = null;
+let selectedDate = null;
+let valueUnit = 'v'; // v, w, m
+let lineChartInstance = null;
+let barChartInstance = null;
+let doughnutChartInstance = null;
+let trackedSectors = [];
+
+// ========================
+// Formatting
+// ========================
+function formatValue(val) {
+  if (val === 0) return '0';
+  const abs = Math.abs(val);
+  if (abs >= 1e12) return (val / 1e12).toFixed(2) + 'T';
+  if (abs >= 1e9) return (val / 1e9).toFixed(2) + 'B';
+  if (abs >= 1e6) return (val / 1e6).toFixed(2) + 'M';
+  if (abs >= 1e3) return (val / 1e3).toFixed(2) + 'K';
+  return val.toFixed(2);
+}
+
+// ========================
+// Load data
+// ========================
+async function loadData() {
+  const resp = await fetch('data.json');
+  data = await resp.json();
+  document.getElementById('data-range').textContent =
+    `📅 ${data.dates[0]} ~ ${data.dates[data.dates.length - 1]} (${data.dates.length} days)`;
+  populateMarketSelect();
+}
+
+// ========================
+// Populate selectors
+// ========================
+function populateMarketSelect() {
+  const select = document.getElementById('market-select');
+  const codes = [...new Set(data.markets.map(m => m.code))].sort();
+  codes.forEach(code => {
+    const opt = document.createElement('option');
+    opt.value = code;
+    opt.textContent = code;
+    select.appendChild(opt);
+  });
+  // Auto-select first
+  select.value = codes[0];
+  select.dispatchEvent(new Event('change'));
+}
+
+function populateIndexSelect(code) {
+  const select = document.getElementById('index-select');
+  select.innerHTML = '<option value="">-- Select --</option>';
+  const names = data.markets.filter(m => m.code === code).map(m => m.name);
+  names.forEach(name => {
+    const opt = document.createElement('option');
+    opt.value = name;
+    opt.textContent = name;
+    select.appendChild(opt);
+  });
+  if (names.length > 0) {
+    select.value = names[0];
+    select.dispatchEvent(new Event('change'));
+  }
+}
+
+function populateDatePicker(dates) {
+  const picker = document.getElementById('date-picker');
+  // Set min/max
+  picker.min = dates[0];
+  picker.max = dates[dates.length - 1];
+  // Default to latest date
+  picker.value = dates[dates.length - 1];
+}
+
+// ========================
+// Get current market data
+// ========================
+function getMarketData() {
+  if (!data || !selectedMarketCode || !selectedIndexName) return null;
+  return data.markets.find(m => m.code === selectedMarketCode && m.name === selectedIndexName);
+}
+
+function getSeriesForDate(marketData, date, unit) {
+  const dayData = marketData.series[date];
+  if (!dayData) return [];
+  return Object.entries(dayData)
+    .map(([sector, vals]) => ({ sector, value: vals[unit] || 0 }))
+    .sort((a, b) => b.value - a.value);
+}
+
+function getSeriesForSector(marketData, sector, unit) {
+  const result = [];
+  const dates = data.dates;
+  for (const date of dates) {
+    const dayData = marketData.series[date];
+    if (dayData && dayData[sector]) {
+      result.push({ date, value: dayData[sector][unit] || 0 });
+    }
+  }
+  return result;
+}
+
+// ========================
+// Render charts
+// ========================
+function renderBarChart() {
+  const marketData = getMarketData();
+  if (!marketData || !selectedDate) return;
+  const series = getSeriesForDate(marketData, selectedDate, valueUnit);
+  if (series.length === 0) return;
+
+  // Top 20 sectors
+  const top = series.slice(0, 20).reverse();
+
+  const ctx = document.getElementById('barChart').getContext('2d');
+  if (barChartInstance) { barChartInstance.destroy(); }
+
+  barChartInstance = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: top.map(d => d.sector),
+      datasets: [{
+        data: top.map(d => d.value),
+        backgroundColor: top.map((_, i) => COLORS[i % COLORS.length]),
+        borderRadius: 4,
+      }]
+    },
+    options: {
+      ...CHART_DEFAULTS,
+      indexAxis: 'y',
+      plugins: {
+        ...CHART_DEFAULTS.plugins,
+        tooltip: {
+          ...CHART_DEFAULTS.plugins.tooltip,
+          callbacks: {
+            label: ctx => formatValue(ctx.raw),
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: '#2a2d38' },
+          ticks: { color: '#888', callback: v => formatValue(v) },
+        },
+        y: {
+          grid: { display: false },
+          ticks: { color: '#aaa', font: { size: 10 } },
+        }
+      }
+    },
+    plugins: [{
+      id: 'barClick',
+      afterEvent: (chart, evt) => {
+        const points = chart.getElementsAtEventForMode(evt.event, 'index', { intersect: true }, true);
+        if (points.length > 0) {
+          const idx = points[0].index;
+          const sector = chart.data.labels[idx];
+          addTrackedSector(sector);
+        }
+      }
+    }]
+  });
+}
+
+function renderDoughnutChart() {
+  const marketData = getMarketData();
+  if (!marketData || !selectedDate) return;
+  const series = getSeriesForDate(marketData, selectedDate, valueUnit);
+  if (series.length === 0) return;
+
+  // Top 10 for doughnut, rest as "Others"
+  const top10 = series.slice(0, 10);
+  const others = series.slice(10);
+  const othersTotal = others.reduce((sum, d) => sum + d.value, 0);
+
+  const labels = top10.map(d => d.sector);
+  const values = top10.map(d => d.value);
+  if (othersTotal > 0) {
+    labels.push('Others');
+    values.push(othersTotal);
+  }
+
+  const ctx = document.getElementById('doughnutChart').getContext('2d');
+  if (doughnutChartInstance) { doughnutChartInstance.destroy(); }
+
+  doughnutChartInstance = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels,
+      datasets: [{
+        data: values,
+        backgroundColor: labels.map((_, i) => COLORS[i % COLORS.length]),
+        borderColor: '#1a1d28',
+        borderWidth: 2,
+      }]
+    },
+    options: {
+      ...CHART_DEFAULTS,
+      cutout: '55%',
+      plugins: {
+        legend: {
+          display: true,
+          position: 'bottom',
+          labels: {
+            color: '#aaa',
+            padding: 12,
+            font: { size: 11 },
+            boxWidth: 12,
+            boxHeight: 12,
+          }
+        },
+        tooltip: {
+          ...CHART_DEFAULTS.plugins.tooltip,
+          callbacks: {
+            label: ctx => {
+              const total = ctx.dataset.data.reduce((a, b) => a + b, 0);
+              const pct = ((ctx.raw / total) * 100).toFixed(1);
+              return `${ctx.label}: ${formatValue(ctx.raw)} (${pct}%)`;
+            }
+          }
+        }
+      }
+    },
+    plugins: [{
+      id: 'doughnutClick',
+      afterEvent: (chart, evt) => {
+        const points = chart.getElementsAtEventForMode(evt.event, 'index', { intersect: true }, true);
+        if (points.length > 0) {
+          const idx = points[0].index;
+          const label = chart.data.labels[idx];
+          if (label !== 'Others') {
+            addTrackedSector(label);
+          }
+        }
+      }
+    }]
+  });
+}
+
+function renderLineChart() {
+  const marketData = getMarketData();
+  if (!marketData) return;
+
+  const ctx = document.getElementById('lineChart').getContext('2d');
+  if (lineChartInstance) { lineChartInstance.destroy(); }
+
+  const datasets = [];
+  trackedSectors.forEach((sector, i) => {
+    const series = getSeriesForSector(marketData, sector, valueUnit);
+    datasets.push({
+      label: sector,
+      data: series.map(d => ({ x: d.date, y: d.value })),
+      borderColor: COLORS[i % COLORS.length],
+      backgroundColor: COLORS[i % COLORS.length] + '22',
+      fill: false,
+      tension: 0.2,
+      pointRadius: 3,
+      pointHoverRadius: 6,
+    });
+  });
+
+  lineChartInstance = new Chart(ctx, {
+    type: 'line',
+    data: { datasets },
+    options: {
+      ...CHART_DEFAULTS,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        ...CHART_DEFAULTS.plugins,
+        tooltip: {
+          ...CHART_DEFAULTS.plugins.tooltip,
+          callbacks: {
+            label: ctx => `${ctx.dataset.label}: ${formatValue(ctx.raw)}`,
+          }
+        }
+      },
+      scales: {
+        x: {
+          type: 'time',
+          time: { unit: 'day', displayFormats: { day: 'MMM d' } },
+          grid: { color: '#2a2d38' },
+          ticks: { color: '#888', maxTicksLimit: 12 },
+        },
+        y: {
+          grid: { color: '#2a2d38' },
+          ticks: { color: '#888', callback: v => formatValue(v) },
+        }
+      }
+    }
+  });
+
+  updateLegend();
+}
+
+function updateLegend() {
+  const container = document.getElementById('trend-legend');
+  container.innerHTML = '';
+  trackedSectors.forEach((sector, i) => {
+    const div = document.createElement('div');
+    div.className = 'legend-item selected';
+    div.innerHTML = `
+      <span class="color-dot" style="background:${COLORS[i % COLORS.length]}"></span>
+      ${sector}
+      <span class="remove-btn" data-sector="${sector}">&times;</span>
+    `;
+    div.querySelector('.remove-btn').addEventListener('click', (e) => {
+      e.stopPropagation();
+      removeTrackedSector(sector);
+    });
+    container.appendChild(div);
+  });
+}
+
+// ========================
+// Sector tracking
+// ========================
+function addTrackedSector(sector) {
+  if (!trackedSectors.includes(sector)) {
+    trackedSectors.push(sector);
+    renderLineChart();
+    updateStats();
+  }
+}
+
+function removeTrackedSector(sector) {
+  trackedSectors = trackedSectors.filter(s => s !== sector);
+  renderLineChart();
+  updateStats();
+}
+
+// ========================
+// Stats
+// ========================
+function updateStats() {
+  const marketData = getMarketData();
+  document.getElementById('stat-market').textContent =
+    marketData ? `${marketData.code} - ${marketData.name}` : '-';
+
+  if (marketData && selectedDate) {
+    const series = getSeriesForDate(marketData, selectedDate, valueUnit);
+    const total = series.reduce((sum, d) => sum + d.value, 0);
+    document.getElementById('stat-total').textContent = formatValue(total);
+    document.getElementById('stat-sectors').textContent = series.length;
+  } else {
+    document.getElementById('stat-total').textContent = '-';
+    document.getElementById('stat-sectors').textContent = '-';
+  }
+
+  document.getElementById('stat-dates').textContent = data ? data.dates.length : '-';
+}
+
+// ========================
+// Event listeners
+// ========================
+document.getElementById('market-select').addEventListener('change', (e) => {
+  selectedMarketCode = e.target.value;
+  trackedSectors = [];
+  populateIndexSelect(selectedMarketCode);
+});
+
+document.getElementById('index-select').addEventListener('change', (e) => {
+  selectedIndexName = e.target.value;
+  const marketData = getMarketData();
+  if (marketData) {
+    const dates = Object.keys(marketData.series).sort();
+    if (dates.length > 0) {
+      populateDatePicker(dates);
+      selectedDate = dates[dates.length - 1];
+    }
+  }
+  trackedSectors = [];
+  renderAll();
+});
+
+document.getElementById('date-picker').addEventListener('change', (e) => {
+  selectedDate = e.target.value;
+  renderBarChart();
+  renderDoughnutChart();
+  updateStats();
+});
+
+document.querySelectorAll('.format-toggle button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.format-toggle button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const unitMap = { raw: 'v', '1W': 'w', '1M': 'm' };
+    valueUnit = unitMap[btn.dataset.unit];
+    renderAll();
+  });
+});
+
+function renderAll() {
+  renderBarChart();
+  renderDoughnutChart();
+  renderLineChart();
+  updateStats();
+}
+
+// ========================
+// Init
+// ========================
+// Register the time scale for Chart.js using the bundled adapter
+// We'll lazy-load the date adapter
+async function init() {
+  // Load date-fns adapter for time scale
+  const script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3/dist/chartjs-adapter-date-fns.bundle.min.js';
+  document.head.appendChild(script);
+  script.onload = () => {
+    loadData().then(() => {
+      // Trigger initial population
+      if (data && data.markets.length > 0) {
+        const first = data.markets[0];
+        selectedMarketCode = first.code;
+        selectedIndexName = first.name;
+        const dates = Object.keys(first.series).sort();
+        if (dates.length > 0) {
+          selectedDate = dates[dates.length - 1];
+        }
+        // Add initial tracked sectors (top 5)
+        const dayData = first.series[selectedDate];
+        if (dayData) {
+          const sorted = Object.entries(dayData)
+            .sort((a, b) => (b[1].v || 0) - (a[1].v || 0));
+          trackedSectors = sorted.slice(0, 5).map(([s]) => s);
+        }
+        renderAll();
+      }
+    });
+  };
+}
+
+init();
+</script>
+</body>
+</html>
