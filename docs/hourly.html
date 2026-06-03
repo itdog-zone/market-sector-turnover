@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hourly Sector Stats</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .container { max-width: 1400px; margin: 0 auto; }
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  .nav {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  .nav a {
+    padding: 8px 18px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 6px 6px 0 0;
+    transition: all 0.2s;
+    background: #1a1d28;
+    color: #888;
+    border: 1px solid #2a2d38;
+    border-bottom: none;
+  }
+  .nav a.active {
+    background: #252836;
+    color: #4a9eff;
+    font-weight: 500;
+  }
+  .nav a:hover { color: #fff; }
+  .subtitle {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 24px;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+  }
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .control-group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+  }
+  select {
+    background: #1a1d28;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    min-width: 160px;
+    cursor: pointer;
+  }
+  select:focus { outline: none; border-color: #4a9eff; }
+  select option { background: #1a1d28; }
+  .stats-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    background: #1a1d28;
+    border-radius: 8px;
+    border: 1px solid #2a2d38;
+  }
+  .stat-item { font-size: 13px; }
+  .stat-item .label { color: #888; margin-right: 6px; }
+  .stat-item .value { color: #fff; font-weight: 500; }
+  .snapshot-info {
+    background: #1a1d28;
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: 1px solid #2a2d38;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #aaa;
+  }
+  .table-container {
+    overflow-x: auto;
+    margin-bottom: 16px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    background: #1a1d28;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #2a2d38;
+  }
+  th {
+    background: #252836;
+    color: #aaa;
+    padding: 10px 8px;
+    text-align: center;
+    font-weight: 500;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+  }
+  td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #2a2d38;
+    white-space: nowrap;
+  }
+  tr:hover td { background: #252836; }
+  .sector-name {
+    text-align: left;
+    font-weight: 500;
+    color: #ddd;
+    min-width: 140px;
+  }
+  .num-up { color: #51cf66; }
+  .num-down { color: #ff6b6b; }
+  .num-neutral { color: #ffd43b; }
+  .num-no-trade { color: #555; }
+  .num-total { color: #4a9eff; font-weight: 500; }
+  .up-bucket { color: #51cf66; }
+  .down-bucket { color: #ff6b6b; }
+  .section-header {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0 12px;
+    color: #ccc;
+  }
+  @media (max-width: 768px) {
+    .controls { flex-direction: column; }
+    select { min-width: 100%; }
+    table { font-size: 11px; }
+    th, td { padding: 6px 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <a href="index.html">📊 Daily Turnover</a>
+    <a href="hourly.html" class="active">⏰ Hourly Sector Stats</a>
+  </div>
+
+  <h1>⏰ Hourly Sector Statistics</h1>
+  <div class="subtitle">
+    Per-sector counts of stocks going up/down/unchanged/no-trade, with turnover totals.
+    Captured at each hour (with ~15min data delay).
+    <span id="data-range"></span>
+  </div>
+
+  <div class="controls">
+    <div class="control-group">
+      <label>Market</label>
+      <select id="market-select"><option value="">-- Select --</option></select>
+    </div>
+    <div class="control-group">
+      <label>Index / Range</label>
+      <select id="index-select"><option value="">-- Select --</option></select>
+    </div>
+    <div class="control-group">
+      <label>Snapshot Time</label>
+      <select id="time-select"><option value="">-- Select --</option></select>
+    </div>
+  </div>
+
+  <div class="stats-bar" id="stats-bar">
+    <div class="stat-item"><span class="label">Market:</span><span class="value" id="stat-market">-</span></div>
+    <div class="stat-item"><span class="label">Snapshot:</span><span class="value" id="stat-snapshot">-</span></div>
+    <div class="stat-item"><span class="label">Sectors:</span><span class="value" id="stat-sectors">-</span></div>
+    <div class="stat-item"><span class="label">Total Turnover:</span><span class="value" id="stat-total">-</span></div>
+  </div>
+
+  <div class="snapshot-info" id="snapshot-info">
+    Select a market and snapshot time to view sector statistics.
+  </div>
+
+  <div id="table-area"></div>
+</div>
+
+<script>
+const UP_COLORS = ['#51cf66', '#40c057', '#2f9e44', '#1e7e34'];
+const DOWN_COLORS = ['#ff6b6b', '#fa5252', '#e03131', '#c92a2a'];
+
+const BUCKET_LABELS = {
+  up_0_3: '↑ 0~3%',
+  up_3_5: '↑ 3~5%',
+  up_5_7: '↑ 5~7%',
+  up_7_plus: '↑ >7%',
+  down_0_3: '↓ 0~3%',
+  down_3_5: '↓ 3~5%',
+  down_5_7: '↓ 5~7%',
+  down_7_plus: '↓ >7%',
+  unchanged: '= 0%',
+  no_trade: 'No Trade',
+};
+
+const BUCKET_ORDER = [
+  'up_0_3', 'up_3_5', 'up_5_7', 'up_7_plus',
+  'down_0_3', 'down_3_5', 'down_5_7', 'down_7_plus',
+  'unchanged', 'no_trade',
+];
+
+function formatValue(val) {
+  if (val === 0 || val === '0') return '0';
+  const abs = Math.abs(Number(val));
+  if (abs >= 1e12) return (val / 1e12).toFixed(2) + 'T';
+  if (abs >= 1e9) return (val / 1e9).toFixed(2) + 'B';
+  if (abs >= 1e6) return (val / 1e6).toFixed(2) + 'M';
+  if (abs >= 1e3) return (val / 1e3).toFixed(2) + 'K';
+  return Number(val).toFixed(2);
+}
+
+let data = null;
+let selectedMarketCode = null;
+let selectedIndexName = null;
+let selectedSnapshot = null;
+
+async function loadData() {
+  const resp = await fetch('hourly_data.json');
+  data = await resp.json();
+  if (data.snapshots.length > 0) {
+    document.getElementById('data-range').textContent =
+      `📅 ${data.snapshots[0]} ~ ${data.snapshots[data.snapshots.length - 1]} (${data.snapshots.length} snapshots)`;
+  }
+  populateMarketSelect();
+}
+
+function populateMarketSelect() {
+  const select = document.getElementById('market-select');
+  const codes = [...new Set(data.markets.map(m => m.code))].sort();
+  codes.forEach(code => {
+    const opt = document.createElement('option');
+    opt.value = code;
+    opt.textContent = code;
+    select.appendChild(opt);
+  });
+  if (codes.length > 0) {
+    select.value = codes[0];
+    select.dispatchEvent(new Event('change'));
+  }
+}
+
+function populateIndexSelect(code) {
+  const select = document.getElementById('index-select');
+  select.innerHTML = '<option value="">-- Select --</option>';
+  const names = data.markets.filter(m => m.code === code).map(m => m.name);
+  names.forEach(name => {
+    const opt = document.createElement('option');
+    opt.value = name;
+    opt.textContent = name;
+    select.appendChild(opt);
+  });
+  if (names.length > 0) {
+    select.value = names[0];
+    select.dispatchEvent(new Event('change'));
+  }
+}
+
+function populateTimeSelect() {
+  const select = document.getElementById('time-select');
+  select.innerHTML = '<option value="">-- Select --</option>';
+  // Get available timestamps for the current market
+  const marketData = getMarketData();
+  if (!marketData) return;
+
+  const timestamps = data.snapshots.filter(ts => marketData.series[ts]);
+  timestamps.forEach(ts => {
+    const opt = document.createElement('option');
+    opt.value = ts;
+    opt.textContent = ts;
+    select.appendChild(opt);
+  });
+  if (timestamps.length > 0) {
+    select.value = timestamps[timestamps.length - 1];
+    select.dispatchEvent(new Event('change'));
+  }
+}
+
+function getMarketData() {
+  if (!data || !selectedMarketCode || !selectedIndexName) return null;
+  return data.markets.find(m => m.code === selectedMarketCode && m.name === selectedIndexName);
+}
+
+function computeSummary(sectorData) {
+  let totalUp = 0, totalDown = 0, totalUnchanged = 0, totalNoTrade = 0, totalTurnover = 0;
+  Object.values(sectorData).forEach(entry => {
+    totalUp += (entry.up_0_3 || 0) + (entry.up_3_5 || 0) + (entry.up_5_7 || 0) + (entry.up_7_plus || 0);
+    totalDown += (entry.down_0_3 || 0) + (entry.down_3_5 || 0) + (entry.down_5_7 || 0) + (entry.down_7_plus || 0);
+    totalUnchanged += entry.unchanged || 0;
+    totalNoTrade += entry.no_trade || 0;
+    totalTurnover += entry.total_turnover || 0;
+  });
+  return { totalUp, totalDown, totalUnchanged, totalNoTrade, totalTurnover };
+}
+
+function renderTable() {
+  const marketData = getMarketData();
+  const area = document.getElementById('table-area');
+
+  if (!marketData || !selectedSnapshot || !marketData.series[selectedSnapshot]) {
+    area.innerHTML = '<div class="snapshot-info">No data available for the selected time.</div>';
+    updateStats();
+    return;
+  }
+
+  const sectorData = marketData.series[selectedSnapshot];
+  const summary = computeSummary(sectorData);
+
+  // Sort sectors by total stocks (up+down+unchanged+no_trade) descending
+  const sortedSectors = Object.entries(sectorData)
+    .map(([sector, entry]) => ({
+      sector,
+      entry,
+      total: (entry.up_0_3||0)+(entry.up_3_5||0)+(entry.up_5_7||0)+(entry.up_7_plus||0)+
+             (entry.down_0_3||0)+(entry.down_3_5||0)+(entry.down_5_7||0)+(entry.down_7_plus||0)+
+             (entry.unchanged||0)+(entry.no_trade||0)
+    }))
+    .sort((a, b) => b.total - a.total);
+
+  // Update snapshot info
+  document.getElementById('snapshot-info').innerHTML = `
+    <strong>Summary:</strong> 
+    <span class="num-up">↑ ${summary.totalUp}</span> · 
+    <span class="num-down">↓ ${summary.totalDown}</span> · 
+    <span class="num-neutral">= ${summary.totalUnchanged}</span> · 
+    <span class="num-no-trade">✕ ${summary.totalNoTrade}</span> · 
+    Total Turnover: <span class="num-total">${formatValue(summary.totalTurnover)}</span>
+  `;
+
+  // Build table
+  let html = '<div class="table-container"><table><thead><tr>';
+  html += '<th class="sector-name">Sector</th>';
+  html += '<th>Stocks</th>';
+  for (const b of BUCKET_ORDER) {
+    html += `<th>${BUCKET_LABELS[b]}</th>`;
+  }
+  html += '<th>Total Turnover</th></tr></thead><tbody>';
+
+  for (const { sector, entry } of sortedSectors) {
+    const totalStocks = (
+      (entry.up_0_3||0)+(entry.up_3_5||0)+(entry.up_5_7||0)+(entry.up_7_plus||0)+
+      (entry.down_0_3||0)+(entry.down_3_5||0)+(entry.down_5_7||0)+(entry.down_7_plus||0)+
+      (entry.unchanged||0)+(entry.no_trade||0)
+    );
+    html += `<tr><td class="sector-name">${sector}</td>`;
+    html += `<td><strong>${totalStocks}</strong></td>`;
+    for (const b of BUCKET_ORDER) {
+      const val = entry[b] || 0;
+      let cls = '';
+      if (b.startsWith('up')) cls = 'up-bucket';
+      else if (b.startsWith('down')) cls = 'down-bucket';
+      else if (b === 'unchanged') cls = 'num-neutral';
+      else if (b === 'no_trade') cls = 'num-no-trade';
+      html += `<td class="${cls}">${val}</td>`;
+    }
+    html += `<td class="num-total">${formatValue(entry.total_turnover || 0)}</td>`;
+    html += '</tr>';
+  }
+
+  html += '</tbody></table></div>';
+  area.innerHTML = html;
+  updateStats();
+}
+
+function updateStats() {
+  const marketData = getMarketData();
+  document.getElementById('stat-market').textContent =
+    marketData ? `${marketData.code} - ${marketData.name}` : '-';
+  document.getElementById('stat-snapshot').textContent = selectedSnapshot || '-';
+
+  if (marketData && selectedSnapshot && marketData.series[selectedSnapshot]) {
+    const sectorData = marketData.series[selectedSnapshot];
+    document.getElementById('stat-sectors').textContent = Object.keys(sectorData).length;
+    const total = Object.values(sectorData).reduce((s, e) => s + (e.total_turnover || 0), 0);
+    document.getElementById('stat-total').textContent = formatValue(total);
+  } else {
+    document.getElementById('stat-sectors').textContent = '-';
+    document.getElementById('stat-total').textContent = '-';
+  }
+}
+
+document.getElementById('market-select').addEventListener('change', (e) => {
+  selectedMarketCode = e.target.value;
+  populateIndexSelect(selectedMarketCode);
+});
+
+document.getElementById('index-select').addEventListener('change', (e) => {
+  selectedIndexName = e.target.value;
+  populateTimeSelect();
+  renderTable();
+});
+
+document.getElementById('time-select').addEventListener('change', (e) => {
+  selectedSnapshot = e.target.value;
+  renderTable();
+});
+
+// Init
+async function init() {
+  await loadData();
+  if (data && data.markets.length > 0) {
+    const first = data.markets[0];
+    selectedMarketCode = first.code;
+    selectedIndexName = first.name;
+    // Set selectors
+    document.getElementById('market-select').value = selectedMarketCode;
+    populateIndexSelect(selectedMarketCode);
+    // populateTimeSelect will auto-trigger renderTable
+  }
+}
+
+init();
+</script>
+</body>
+</html>

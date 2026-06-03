@@ -195,10 +195,37 @@
   }
   .color-picker-item:hover { transform: scale(1.15); }
   .color-picker-item.active { border-color: #fff; }
+  .nav {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  .nav a {
+    padding: 8px 18px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 6px 6px 0 0;
+    transition: all 0.2s;
+    background: #1a1d28;
+    color: #888;
+    border: 1px solid #2a2d38;
+    border-bottom: none;
+  }
+  .nav a.active {
+    background: #252836;
+    color: #4a9eff;
+    font-weight: 500;
+  }
+  .nav a:hover { color: #fff; }
 </style>
 </head>
 <body>
 <div class="container">
+  <div class="nav">
+    <a href="index.html" class="active">📊 Daily Turnover</a>
+    <a href="hourly.html">⏰ Hourly Sector Stats</a>
+  </div>
+
   <h1>📊 Market Sector Turnover</h1>
   <div class="subtitle">
     Daily sector turnover data across global markets.
