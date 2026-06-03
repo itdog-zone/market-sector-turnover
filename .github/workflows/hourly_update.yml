@@ -3,7 +3,7 @@ name: Hourly Market Sector Stats
 on:
   schedule:
     # Run at minute 16 of every hour (accounting for ~15min data delay)
-    - cron: '16 * * * *'
+    - cron: '31 * * * *'
   workflow_dispatch:
 
 jobs:
