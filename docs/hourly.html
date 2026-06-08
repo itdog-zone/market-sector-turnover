@@ -149,11 +149,68 @@
     margin: 20px 0 12px;
     color: #ccc;
   }
+  /* Mini bar chart styles */
+  .mini-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 120px;
+  }
+  .mini-bar {
+    display: flex;
+    height: 14px;
+    border-radius: 3px;
+    overflow: hidden;
+    flex: 1;
+    min-width: 60px;
+  }
+  .mini-bar-up {
+    background: #51cf66;
+    transition: width 0.3s;
+  }
+  .mini-bar-down {
+    background: #ff6b6b;
+    transition: width 0.3s;
+  }
+  .mini-bar-neutral {
+    background: #555;
+    transition: width 0.3s;
+  }
+  .mini-bar-label {
+    font-size: 11px;
+    white-space: nowrap;
+    color: #aaa;
+    min-width: 36px;
+    text-align: right;
+  }
+  /* Historical chart area */
+  .chart-area {
+    margin-top: 24px;
+    background: #1a1d28;
+    border-radius: 8px;
+    border: 1px solid #2a2d38;
+    padding: 16px;
+    display: none;
+  }
+  .chart-area.visible { display: block; }
+  .chart-area h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ccc;
+  }
+  .chart-container {
+    position: relative;
+    width: 100%;
+    height: 320px;
+  }
   @media (max-width: 768px) {
     .controls { flex-direction: column; }
     select { min-width: 100%; }
     table { font-size: 11px; }
     th, td { padding: 6px 4px; }
+    .mini-bar-wrap { min-width: 80px; }
+    .mini-bar { min-width: 40px; }
   }
 </style>
 </head>
@@ -198,6 +255,13 @@
   </div>
 
   <div id="table-area"></div>
+
+  <div class="chart-area" id="chart-area">
+    <h3>📈 Historical Up / Down Summary</h3>
+    <div class="chart-container">
+      <canvas id="history-chart"></canvas>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -223,6 +287,8 @@ const BUCKET_ORDER = [
   'unchanged', 'no_trade',
 ];
 
+let historyChartInstance = null;
+
 function formatValue(val) {
   if (val === 0 || val === '0') return '0';
   const abs = Math.abs(Number(val));
@@ -231,6 +297,19 @@ function formatValue(val) {
   if (abs >= 1e6) return (val / 1e6).toFixed(2) + 'M';
   if (abs >= 1e3) return (val / 1e3).toFixed(2) + 'K';
   return Number(val).toFixed(2);
+}
+
+function calcUp(entry) {
+  return (entry.up_0_3||0)+(entry.up_3_5||0)+(entry.up_5_7||0)+(entry.up_7_plus||0);
+}
+function calcDown(entry) {
+  return (entry.down_0_3||0)+(entry.down_3_5||0)+(entry.down_5_7||0)+(entry.down_7_plus||0);
+}
+function calcTotal(entry) {
+  return calcUp(entry)+calcDown(entry)+(entry.unchanged||0)+(entry.no_trade||0);
+}
+function calcNet(entry) {
+  return calcUp(entry) - calcDown(entry);
 }
 
 let data = null;
@@ -307,8 +386,8 @@ function getMarketData() {
 function computeSummary(sectorData) {
   let totalUp = 0, totalDown = 0, totalUnchanged = 0, totalNoTrade = 0, totalTurnover = 0;
   Object.values(sectorData).forEach(entry => {
-    totalUp += (entry.up_0_3 || 0) + (entry.up_3_5 || 0) + (entry.up_5_7 || 0) + (entry.up_7_plus || 0);
-    totalDown += (entry.down_0_3 || 0) + (entry.down_3_5 || 0) + (entry.down_5_7 || 0) + (entry.down_7_plus || 0);
+    totalUp += calcUp(entry);
+    totalDown += calcDown(entry);
     totalUnchanged += entry.unchanged || 0;
     totalNoTrade += entry.no_trade || 0;
     totalTurnover += entry.total_turnover || 0;
@@ -316,9 +395,162 @@ function computeSummary(sectorData) {
   return { totalUp, totalDown, totalUnchanged, totalNoTrade, totalTurnover };
 }
 
+function buildHistoryData(marketData) {
+  // Collect all timestamps that have data for this market
+  const timestamps = data.snapshots.filter(ts => marketData.series[ts]);
+  const labels = [];
+  const upData = [];
+  const downData = [];
+  const unchangedData = [];
+  const noTradeData = [];
+
+  for (const ts of timestamps) {
+    const sectorData = marketData.series[ts];
+    const summary = computeSummary(sectorData);
+    labels.push(ts);
+    upData.push(summary.totalUp);
+    downData.push(summary.totalDown);
+    unchangedData.push(summary.totalUnchanged);
+    noTradeData.push(summary.totalNoTrade);
+  }
+
+  return { labels, upData, downData, unchangedData, noTradeData };
+}
+
+function renderHistoryChart(marketData) {
+  const area = document.getElementById('chart-area');
+  if (!marketData) {
+    area.classList.remove('visible');
+    return;
+  }
+
+  const history = buildHistoryData(marketData);
+  if (history.labels.length === 0) {
+    area.classList.remove('visible');
+    return;
+  }
+
+  area.classList.add('visible');
+
+  const ctx = document.getElementById('history-chart').getContext('2d');
+
+  // Destroy previous instance
+  if (historyChartInstance) {
+    historyChartInstance.destroy();
+    historyChartInstance = null;
+  }
+
+  historyChartInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: history.labels,
+      datasets: [
+        {
+          label: '↑ Up',
+          data: history.upData,
+          borderColor: '#51cf66',
+          backgroundColor: 'rgba(81, 207, 102, 0.12)',
+          fill: true,
+          tension: 0.2,
+          pointRadius: 2,
+          pointHoverRadius: 5,
+        },
+        {
+          label: '↓ Down',
+          data: history.downData,
+          borderColor: '#ff6b6b',
+          backgroundColor: 'rgba(255, 107, 107, 0.12)',
+          fill: true,
+          tension: 0.2,
+          pointRadius: 2,
+          pointHoverRadius: 5,
+        },
+        {
+          label: '= Unchanged',
+          data: history.unchangedData,
+          borderColor: '#ffd43b',
+          backgroundColor: 'rgba(255, 212, 59, 0.08)',
+          fill: false,
+          tension: 0.2,
+          pointRadius: 2,
+          pointHoverRadius: 5,
+          borderDash: [4, 4],
+        },
+        {
+          label: '✕ No Trade',
+          data: history.noTradeData,
+          borderColor: '#555',
+          backgroundColor: 'rgba(85, 85, 85, 0.08)',
+          fill: false,
+          tension: 0.2,
+          pointRadius: 2,
+          pointHoverRadius: 5,
+          borderDash: [2, 4],
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: {
+        mode: 'index',
+        intersect: false,
+      },
+      plugins: {
+        legend: {
+          labels: { color: '#aaa', font: { size: 11 } },
+        },
+        tooltip: {
+          backgroundColor: '#252836',
+          titleColor: '#fff',
+          bodyColor: '#ddd',
+          borderColor: '#333',
+          borderWidth: 1,
+          padding: 8,
+          cornerRadius: 6,
+        },
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: '#888',
+            font: { size: 10 },
+            maxRotation: 45,
+            maxTicksLimit: 20,
+          },
+          grid: { color: '#2a2d38' },
+          title: {
+            display: true,
+            text: 'Snapshot Time',
+            color: '#888',
+            font: { size: 11 },
+          },
+        },
+        y: {
+          beginAtZero: true,
+          ticks: {
+            color: '#888',
+            font: { size: 10 },
+          },
+          grid: { color: '#2a2d38' },
+          title: {
+            display: true,
+            text: 'Number of Stocks',
+            color: '#888',
+            font: { size: 11 },
+          },
+        },
+      },
+    },
+  });
+}
+
 function renderTable() {
   const marketData = getMarketData();
   const area = document.getElementById('table-area');
+
+  // Always try to render the history chart (may hide if no data)
+  renderHistoryChart(marketData);
 
   if (!marketData || !selectedSnapshot || !marketData.series[selectedSnapshot]) {
     area.innerHTML = '<div class="snapshot-info">No data available for the selected time.</div>';
@@ -329,16 +561,18 @@ function renderTable() {
   const sectorData = marketData.series[selectedSnapshot];
   const summary = computeSummary(sectorData);
 
-  // Sort sectors by total stocks (up+down+unchanged+no_trade) descending
+  // Sort sectors by net score (up - down), ascending = most down first
   const sortedSectors = Object.entries(sectorData)
     .map(([sector, entry]) => ({
       sector,
       entry,
-      total: (entry.up_0_3||0)+(entry.up_3_5||0)+(entry.up_5_7||0)+(entry.up_7_plus||0)+
-             (entry.down_0_3||0)+(entry.down_3_5||0)+(entry.down_5_7||0)+(entry.down_7_plus||0)+
-             (entry.unchanged||0)+(entry.no_trade||0)
+      total: calcTotal(entry),
+      net: calcNet(entry),
     }))
-    .sort((a, b) => b.total - a.total);
+    .sort((a, b) => a.net - b.net);
+
+  // Find the max total for normalizing bar widths
+  const maxTotal = Math.max(...sortedSectors.map(s => s.total), 1);
 
   // Update snapshot info
   document.getElementById('snapshot-info').innerHTML = `
@@ -354,19 +588,43 @@ function renderTable() {
   let html = '<div class="table-container"><table><thead><tr>';
   html += '<th class="sector-name">Sector</th>';
   html += '<th>Stocks</th>';
+  html += '<th>Net</th>';
+  html += '<th>Up/Down</th>';
   for (const b of BUCKET_ORDER) {
     html += `<th>${BUCKET_LABELS[b]}</th>`;
   }
   html += '<th>Total Turnover</th></tr></thead><tbody>';
 
-  for (const { sector, entry } of sortedSectors) {
-    const totalStocks = (
-      (entry.up_0_3||0)+(entry.up_3_5||0)+(entry.up_5_7||0)+(entry.up_7_plus||0)+
-      (entry.down_0_3||0)+(entry.down_3_5||0)+(entry.down_5_7||0)+(entry.down_7_plus||0)+
-      (entry.unchanged||0)+(entry.no_trade||0)
-    );
+  for (const { sector, entry, total, net } of sortedSectors) {
+    const up = calcUp(entry);
+    const down = calcDown(entry);
+    const unchanged = entry.unchanged || 0;
+    const noTrade = entry.no_trade || 0;
+    const upPct = total > 0 ? (up / total * 100) : 0;
+    const downPct = total > 0 ? (down / total * 100) : 0;
+    const neutralPct = total > 0 ? ((unchanged + noTrade) / total * 100) : 0;
+
+    let netClass = '';
+    let netSign = '';
+    if (net > 0) { netClass = 'num-up'; netSign = '+'; }
+    else if (net < 0) { netClass = 'num-down'; netSign = ''; }
+    else { netClass = 'num-neutral'; netSign = ''; }
+
     html += `<tr><td class="sector-name">${sector}</td>`;
-    html += `<td><strong>${totalStocks}</strong></td>`;
+    html += `<td><strong>${total}</strong></td>`;
+    html += `<td class="${netClass}"><strong>${netSign}${net}</strong></td>`;
+
+    // Mini bar chart column
+    html += `<td style="min-width:140px;"><div class="mini-bar-wrap">`;
+    html += `<span class="mini-bar-label num-up">${up}</span>`;
+    html += `<div class="mini-bar">`;
+    html += `<div class="mini-bar-up" style="width:${upPct}%;"></div>`;
+    html += `<div class="mini-bar-down" style="width:${downPct}%;"></div>`;
+    html += `<div class="mini-bar-neutral" style="width:${neutralPct}%;"></div>`;
+    html += `</div>`;
+    html += `<span class="mini-bar-label num-down">${down}</span>`;
+    html += `</div></td>`;
+
     for (const b of BUCKET_ORDER) {
       const val = entry[b] || 0;
       let cls = '';
