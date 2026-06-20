@@ -1,0 +1,110 @@
+﻿Market,MarketName,Sector,Fetch_Time,up_0_3,up_3_5,up_5_7,up_7_plus,down_0_3,down_3_5,down_5_7,down_7_plus,unchanged,no_trade,total_turnover
+TW,All Taiwan Companies,Commercial Services,2026-06-20 23:00:00,18,4,2,6,21,2,0,1,4,0,26784849874.8
+TW,All Taiwan Companies,Communications,2026-06-20 23:00:00,4,0,0,0,3,0,0,0,1,0,7056011072.9
+TW,All Taiwan Companies,Consumer Durables,2026-06-20 23:00:00,54,2,0,2,50,2,1,0,13,0,10790497459.42
+TW,All Taiwan Companies,Consumer Non-Durables,2026-06-20 23:00:00,24,2,0,1,29,0,1,1,7,0,3895802165.94
+TW,All Taiwan Companies,Consumer Services,2026-06-20 23:00:00,21,4,1,1,37,3,0,0,11,0,834278716.77
+TW,All Taiwan Companies,Distribution Services,2026-06-20 23:00:00,28,5,0,5,26,5,1,1,11,0,25915296449.4
+TW,All Taiwan Companies,Electronic Technology,2026-06-20 23:00:00,279,80,35,98,181,22,7,4,30,0,1399218270160.38
+TW,All Taiwan Companies,Energy Minerals,2026-06-20 23:00:00,4,0,0,0,0,0,0,0,0,0,751815544.0
+TW,All Taiwan Companies,Finance,2026-06-20 23:00:00,42,2,0,1,31,2,0,1,13,0,54833114624.25
+TW,All Taiwan Companies,Health Services,2026-06-20 23:00:00,3,0,0,0,5,0,0,0,3,0,42766410.87
+TW,All Taiwan Companies,Health Technology,2026-06-20 23:00:00,70,6,1,8,62,11,4,1,26,0,12910093188.84
+TW,All Taiwan Companies,Industrial Services,2026-06-20 23:00:00,24,3,1,2,27,5,1,2,8,0,11206958044.01
+TW,All Taiwan Companies,Miscellaneous,2026-06-20 23:00:00,1,0,0,0,0,0,0,0,0,0,1328556.0
+TW,All Taiwan Companies,Non-Energy Minerals,2026-06-20 23:00:00,18,2,0,4,25,3,0,0,10,0,21057711960.82
+TW,All Taiwan Companies,Process Industries,2026-06-20 23:00:00,74,9,8,9,56,2,0,3,25,0,63033652194.83
+TW,All Taiwan Companies,Producer Manufacturing,2026-06-20 23:00:00,138,24,11,26,93,10,1,2,33,0,125157320702.97
+TW,All Taiwan Companies,Retail Trade,2026-06-20 23:00:00,16,1,0,1,13,2,0,0,4,0,4223335750.09
+TW,All Taiwan Companies,Technology Services,2026-06-20 23:00:00,47,7,2,2,43,2,0,4,15,0,15700621554.46
+TW,All Taiwan Companies,Transportation,2026-06-20 23:00:00,9,0,0,0,21,1,0,0,8,0,13720962943.25
+TW,All Taiwan Companies,Utilities,2026-06-20 23:00:00,6,0,1,0,8,1,0,0,3,0,1036510416.55
+TW,FTSE TWSE Taiwan 50 Index,Communications,2026-06-20 23:00:00,0,0,0,0,2,0,0,0,1,0,6992768866.5
+TW,FTSE TWSE Taiwan 50 Index,Consumer Non-Durables,2026-06-20 23:00:00,0,0,0,0,1,0,0,0,0,0,348211452.6
+TW,FTSE TWSE Taiwan 50 Index,Distribution Services,2026-06-20 23:00:00,0,1,0,0,0,0,0,0,0,0,4226834412.0
+TW,FTSE TWSE Taiwan 50 Index,Electronic Technology,2026-06-20 23:00:00,5,2,1,2,6,0,0,0,0,0,530155403404.8
+TW,FTSE TWSE Taiwan 50 Index,Energy Minerals,2026-06-20 23:00:00,1,0,0,0,0,0,0,0,0,0,748849397.5
+TW,FTSE TWSE Taiwan 50 Index,Finance,2026-06-20 23:00:00,8,0,0,1,5,0,0,0,1,0,47883221093.2
+TW,FTSE TWSE Taiwan 50 Index,Non-Energy Minerals,2026-06-20 23:00:00,1,0,0,0,1,0,0,0,0,0,8100626943.8
+TW,FTSE TWSE Taiwan 50 Index,Process Industries,2026-06-20 23:00:00,2,0,0,2,0,0,0,0,0,0,31150189637.8
+TW,FTSE TWSE Taiwan 50 Index,Producer Manufacturing,2026-06-20 23:00:00,1,1,0,0,0,0,0,0,0,0,4100145981.0
+TW,FTSE TWSE Taiwan 50 Index,Retail Trade,2026-06-20 23:00:00,0,0,0,0,2,0,0,0,0,0,3505886485.5
+TW,FTSE TWSE Taiwan 50 Index,Transportation,2026-06-20 23:00:00,0,0,0,0,2,0,0,0,1,0,5621169412.6
+CN,Shenzhen Component Index,Commercial Services,2026-06-20 23:00:00,2,2,1,1,3,1,0,0,0,0,15942742176.33
+CN,Shenzhen Component Index,Communications,2026-06-20 23:00:00,0,0,0,0,1,0,0,0,0,0,1184332320.0
+CN,Shenzhen Component Index,Consumer Durables,2026-06-20 23:00:00,6,0,0,1,9,1,0,0,0,0,26337927611.93
+CN,Shenzhen Component Index,Consumer Non-Durables,2026-06-20 23:00:00,3,0,0,0,13,1,0,0,0,0,6641862431.87
+CN,Shenzhen Component Index,Consumer Services,2026-06-20 23:00:00,1,1,0,0,5,0,0,0,0,0,3264690545.44
+CN,Shenzhen Component Index,Distribution Services,2026-06-20 23:00:00,1,1,0,1,3,0,1,0,0,0,8929398387.27
+CN,Shenzhen Component Index,Electronic Technology,2026-06-20 23:00:00,41,5,6,7,34,4,1,0,0,0,472952658121.78
+CN,Shenzhen Component Index,Energy Minerals,2026-06-20 23:00:00,0,0,0,0,0,2,1,0,0,0,1115467212.95
+CN,Shenzhen Component Index,Finance,2026-06-20 23:00:00,1,0,0,0,16,11,1,0,0,0,12648281677.74
+CN,Shenzhen Component Index,Health Services,2026-06-20 23:00:00,0,0,0,1,2,0,0,0,0,0,2359530896.3
+CN,Shenzhen Component Index,Health Technology,2026-06-20 23:00:00,16,3,0,3,17,2,0,0,1,0,19084496664.64
+CN,Shenzhen Component Index,Industrial Services,2026-06-20 23:00:00,1,1,0,0,2,0,0,0,0,0,3532005479.88
+CN,Shenzhen Component Index,Non-Energy Minerals,2026-06-20 23:00:00,11,4,1,2,14,5,2,1,1,0,80605984329.12
+CN,Shenzhen Component Index,Process Industries,2026-06-20 23:00:00,4,3,0,0,30,13,0,2,2,0,69987065338.92
+CN,Shenzhen Component Index,Producer Manufacturing,2026-06-20 23:00:00,25,13,0,6,49,4,1,1,1,0,267234806175.45
+CN,Shenzhen Component Index,Retail Trade,2026-06-20 23:00:00,0,0,0,0,1,0,0,0,0,0,95167921.68
+CN,Shenzhen Component Index,Technology Services,2026-06-20 23:00:00,10,6,1,1,18,0,1,0,2,0,54260267683.4
+CN,Shenzhen Component Index,Transportation,2026-06-20 23:00:00,1,0,0,0,6,4,0,0,0,0,2543695722.2
+CN,Shenzhen Component Index,Utilities,2026-06-20 23:00:00,0,0,0,0,4,2,7,3,0,0,9924362565.05
+HK,Hang Seng Index,Commercial Services,2026-06-20 23:00:00,0,0,0,0,1,0,0,0,0,0,3090755985.28
+HK,Hang Seng Index,Communications,2026-06-20 23:00:00,0,0,0,0,2,1,0,0,0,0,2922078364.32
+HK,Hang Seng Index,Consumer Durables,2026-06-20 23:00:00,1,0,0,0,4,1,2,0,0,0,5043313531.98
+HK,Hang Seng Index,Consumer Non-Durables,2026-06-20 23:00:00,0,0,0,0,8,2,0,0,0,0,3986672706.3
+HK,Hang Seng Index,Consumer Services,2026-06-20 23:00:00,0,0,0,0,4,2,0,0,0,0,6409050794.34
+HK,Hang Seng Index,Distribution Services,2026-06-20 23:00:00,0,0,0,0,3,0,0,0,0,0,1970894452.86
+HK,Hang Seng Index,Electronic Technology,2026-06-20 23:00:00,2,0,0,0,1,2,0,0,0,0,26456390521.2
+HK,Hang Seng Index,Energy Minerals,2026-06-20 23:00:00,0,0,0,0,3,0,1,0,0,0,6053259022.62
+HK,Hang Seng Index,Finance,2026-06-20 23:00:00,3,0,0,0,12,2,2,2,0,0,34088322458.25
+HK,Hang Seng Index,Health Technology,2026-06-20 23:00:00,2,2,1,0,2,0,0,0,0,0,4420083404.87
+HK,Hang Seng Index,Non-Energy Minerals,2026-06-20 23:00:00,0,0,0,0,0,2,0,0,0,0,5082101877.48
+HK,Hang Seng Index,Producer Manufacturing,2026-06-20 23:00:00,0,0,0,0,3,0,0,0,0,0,4808321491.05
+HK,Hang Seng Index,Retail Trade,2026-06-20 23:00:00,1,0,0,0,3,0,0,0,0,0,19724694544.45
+HK,Hang Seng Index,Technology Services,2026-06-20 23:00:00,0,0,0,0,4,1,0,0,0,0,21990893018.6
+HK,Hang Seng Index,Transportation,2026-06-20 23:00:00,2,0,0,0,3,0,0,0,0,0,1752374600.7
+HK,Hang Seng Index,Utilities,2026-06-20 23:00:00,3,0,0,0,2,0,0,0,1,0,2274502553.2
+HK,Hang Seng China Enterprises Index,Commercial Services,2026-06-20 23:00:00,0,0,0,0,1,0,0,0,0,0,3090755985.28
+HK,Hang Seng China Enterprises Index,Communications,2026-06-20 23:00:00,0,0,0,0,2,0,0,0,0,0,2355206761.44
+HK,Hang Seng China Enterprises Index,Consumer Durables,2026-06-20 23:00:00,0,0,0,0,1,2,0,0,0,0,3198520664.85
+HK,Hang Seng China Enterprises Index,Consumer Non-Durables,2026-06-20 23:00:00,0,0,0,0,3,0,0,0,0,0,1565454671.95
+HK,Hang Seng China Enterprises Index,Consumer Services,2026-06-20 23:00:00,0,0,0,0,2,1,0,0,0,0,5316239105.9
+HK,Hang Seng China Enterprises Index,Electronic Technology,2026-06-20 23:00:00,1,0,0,0,0,2,0,0,0,0,24365248526.22
+HK,Hang Seng China Enterprises Index,Energy Minerals,2026-06-20 23:00:00,0,0,0,0,3,0,1,0,0,0,6053259022.62
+HK,Hang Seng China Enterprises Index,Finance,2026-06-20 23:00:00,0,0,0,0,7,4,1,2,0,0,21874224962.85
+HK,Hang Seng China Enterprises Index,Health Technology,2026-06-20 23:00:00,2,2,0,0,1,0,0,0,0,0,3980508269.35
+HK,Hang Seng China Enterprises Index,Non-Energy Minerals,2026-06-20 23:00:00,0,0,0,0,0,2,0,0,0,0,5082101877.48
+HK,Hang Seng China Enterprises Index,Producer Manufacturing,2026-06-20 23:00:00,0,0,0,0,1,0,0,0,0,0,2499321871.2
+HK,Hang Seng China Enterprises Index,Retail Trade,2026-06-20 23:00:00,0,0,0,0,3,0,0,0,0,0,18798392043.4
+HK,Hang Seng China Enterprises Index,Technology Services,2026-06-20 23:00:00,0,0,0,0,3,2,0,0,0,0,22802344191.2
+HK,Hang Seng China Enterprises Index,Transportation,2026-06-20 23:00:00,0,0,0,0,1,0,0,0,0,0,488937404.7
+HK,Hang Seng Tech Index,Commercial Services,2026-06-20 23:00:00,0,0,0,0,1,0,0,0,0,0,3090755985.28
+HK,Hang Seng Tech Index,Consumer Durables,2026-06-20 23:00:00,0,1,0,0,2,2,1,0,0,0,4144088113.18
+HK,Hang Seng Tech Index,Consumer Services,2026-06-20 23:00:00,0,0,0,0,2,0,0,0,0,0,1193505891.92
+HK,Hang Seng Tech Index,Electronic Technology,2026-06-20 23:00:00,2,0,1,0,1,2,0,0,0,0,34109134952.4
+HK,Hang Seng Tech Index,Producer Manufacturing,2026-06-20 23:00:00,0,0,0,0,1,0,0,0,0,0,2499321871.2
+HK,Hang Seng Tech Index,Retail Trade,2026-06-20 23:00:00,0,0,0,0,3,0,0,0,0,0,18798392043.4
+HK,Hang Seng Tech Index,Technology Services,2026-06-20 23:00:00,0,0,0,2,7,2,0,0,0,0,36867626289.08
+US,All US Companies,Commercial Services,2026-06-20 23:00:00,74,24,10,58,80,33,21,56,83,0,18624642985.7
+US,All US Companies,Communications,2026-06-20 23:00:00,8,1,2,8,13,3,5,11,12,0,63767058660.15
+US,All US Companies,Consumer Durables,2026-06-20 23:00:00,56,28,12,27,19,3,7,20,20,0,34648870989.37
+US,All US Companies,Consumer Non-Durables,2026-06-20 23:00:00,55,23,11,22,42,10,8,18,41,0,33513750150.05
+US,All US Companies,Consumer Services,2026-06-20 23:00:00,91,27,12,31,49,14,8,19,45,0,37718299528.05
+US,All US Companies,Distribution Services,2026-06-20 23:00:00,33,16,9,14,29,4,3,22,35,0,11993300993.21
+US,All US Companies,Electronic Technology,2026-06-20 23:00:00,112,50,41,79,49,19,13,35,53,0,546362485648.45
+US,All US Companies,Energy Minerals,2026-06-20 23:00:00,21,2,3,9,57,17,4,18,47,0,27206545403.16
+US,All US Companies,Finance,2026-06-20 23:00:00,758,68,35,86,451,44,17,63,229,7,142285830921.08
+US,All US Companies,Government,2026-06-20 23:00:00,0,0,0,0,1,0,1,0,0,0,367009.89
+US,All US Companies,Health Services,2026-06-20 23:00:00,38,7,5,15,19,7,4,12,24,0,16101007501.58
+US,All US Companies,Health Technology,2026-06-20 23:00:00,300,116,64,123,212,51,31,89,150,2,85933130453.91
+US,All US Companies,Industrial Services,2026-06-20 23:00:00,48,18,6,20,43,11,9,16,30,0,25586055660.56
+US,All US Companies,Miscellaneous,2026-06-20 23:00:00,3788,218,88,129,1190,103,41,62,67,6,339579116630.95
+US,All US Companies,Non-Energy Minerals,2026-06-20 23:00:00,39,13,8,25,45,15,3,32,49,0,20697970714.49
+US,All US Companies,Process Industries,2026-06-20 23:00:00,70,19,11,27,42,16,5,23,61,0,18205308398.98
+US,All US Companies,Producer Manufacturing,2026-06-20 23:00:00,116,65,33,53,33,10,5,35,48,1,88594677599.83
+US,All US Companies,Retail Trade,2026-06-20 23:00:00,65,23,19,26,41,7,13,24,26,1,64447440444.06
+US,All US Companies,Technology Services,2026-06-20 23:00:00,216,59,23,92,176,61,32,100,152,1,224308844566.67
+US,All US Companies,Transportation,2026-06-20 23:00:00,52,14,8,9,37,12,6,16,12,0,21093559559.59
+US,All US Companies,Unknown,2026-06-20 23:00:00,1,0,0,0,2,0,0,0,4,0,9497778.16
+US,All US Companies,Utilities,2026-06-20 23:00:00,59,6,3,7,26,2,1,7,18,0,25724789296.56
