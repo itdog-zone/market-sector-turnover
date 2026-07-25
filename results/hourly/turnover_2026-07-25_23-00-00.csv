@@ -1,0 +1,154 @@
+﻿Market,MarketName,Sector,Fetch_Time,up_0_3,up_3_5,up_5_7,up_7_plus,down_0_3,down_3_5,down_5_7,down_7_plus,unchanged,no_trade,total_turnover
+HK,All Hong Kong Companies,Commercial Services,2026-07-25 23:00:00,13,7,6,9,42,15,7,10,32,0,2289273253.2
+HK,All Hong Kong Companies,Communications,2026-07-25 23:00:00,6,1,0,0,7,0,0,0,1,0,381562587.15
+HK,All Hong Kong Companies,Consumer Durables,2026-07-25 23:00:00,13,6,3,8,37,11,5,10,16,0,4729289607.89
+HK,All Hong Kong Companies,Consumer Non-Durables,2026-07-25 23:00:00,22,13,4,5,55,10,7,2,35,0,3400294553.34
+HK,All Hong Kong Companies,Consumer Services,2026-07-25 23:00:00,25,5,2,7,60,13,5,13,34,0,4039521355.63
+HK,All Hong Kong Companies,Distribution Services,2026-07-25 23:00:00,17,5,6,5,23,14,3,9,28,0,444888687.02
+HK,All Hong Kong Companies,Electronic Technology,2026-07-25 23:00:00,12,7,4,5,41,21,10,11,22,0,13820923364.94
+HK,All Hong Kong Companies,Energy Minerals,2026-07-25 23:00:00,4,1,0,1,8,7,3,4,6,0,158035691.9
+HK,All Hong Kong Companies,Finance,2026-07-25 23:00:00,63,12,9,17,133,36,28,25,97,0,10344229688.02
+HK,All Hong Kong Companies,Health Services,2026-07-25 23:00:00,12,2,1,1,9,2,1,2,9,0,106664934.25
+HK,All Hong Kong Companies,Health Technology,2026-07-25 23:00:00,30,5,1,4,62,19,12,8,15,0,8238316366.49
+HK,All Hong Kong Companies,Industrial Services,2026-07-25 23:00:00,31,6,8,13,43,12,7,8,43,0,399797067.05
+HK,All Hong Kong Companies,Miscellaneous,2026-07-25 23:00:00,2,0,0,1,3,0,2,1,2,0,72321292.0
+HK,All Hong Kong Companies,Non-Energy Minerals,2026-07-25 23:00:00,11,4,1,4,22,12,7,2,10,0,4278250089.12
+HK,All Hong Kong Companies,Process Industries,2026-07-25 23:00:00,13,8,3,7,28,9,4,7,18,0,2410023633.52
+HK,All Hong Kong Companies,Producer Manufacturing,2026-07-25 23:00:00,20,3,5,6,52,17,13,11,30,0,5670408973.46
+HK,All Hong Kong Companies,Retail Trade,2026-07-25 23:00:00,14,5,2,7,29,8,5,6,22,0,1018477847.4
+HK,All Hong Kong Companies,Technology Services,2026-07-25 23:00:00,22,15,1,9,55,28,17,11,21,0,25448042066.95
+HK,All Hong Kong Companies,Transportation,2026-07-25 23:00:00,10,2,2,1,29,4,1,3,15,0,1568734946.81
+HK,All Hong Kong Companies,Utilities,2026-07-25 23:00:00,7,4,2,4,23,5,2,0,10,0,1272557186.39
+EU,All European Companies,Commercial Services,2026-07-25 23:00:00,104,17,9,14,95,23,5,9,115,0,1212928047.59
+EU,All European Companies,Communications,2026-07-25 23:00:00,25,1,0,3,26,4,0,1,9,0,1113835269.14
+EU,All European Companies,Consumer Durables,2026-07-25 23:00:00,78,12,2,6,73,8,2,3,36,0,1328087459.52
+EU,All European Companies,Consumer Non-Durables,2026-07-25 23:00:00,122,9,5,7,93,16,2,6,51,0,2817596183.25
+EU,All European Companies,Consumer Services,2026-07-25 23:00:00,104,10,7,10,74,7,8,3,76,0,486810556.67
+EU,All European Companies,Distribution Services,2026-07-25 23:00:00,83,11,3,8,59,10,6,4,37,0,511585830.17
+EU,All European Companies,Electronic Technology,2026-07-25 23:00:00,102,14,10,15,119,17,15,11,55,0,3998770813.32
+EU,All European Companies,Energy Minerals,2026-07-25 23:00:00,29,3,5,8,44,15,4,2,24,0,2136058146.3
+EU,All European Companies,Finance,2026-07-25 23:00:00,462,48,16,30,298,42,13,24,347,0,9124398471.23
+EU,All European Companies,Government,2026-07-25 23:00:00,0,0,0,0,0,0,0,0,1,0,85282.87
+EU,All European Companies,Health Services,2026-07-25 23:00:00,26,1,6,0,14,0,0,0,18,0,133174107.33
+EU,All European Companies,Health Technology,2026-07-25 23:00:00,151,26,10,14,147,24,7,12,57,0,2497987098.04
+EU,All European Companies,Industrial Services,2026-07-25 23:00:00,96,10,6,11,86,9,1,5,59,0,794490658.55
+EU,All European Companies,Miscellaneous,2026-07-25 23:00:00,29,6,3,2,14,1,1,2,36,0,155661516.21
+EU,All European Companies,Non-Energy Minerals,2026-07-25 23:00:00,97,20,9,12,80,16,4,11,79,0,1987852958.7
+EU,All European Companies,Process Industries,2026-07-25 23:00:00,110,18,8,16,110,18,9,11,53,0,1123879800.72
+EU,All European Companies,Producer Manufacturing,2026-07-25 23:00:00,196,17,15,20,174,24,6,16,105,0,3084899323.08
+EU,All European Companies,Retail Trade,2026-07-25 23:00:00,84,8,1,12,57,6,1,2,45,0,938624346.65
+EU,All European Companies,Technology Services,2026-07-25 23:00:00,210,53,24,34,163,37,12,24,183,0,1841132292.64
+EU,All European Companies,Transportation,2026-07-25 23:00:00,73,6,3,4,35,3,1,2,23,0,968433681.75
+EU,All European Companies,Unknown,2026-07-25 23:00:00,37,2,0,6,9,0,3,7,19,1,47091118.33
+EU,All European Companies,Utilities,2026-07-25 23:00:00,96,6,4,6,90,11,3,0,36,0,1484781991.33
+US,All US Companies,Commercial Services,2026-07-25 23:00:00,87,22,11,40,76,23,13,68,85,0,9293150138.35
+US,All US Companies,Communications,2026-07-25 23:00:00,8,2,4,5,12,4,3,8,14,0,13056306978.05
+US,All US Companies,Consumer Durables,2026-07-25 23:00:00,58,12,3,17,38,11,3,20,26,0,25612741092.09
+US,All US Companies,Consumer Non-Durables,2026-07-25 23:00:00,76,12,8,18,32,4,7,22,49,0,14213540231.4
+US,All US Companies,Consumer Services,2026-07-25 23:00:00,106,15,4,19,56,9,5,22,48,0,17151553975.92
+US,All US Companies,Distribution Services,2026-07-25 23:00:00,55,3,2,13,24,6,3,22,30,0,4577183874.31
+US,All US Companies,Electronic Technology,2026-07-25 23:00:00,76,11,4,15,93,69,52,74,54,0,203228395116.41
+US,All US Companies,Energy Minerals,2026-07-25 23:00:00,15,2,0,13,63,14,4,25,48,0,10826747888.56
+US,All US Companies,Finance,2026-07-25 23:00:00,849,94,34,83,346,40,25,59,260,3,68915888821.57
+US,All US Companies,Government,2026-07-25 23:00:00,1,0,0,1,0,0,0,0,0,0,198841.9
+US,All US Companies,Health Services,2026-07-25 23:00:00,28,13,1,11,25,7,7,14,28,0,8358518960.64
+US,All US Companies,Health Technology,2026-07-25 23:00:00,214,47,16,54,319,145,78,118,134,1,36229048465.45
+US,All US Companies,Industrial Services,2026-07-25 23:00:00,33,8,4,23,58,14,13,29,26,0,13099225492.64
+US,All US Companies,Miscellaneous,2026-07-25 23:00:00,3123,41,17,46,2153,176,80,247,120,0,245850668915.66
+US,All US Companies,Non-Energy Minerals,2026-07-25 23:00:00,28,6,1,22,50,24,11,34,57,0,8008648678.77
+US,All US Companies,Process Industries,2026-07-25 23:00:00,63,7,2,21,62,10,7,34,51,0,8472401701.4
+US,All US Companies,Producer Manufacturing,2026-07-25 23:00:00,117,20,0,16,62,35,34,58,63,0,31204061178.97
+US,All US Companies,Retail Trade,2026-07-25 23:00:00,93,12,5,21,43,7,12,24,35,1,26853522099.88
+US,All US Companies,Technology Services,2026-07-25 23:00:00,196,80,39,86,144,65,49,117,130,1,92003917795.62
+US,All US Companies,Transportation,2026-07-25 23:00:00,56,9,6,13,40,11,2,13,13,0,12788310184.34
+US,All US Companies,Unknown,2026-07-25 23:00:00,0,0,0,1,2,0,0,1,3,0,5230269.87
+US,All US Companies,Utilities,2026-07-25 23:00:00,51,1,1,10,32,3,3,14,14,0,10673828941.31
+US,S&P 500 Index,Commercial Services,2026-07-25 23:00:00,8,2,0,0,4,0,0,0,0,0,4689649111.46
+US,S&P 500 Index,Communications,2026-07-25 23:00:00,0,0,3,0,0,1,0,0,0,0,5368036352.9
+US,S&P 500 Index,Consumer Durables,2026-07-25 23:00:00,4,5,0,0,2,0,0,0,0,0,22970276277.96
+US,S&P 500 Index,Consumer Non-Durables,2026-07-25 23:00:00,25,1,0,0,3,0,0,0,0,0,10918752618.77
+US,S&P 500 Index,Consumer Services,2026-07-25 23:00:00,20,4,0,0,3,1,0,0,0,0,12468433356.94
+US,S&P 500 Index,Distribution Services,2026-07-25 23:00:00,7,1,0,0,0,0,0,0,0,0,2284193955.93
+US,S&P 500 Index,Electronic Technology,2026-07-25 23:00:00,22,2,0,0,13,9,5,5,0,0,181362395020.85
+US,S&P 500 Index,Energy Minerals,2026-07-25 23:00:00,4,0,0,0,9,0,0,0,0,0,7927570590.48
+US,S&P 500 Index,Finance,2026-07-25 23:00:00,73,10,0,1,11,1,1,0,0,0,46742390978.3
+US,S&P 500 Index,Health Services,2026-07-25 23:00:00,6,0,0,0,5,0,0,0,0,0,4807145888.46
+US,S&P 500 Index,Health Technology,2026-07-25 23:00:00,23,3,0,0,13,0,1,1,0,0,23157648250.08
+US,S&P 500 Index,Industrial Services,2026-07-25 23:00:00,5,0,0,1,3,2,1,0,0,0,6479333275.2
+US,S&P 500 Index,Miscellaneous,2026-07-25 23:00:00,0,0,0,0,1,0,0,0,0,0,76982339.84
+US,S&P 500 Index,Non-Energy Minerals,2026-07-25 23:00:00,5,0,0,0,2,0,0,0,0,0,2967338485.2
+US,S&P 500 Index,Process Industries,2026-07-25 23:00:00,9,2,0,3,5,1,0,0,0,0,5479492873.84
+US,S&P 500 Index,Producer Manufacturing,2026-07-25 23:00:00,21,0,0,0,7,3,0,1,0,0,22172763223.59
+US,S&P 500 Index,Retail Trade,2026-07-25 23:00:00,19,2,0,0,3,0,0,0,0,0,19974303201.92
+US,S&P 500 Index,Technology Services,2026-07-25 23:00:00,17,10,9,2,8,1,0,0,0,0,62616589087.31
+US,S&P 500 Index,Transportation,2026-07-25 23:00:00,9,1,0,0,3,1,0,1,0,0,8404073748.98
+US,S&P 500 Index,Utilities,2026-07-25 23:00:00,23,0,0,0,8,1,0,0,0,0,9428006354.88
+US,Nasdaq 100 Index,Commercial Services,2026-07-25 23:00:00,3,0,0,0,0,0,0,0,0,0,1919788251.81
+US,Nasdaq 100 Index,Communications,2026-07-25 23:00:00,0,0,1,0,1,0,0,0,0,0,7547795426.39
+US,Nasdaq 100 Index,Consumer Durables,2026-07-25 23:00:00,0,0,0,0,1,0,0,0,0,0,19645354921.91
+US,Nasdaq 100 Index,Consumer Non-Durables,2026-07-25 23:00:00,5,0,0,0,1,0,0,0,0,0,2879343579.75
+US,Nasdaq 100 Index,Consumer Services,2026-07-25 23:00:00,5,0,0,0,1,0,0,0,0,0,4397934757.48
+US,Nasdaq 100 Index,Distribution Services,2026-07-25 23:00:00,1,0,0,0,0,0,0,0,0,0,246449264.42
+US,Nasdaq 100 Index,Electronic Technology,2026-07-25 23:00:00,2,2,0,0,8,4,4,6,0,0,166759953514.72
+US,Nasdaq 100 Index,Energy Minerals,2026-07-25 23:00:00,0,0,0,0,1,0,0,0,0,0,492049082.56
+US,Nasdaq 100 Index,Health Technology,2026-07-25 23:00:00,7,0,0,0,2,0,0,0,0,0,5184510458.22
+US,Nasdaq 100 Index,Industrial Services,2026-07-25 23:00:00,1,0,0,0,1,0,0,0,0,0,648038531.75
+US,Nasdaq 100 Index,Process Industries,2026-07-25 23:00:00,1,0,0,0,0,0,0,0,0,0,679972296.6
+US,Nasdaq 100 Index,Producer Manufacturing,2026-07-25 23:00:00,1,0,0,0,0,2,0,1,0,0,9477911110.32
+US,Nasdaq 100 Index,Retail Trade,2026-07-25 23:00:00,6,0,0,0,2,0,0,0,0,0,13789933628.41
+US,Nasdaq 100 Index,Technology Services,2026-07-25 23:00:00,10,1,4,0,8,0,0,2,0,0,52705823562.64
+US,Nasdaq 100 Index,Transportation,2026-07-25 23:00:00,3,0,0,0,0,0,0,0,0,0,1745642225.61
+US,Nasdaq 100 Index,Utilities,2026-07-25 23:00:00,3,0,0,0,1,0,0,0,0,0,1700844079.73
+US,Nasdaq Composite Index,Commercial Services,2026-07-25 23:00:00,48,14,5,7,39,15,11,24,5,0,3668862826.75
+US,Nasdaq Composite Index,Communications,2026-07-25 23:00:00,5,0,1,1,9,5,3,2,0,0,9281642878.9
+US,Nasdaq Composite Index,Consumer Durables,2026-07-25 23:00:00,23,3,2,5,28,9,3,11,2,0,20831973131.36
+US,Nasdaq Composite Index,Consumer Non-Durables,2026-07-25 23:00:00,33,2,4,0,19,3,3,4,2,0,4543538598.96
+US,Nasdaq Composite Index,Consumer Services,2026-07-25 23:00:00,57,6,2,3,30,6,2,10,5,0,8281551067.81
+US,Nasdaq Composite Index,Distribution Services,2026-07-25 23:00:00,22,1,1,2,11,3,3,8,2,0,873021243.77
+US,Nasdaq Composite Index,Electronic Technology,2026-07-25 23:00:00,32,5,2,1,65,55,33,48,2,0,185525770262.01
+US,Nasdaq Composite Index,Energy Minerals,2026-07-25 23:00:00,1,0,0,0,14,3,1,4,0,0,1299928391.82
+US,Nasdaq Composite Index,Finance,2026-07-25 23:00:00,359,41,11,12,166,22,12,10,72,0,17122884096.17
+US,Nasdaq Composite Index,Health Services,2026-07-25 23:00:00,10,9,0,1,13,7,5,4,1,0,862659917.29
+US,Nasdaq Composite Index,Health Technology,2026-07-25 23:00:00,168,34,11,8,294,134,69,53,16,0,18477612246.52
+US,Nasdaq Composite Index,Industrial Services,2026-07-25 23:00:00,10,6,1,3,23,8,5,11,0,0,2758817810.54
+US,Nasdaq Composite Index,Miscellaneous,2026-07-25 23:00:00,6,0,0,0,7,4,1,2,1,0,176733955.38
+US,Nasdaq Composite Index,Non-Energy Minerals,2026-07-25 23:00:00,7,2,0,0,22,11,6,2,1,0,853157257.44
+US,Nasdaq Composite Index,Process Industries,2026-07-25 23:00:00,21,1,0,2,26,6,5,9,0,0,1761724641.68
+US,Nasdaq Composite Index,Producer Manufacturing,2026-07-25 23:00:00,31,6,0,1,36,27,23,22,4,0,12992531569.67
+US,Nasdaq Composite Index,Retail Trade,2026-07-25 23:00:00,39,2,2,2,22,3,7,9,2,0,16220123617.16
+US,Nasdaq Composite Index,Technology Services,2026-07-25 23:00:00,137,48,24,22,103,46,36,48,9,0,71646120539.49
+US,Nasdaq Composite Index,Transportation,2026-07-25 23:00:00,21,3,6,7,22,9,1,8,1,0,5864859578.84
+US,Nasdaq Composite Index,Utilities,2026-07-25 23:00:00,14,1,1,1,7,1,2,3,0,0,2383534614.09
+US,Russell 2000 Index,Commercial Services,2026-07-25 23:00:00,39,8,4,1,21,4,1,5,2,0,1511334724.48
+US,Russell 2000 Index,Communications,2026-07-25 23:00:00,7,1,0,0,2,0,1,2,0,0,171660163.16
+US,Russell 2000 Index,Consumer Durables,2026-07-25 23:00:00,36,1,2,3,11,3,1,1,0,0,1200116975.75
+US,Russell 2000 Index,Consumer Non-Durables,2026-07-25 23:00:00,24,6,0,1,6,1,1,1,2,0,1109484275.42
+US,Russell 2000 Index,Consumer Services,2026-07-25 23:00:00,46,4,1,0,21,5,0,1,2,0,1936887993.38
+US,Russell 2000 Index,Distribution Services,2026-07-25 23:00:00,19,1,2,0,1,1,0,0,1,0,428561975.74
+US,Russell 2000 Index,Electronic Technology,2026-07-25 23:00:00,17,0,0,0,34,24,23,24,0,0,6845805134.88
+US,Russell 2000 Index,Energy Minerals,2026-07-25 23:00:00,1,0,0,0,33,9,0,2,0,0,1446186811.6
+US,Russell 2000 Index,Finance,2026-07-25 23:00:00,329,41,9,9,78,5,3,0,7,0,8948520327.58
+US,Russell 2000 Index,Health Services,2026-07-25 23:00:00,15,8,0,0,9,3,2,2,1,0,1905382317.02
+US,Russell 2000 Index,Health Technology,2026-07-25 23:00:00,89,16,4,2,161,58,17,12,7,0,7102437911.3
+US,Russell 2000 Index,Industrial Services,2026-07-25 23:00:00,13,0,1,0,24,5,5,7,1,0,2771901356.07
+US,Russell 2000 Index,Miscellaneous,2026-07-25 23:00:00,1,0,0,0,2,2,0,0,0,0,67535393.35
+US,Russell 2000 Index,Non-Energy Minerals,2026-07-25 23:00:00,11,3,0,0,17,8,6,2,3,0,996560007.98
+US,Russell 2000 Index,Process Industries,2026-07-25 23:00:00,25,3,0,0,26,2,2,7,1,0,895562708.73
+US,Russell 2000 Index,Producer Manufacturing,2026-07-25 23:00:00,53,8,0,1,21,11,13,10,1,0,3168050117.58
+US,Russell 2000 Index,Retail Trade,2026-07-25 23:00:00,40,5,1,1,18,0,1,0,0,0,1454980538.91
+US,Russell 2000 Index,Technology Services,2026-07-25 23:00:00,74,29,7,5,32,19,10,9,4,0,6632786514.49
+US,Russell 2000 Index,Transportation,2026-07-25 23:00:00,19,5,3,1,6,6,0,0,1,0,1003914861.95
+US,Russell 2000 Index,Utilities,2026-07-25 23:00:00,16,0,0,0,13,1,1,0,0,0,629122782.59
+US,Dow Jones Composite Index,Consumer Non-Durables,2026-07-25 23:00:00,3,0,0,0,0,0,0,0,0,0,3052851596.03
+US,Dow Jones Composite Index,Consumer Services,2026-07-25 23:00:00,2,0,0,0,0,0,0,0,0,0,2133257155.7
+US,Dow Jones Composite Index,Electronic Technology,2026-07-25 23:00:00,2,1,0,0,2,0,0,0,0,0,43465421649.38
+US,Dow Jones Composite Index,Energy Minerals,2026-07-25 23:00:00,1,0,0,0,0,0,0,0,0,0,1305167799.36
+US,Dow Jones Composite Index,Finance,2026-07-25 23:00:00,4,0,0,0,1,1,0,0,0,0,8808787684.81
+US,Dow Jones Composite Index,Health Services,2026-07-25 23:00:00,0,0,0,0,1,0,0,0,0,0,1578816331.5
+US,Dow Jones Composite Index,Health Technology,2026-07-25 23:00:00,3,0,0,0,0,0,0,0,0,0,3417547395.48
+US,Dow Jones Composite Index,Process Industries,2026-07-25 23:00:00,1,0,0,0,0,0,0,0,0,0,641787725.65
+US,Dow Jones Composite Index,Producer Manufacturing,2026-07-25 23:00:00,1,0,0,0,1,0,0,0,0,0,2469556275.97
+US,Dow Jones Composite Index,Retail Trade,2026-07-25 23:00:00,2,0,0,0,1,0,0,0,0,0,11432999198.48
+US,Dow Jones Composite Index,Technology Services,2026-07-25 23:00:00,2,2,0,0,0,0,0,0,0,0,24776414720.83
+US,Dow Jones Composite Index,Transportation,2026-07-25 23:00:00,8,2,0,0,6,2,0,1,0,0,8192473121.07
+US,Dow Jones Composite Index,Utilities,2026-07-25 23:00:00,11,0,0,0,3,1,0,0,0,0,4939441929.78
