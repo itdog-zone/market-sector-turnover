@@ -1,0 +1,533 @@
+﻿Market,MarketName,Sector,Fetch_Time,up_0_3,up_3_5,up_5_7,up_7_plus,down_0_3,down_3_5,down_5_7,down_7_plus,unchanged,no_trade,total_turnover
+JP,Japan 225 Index,Commercial Services,2026-09-09 00:00:00,2,0,0,0,3,1,0,0,0,0,26593381800.0
+JP,Japan 225 Index,Communications,2026-09-09 00:00:00,3,0,0,0,0,0,0,0,0,0,61844689450.0
+JP,Japan 225 Index,Consumer Durables,2026-09-09 00:00:00,3,0,0,0,3,12,4,0,1,0,404938914370.0
+JP,Japan 225 Index,Consumer Non-Durables,2026-09-09 00:00:00,5,0,0,0,7,0,0,0,0,0,88781423100.0
+JP,Japan 225 Index,Consumer Services,2026-09-09 00:00:00,1,1,0,0,0,0,0,0,0,0,23507095000.0
+JP,Japan 225 Index,Distribution Services,2026-09-09 00:00:00,1,0,0,0,3,1,0,0,0,0,126227764200.0
+JP,Japan 225 Index,Electronic Technology,2026-09-09 00:00:00,0,0,0,0,4,7,5,4,0,0,3197561973400.0
+JP,Japan 225 Index,Energy Minerals,2026-09-09 00:00:00,3,0,0,0,0,0,0,0,0,0,38374957700.0
+JP,Japan 225 Index,Finance,2026-09-09 00:00:00,5,0,0,0,23,0,0,0,0,0,497888209250.0
+JP,Japan 225 Index,Health Technology,2026-09-09 00:00:00,2,0,0,0,9,1,0,0,0,0,125524066150.0
+JP,Japan 225 Index,Industrial Services,2026-09-09 00:00:00,4,0,0,0,1,1,0,0,0,0,40925987100.0
+JP,Japan 225 Index,Miscellaneous,2026-09-09 00:00:00,0,0,1,0,0,0,0,0,0,0,725690851600.0
+JP,Japan 225 Index,Non-Energy Minerals,2026-09-09 00:00:00,0,0,0,0,5,3,0,0,0,0,101547512610.0
+JP,Japan 225 Index,Process Industries,2026-09-09 00:00:00,2,0,0,0,10,5,2,0,0,0,166425701730.0
+JP,Japan 225 Index,Producer Manufacturing,2026-09-09 00:00:00,0,0,0,0,5,17,9,3,0,0,870021764200.0
+JP,Japan 225 Index,Retail Trade,2026-09-09 00:00:00,5,0,1,0,5,0,1,0,0,0,150406842740.0
+JP,Japan 225 Index,Technology Services,2026-09-09 00:00:00,8,0,0,0,4,0,0,0,0,0,135740989630.0
+JP,Japan 225 Index,Transportation,2026-09-09 00:00:00,10,0,0,0,3,1,0,0,0,0,88539855670.0
+JP,Japan 225 Index,Utilities,2026-09-09 00:00:00,2,0,0,0,3,0,0,0,0,0,39942239460.0
+JP,All Japanese companies,Commercial Services,2026-09-09 00:00:00,76,4,0,0,211,19,3,2,25,0,63568889980.0
+JP,All Japanese companies,Communications,2026-09-09 00:00:00,9,0,0,0,10,0,0,0,3,0,65246616650.0
+JP,All Japanese companies,Consumer Durables,2026-09-09 00:00:00,24,0,1,0,67,20,6,2,12,0,470387434170.0
+JP,All Japanese companies,Consumer Non-Durables,2026-09-09 00:00:00,74,5,2,0,89,3,1,0,15,0,167730338200.0
+JP,All Japanese companies,Consumer Services,2026-09-09 00:00:00,91,4,1,1,109,4,1,1,25,0,106424012550.0
+JP,All Japanese companies,Distribution Services,2026-09-09 00:00:00,45,4,0,0,132,15,10,0,15,0,177325205350.0
+JP,All Japanese companies,Electronic Technology,2026-09-09 00:00:00,14,1,1,2,85,52,41,12,7,0,3342165941740.0
+JP,All Japanese companies,Energy Minerals,2026-09-09 00:00:00,7,0,0,0,0,0,0,0,1,0,45029288000.0
+JP,All Japanese companies,Finance,2026-09-09 00:00:00,59,2,0,3,257,29,2,2,20,0,716624088440.0
+JP,All Japanese companies,Government,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,2151000.0
+JP,All Japanese companies,Health Services,2026-09-09 00:00:00,12,2,1,0,14,0,0,0,5,0,1639589300.0
+JP,All Japanese companies,Health Technology,2026-09-09 00:00:00,30,4,2,3,67,11,2,1,10,0,207349885350.0
+JP,All Japanese companies,Industrial Services,2026-09-09 00:00:00,42,0,0,0,102,4,0,1,10,0,108438077050.0
+JP,All Japanese companies,Miscellaneous,2026-09-09 00:00:00,1,0,1,0,2,0,0,0,0,0,726661170500.0
+JP,All Japanese companies,Non-Energy Minerals,2026-09-09 00:00:00,7,0,1,1,61,11,1,0,7,0,223191260310.0
+JP,All Japanese companies,Process Industries,2026-09-09 00:00:00,33,2,2,0,129,44,20,7,13,0,309454608580.0
+JP,All Japanese companies,Producer Manufacturing,2026-09-09 00:00:00,51,4,0,1,233,121,46,20,25,0,1254019134920.0
+JP,All Japanese companies,Retail Trade,2026-09-09 00:00:00,89,6,1,0,105,6,2,1,20,0,233132873090.0
+JP,All Japanese companies,Technology Services,2026-09-09 00:00:00,154,9,5,5,333,30,7,2,44,1,578832432342.0
+JP,All Japanese companies,Transportation,2026-09-09 00:00:00,42,3,0,0,53,2,0,0,10,0,120706967070.0
+JP,All Japanese companies,Utilities,2026-09-09 00:00:00,11,0,0,0,15,1,1,0,4,0,63411036510.0
+KR,All South Korean Companies,Commercial Services,2026-09-09 00:00:00,22,3,2,3,56,7,2,2,7,0,129426583868.0
+KR,All South Korean Companies,Communications,2026-09-09 00:00:00,2,1,2,0,5,1,1,0,1,0,102012912667.0
+KR,All South Korean Companies,Consumer Durables,2026-09-09 00:00:00,14,2,1,3,42,6,0,6,4,0,1623064170288.0
+KR,All South Korean Companies,Consumer Non-Durables,2026-09-09 00:00:00,29,7,2,1,92,11,4,6,6,0,648210973857.0
+KR,All South Korean Companies,Consumer Services,2026-09-09 00:00:00,25,3,0,0,39,1,3,0,2,0,110132104599.0
+KR,All South Korean Companies,Distribution Services,2026-09-09 00:00:00,11,0,1,2,35,7,1,0,2,0,105811038107.0
+KR,All South Korean Companies,Electronic Technology,2026-09-09 00:00:00,84,16,6,14,206,48,18,13,17,0,17531837623408.0
+KR,All South Korean Companies,Energy Minerals,2026-09-09 00:00:00,4,0,0,0,4,1,0,0,0,0,163240792057.0
+KR,All South Korean Companies,Finance,2026-09-09 00:00:00,51,4,1,2,95,5,1,0,26,0,1620304752334.0
+KR,All South Korean Companies,Health Services,2026-09-09 00:00:00,0,0,0,1,5,1,0,1,2,0,28092432510.0
+KR,All South Korean Companies,Health Technology,2026-09-09 00:00:00,59,11,7,5,164,31,6,12,15,0,2684848493577.0
+KR,All South Korean Companies,Industrial Services,2026-09-09 00:00:00,17,2,1,4,28,0,2,1,1,0,746159590294.0
+KR,All South Korean Companies,Miscellaneous,2026-09-09 00:00:00,2,0,0,0,4,1,0,0,2,0,14992868528.0
+KR,All South Korean Companies,Non-Energy Minerals,2026-09-09 00:00:00,32,4,1,3,54,4,0,3,6,0,541697764734.0
+KR,All South Korean Companies,Process Industries,2026-09-09 00:00:00,33,3,3,2,155,18,2,4,9,0,453920106259.0
+KR,All South Korean Companies,Producer Manufacturing,2026-09-09 00:00:00,83,11,9,11,262,51,8,7,21,0,4744907561738.0
+KR,All South Korean Companies,Retail Trade,2026-09-09 00:00:00,14,1,0,1,21,2,1,0,1,0,223203233314.0
+KR,All South Korean Companies,Technology Services,2026-09-09 00:00:00,58,7,3,9,113,20,14,7,12,0,788217898557.0
+KR,All South Korean Companies,Transportation,2026-09-09 00:00:00,10,0,2,1,21,1,0,0,2,0,179021784980.0
+KR,All South Korean Companies,Utilities,2026-09-09 00:00:00,11,1,1,0,9,0,0,0,1,0,248092343060.0
+KR,KOSPI Composite Index,Commercial Services,2026-09-09 00:00:00,4,0,0,1,9,1,0,0,0,0,60219390732.0
+KR,KOSPI Composite Index,Communications,2026-09-09 00:00:00,0,0,1,0,3,0,0,0,1,0,99175774705.0
+KR,KOSPI Composite Index,Consumer Durables,2026-09-09 00:00:00,6,1,1,2,16,3,0,1,1,0,1437108685768.0
+KR,KOSPI Composite Index,Consumer Non-Durables,2026-09-09 00:00:00,14,2,0,0,57,4,1,0,2,0,531682753992.0
+KR,KOSPI Composite Index,Consumer Services,2026-09-09 00:00:00,6,1,0,0,14,0,0,0,1,0,49395580438.0
+KR,KOSPI Composite Index,Distribution Services,2026-09-09 00:00:00,1,0,1,0,13,0,0,0,1,0,78129272566.0
+KR,KOSPI Composite Index,Electronic Technology,2026-09-09 00:00:00,7,3,1,1,31,8,3,3,0,0,15801068021435.0
+KR,KOSPI Composite Index,Energy Minerals,2026-09-09 00:00:00,4,0,0,0,2,1,0,0,0,0,160805285522.0
+KR,KOSPI Composite Index,Finance,2026-09-09 00:00:00,22,0,0,1,48,1,0,0,7,0,1526582434918.0
+KR,KOSPI Composite Index,Health Technology,2026-09-09 00:00:00,10,0,2,1,42,1,1,0,2,0,611955104992.0
+KR,KOSPI Composite Index,Industrial Services,2026-09-09 00:00:00,9,1,0,1,12,0,1,1,1,0,722458603431.0
+KR,KOSPI Composite Index,Miscellaneous,2026-09-09 00:00:00,1,0,0,0,0,1,0,0,1,0,18436425820.0
+KR,KOSPI Composite Index,Non-Energy Minerals,2026-09-09 00:00:00,21,2,1,0,35,2,0,2,3,0,194852958508.0
+KR,KOSPI Composite Index,Process Industries,2026-09-09 00:00:00,14,1,0,0,88,8,1,1,4,0,345989140099.0
+KR,KOSPI Composite Index,Producer Manufacturing,2026-09-09 00:00:00,21,0,2,1,84,17,0,1,7,0,2382512875368.0
+KR,KOSPI Composite Index,Retail Trade,2026-09-09 00:00:00,10,1,0,0,9,0,0,0,0,0,167718241217.0
+KR,KOSPI Composite Index,Technology Services,2026-09-09 00:00:00,1,0,0,1,8,3,6,1,2,0,386763017067.0
+KR,KOSPI Composite Index,Transportation,2026-09-09 00:00:00,6,0,2,1,17,1,0,0,2,0,177538691832.0
+KR,KOSPI Composite Index,Utilities,2026-09-09 00:00:00,7,1,0,0,8,0,0,0,1,0,183719030630.0
+TW,All Taiwan Companies,Commercial Services,2026-09-09 00:00:00,14,1,0,0,30,1,4,1,8,0,9702309300.65
+TW,All Taiwan Companies,Communications,2026-09-09 00:00:00,4,0,0,0,4,0,0,0,0,0,2516589549.4
+TW,All Taiwan Companies,Consumer Durables,2026-09-09 00:00:00,37,2,0,2,57,6,2,1,18,0,4416021666.36
+TW,All Taiwan Companies,Consumer Non-Durables,2026-09-09 00:00:00,25,0,1,0,27,1,0,0,11,0,1741918565.07
+TW,All Taiwan Companies,Consumer Services,2026-09-09 00:00:00,23,1,0,0,37,3,0,1,14,0,284289488.76
+TW,All Taiwan Companies,Distribution Services,2026-09-09 00:00:00,15,0,0,1,42,7,1,1,14,0,10357651306.85
+TW,All Taiwan Companies,Electronic Technology,2026-09-09 00:00:00,100,23,7,18,400,105,32,12,45,0,810771393020.7
+TW,All Taiwan Companies,Energy Minerals,2026-09-09 00:00:00,1,0,0,0,2,1,0,0,0,0,905657079.7
+TW,All Taiwan Companies,Finance,2026-09-09 00:00:00,42,8,2,0,27,1,0,1,10,0,25618759542.65
+TW,All Taiwan Companies,Health Services,2026-09-09 00:00:00,2,0,0,0,7,0,0,0,3,0,25149718.42
+TW,All Taiwan Companies,Health Technology,2026-09-09 00:00:00,53,9,3,6,73,14,3,6,22,0,16986203253.13
+TW,All Taiwan Companies,Industrial Services,2026-09-09 00:00:00,22,3,1,0,31,1,0,1,13,0,2948244853.22
+TW,All Taiwan Companies,Miscellaneous,2026-09-09 00:00:00,0,0,0,0,1,0,1,0,0,0,486072555.1
+TW,All Taiwan Companies,Non-Energy Minerals,2026-09-09 00:00:00,17,7,0,1,27,1,0,1,8,0,10298696300.33
+TW,All Taiwan Companies,Process Industries,2026-09-09 00:00:00,55,0,2,1,93,7,2,1,25,0,27327727131.14
+TW,All Taiwan Companies,Producer Manufacturing,2026-09-09 00:00:00,62,4,3,8,200,25,12,4,24,0,128637685413.93
+TW,All Taiwan Companies,Retail Trade,2026-09-09 00:00:00,19,0,0,0,13,1,0,0,4,0,1719064969.28
+TW,All Taiwan Companies,Technology Services,2026-09-09 00:00:00,24,2,2,6,60,10,6,1,15,0,18156123200.17
+TW,All Taiwan Companies,Transportation,2026-09-09 00:00:00,12,0,0,1,21,0,0,0,5,0,5753877469.1
+TW,All Taiwan Companies,Unknown,2026-09-09 00:00:00,0,0,0,0,0,1,0,1,0,0,770636522.0
+TW,All Taiwan Companies,Utilities,2026-09-09 00:00:00,3,0,0,0,13,2,0,0,1,0,209388014.8
+TW,FTSE TWSE Taiwan 50 Index,Communications,2026-09-09 00:00:00,3,0,0,0,0,0,0,0,0,0,2490688949.0
+TW,FTSE TWSE Taiwan 50 Index,Consumer Non-Durables,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,270091639.6
+TW,FTSE TWSE Taiwan 50 Index,Distribution Services,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,107109675.0
+TW,FTSE TWSE Taiwan 50 Index,Electronic Technology,2026-09-09 00:00:00,3,0,0,0,7,4,2,0,0,0,277539343331.5
+TW,FTSE TWSE Taiwan 50 Index,Energy Minerals,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,904932361.2
+TW,FTSE TWSE Taiwan 50 Index,Finance,2026-09-09 00:00:00,10,3,0,0,2,0,0,0,0,0,21806536029.05
+TW,FTSE TWSE Taiwan 50 Index,Non-Energy Minerals,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,1,0,805129247.8
+TW,FTSE TWSE Taiwan 50 Index,Process Industries,2026-09-09 00:00:00,1,0,0,0,3,0,0,0,0,0,19077310486.7
+TW,FTSE TWSE Taiwan 50 Index,Producer Manufacturing,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,1060414299.9
+TW,FTSE TWSE Taiwan 50 Index,Retail Trade,2026-09-09 00:00:00,2,0,0,0,0,0,0,0,0,0,1392872326.6
+TW,FTSE TWSE Taiwan 50 Index,Transportation,2026-09-09 00:00:00,0,0,0,0,3,0,0,0,0,0,3612409857.0
+CN,All Chinese Companies,Commercial Services,2026-09-09 00:00:00,92,19,6,6,60,6,3,2,2,0,55175168346.08
+CN,All Chinese Companies,Communications,2026-09-09 00:00:00,11,0,0,1,6,0,0,0,0,0,5166747546.02
+CN,All Chinese Companies,Consumer Durables,2026-09-09 00:00:00,123,11,4,2,60,5,1,1,8,0,38592422264.51
+CN,All Chinese Companies,Consumer Non-Durables,2026-09-09 00:00:00,123,15,6,8,45,2,1,0,6,0,47738227448.97
+CN,All Chinese Companies,Consumer Services,2026-09-09 00:00:00,54,12,1,8,10,1,1,0,2,0,25459273440.7
+CN,All Chinese Companies,Distribution Services,2026-09-09 00:00:00,64,7,2,3,24,4,1,0,3,0,32928634613.98
+CN,All Chinese Companies,Electronic Technology,2026-09-09 00:00:00,233,37,9,15,380,52,3,3,9,0,555266087055.09
+CN,All Chinese Companies,Energy Minerals,2026-09-09 00:00:00,19,20,3,6,4,1,0,0,0,0,25643235775.11
+CN,All Chinese Companies,Finance,2026-09-09 00:00:00,159,21,1,5,47,3,0,0,7,0,82123452409.18
+CN,All Chinese Companies,Health Services,2026-09-09 00:00:00,10,1,1,0,2,0,0,0,0,0,2980019880.15
+CN,All Chinese Companies,Health Technology,2026-09-09 00:00:00,275,37,16,13,76,7,3,0,4,0,97378112404.85
+CN,All Chinese Companies,Industrial Services,2026-09-09 00:00:00,114,18,9,2,41,3,1,0,1,0,36841205287.08
+CN,All Chinese Companies,Miscellaneous,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,1534951.24
+CN,All Chinese Companies,Non-Energy Minerals,2026-09-09 00:00:00,141,29,10,4,71,5,0,0,2,0,130691265841.26
+CN,All Chinese Companies,Process Industries,2026-09-09 00:00:00,337,81,26,29,163,11,5,2,9,0,213784635269.52
+CN,All Chinese Companies,Producer Manufacturing,2026-09-09 00:00:00,505,53,14,14,460,63,15,4,25,0,424330150096.38
+CN,All Chinese Companies,Retail Trade,2026-09-09 00:00:00,61,7,0,3,17,1,1,0,1,0,24728598476.42
+CN,All Chinese Companies,Technology Services,2026-09-09 00:00:00,134,10,7,3,131,13,3,1,6,0,104518763612.26
+CN,All Chinese Companies,Transportation,2026-09-09 00:00:00,81,7,1,1,31,2,0,1,7,0,25168176843.33
+CN,All Chinese Companies,Utilities,2026-09-09 00:00:00,95,11,1,2,13,1,0,0,0,0,28762800632.79
+CN,Shenzhen Component Index,Commercial Services,2026-09-09 00:00:00,4,1,0,0,3,2,0,0,0,0,14327906299.78
+CN,Shenzhen Component Index,Communications,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,606617389.24
+CN,Shenzhen Component Index,Consumer Durables,2026-09-09 00:00:00,6,1,0,0,8,1,0,0,1,0,10288007295.89
+CN,Shenzhen Component Index,Consumer Non-Durables,2026-09-09 00:00:00,12,0,0,0,4,0,0,0,1,0,5748173014.96
+CN,Shenzhen Component Index,Consumer Services,2026-09-09 00:00:00,6,0,0,0,1,0,0,0,0,0,3548154172.44
+CN,Shenzhen Component Index,Distribution Services,2026-09-09 00:00:00,2,1,0,0,4,0,0,0,0,0,2652870473.41
+CN,Shenzhen Component Index,Electronic Technology,2026-09-09 00:00:00,27,5,0,1,53,10,0,0,2,0,211516711116.87
+CN,Shenzhen Component Index,Energy Minerals,2026-09-09 00:00:00,1,2,0,0,0,0,0,0,0,0,1279632668.76
+CN,Shenzhen Component Index,Finance,2026-09-09 00:00:00,23,0,0,0,5,0,0,0,1,0,9984747494.65
+CN,Shenzhen Component Index,Health Services,2026-09-09 00:00:00,3,0,0,0,0,0,0,0,0,0,679619781.2
+CN,Shenzhen Component Index,Health Technology,2026-09-09 00:00:00,30,3,0,1,5,1,1,0,1,0,18817999451.55
+CN,Shenzhen Component Index,Industrial Services,2026-09-09 00:00:00,3,0,0,0,1,0,0,0,0,0,3224551783.33
+CN,Shenzhen Component Index,Non-Energy Minerals,2026-09-09 00:00:00,21,5,1,1,12,0,0,0,1,0,35891393246.6
+CN,Shenzhen Component Index,Process Industries,2026-09-09 00:00:00,26,7,1,1,17,1,0,0,1,0,31860339344.34
+CN,Shenzhen Component Index,Producer Manufacturing,2026-09-09 00:00:00,35,3,0,0,53,8,1,0,0,0,130987854946.77
+CN,Shenzhen Component Index,Retail Trade,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,145716404.73
+CN,Shenzhen Component Index,Technology Services,2026-09-09 00:00:00,17,0,0,0,17,4,1,0,0,0,38319523708.33
+CN,Shenzhen Component Index,Transportation,2026-09-09 00:00:00,8,0,0,0,2,0,0,1,0,0,3031045463.31
+CN,Shenzhen Component Index,Utilities,2026-09-09 00:00:00,14,1,0,0,1,0,0,0,0,0,4506418082.59
+HK,All Hong Kong Companies,Commercial Services,2026-09-09 00:00:00,34,8,3,9,34,6,8,9,32,0,2074777522.51
+HK,All Hong Kong Companies,Communications,2026-09-09 00:00:00,8,1,1,0,3,1,0,1,0,0,741664564.97
+HK,All Hong Kong Companies,Consumer Durables,2026-09-09 00:00:00,23,5,3,8,28,9,3,5,24,0,3415113855.73
+HK,All Hong Kong Companies,Consumer Non-Durables,2026-09-09 00:00:00,40,11,3,10,43,12,4,6,25,0,4023748492.61
+HK,All Hong Kong Companies,Consumer Services,2026-09-09 00:00:00,34,12,5,10,46,11,5,6,32,0,2331463881.98
+HK,All Hong Kong Companies,Distribution Services,2026-09-09 00:00:00,23,6,6,8,20,9,2,9,26,0,654441425.56
+HK,All Hong Kong Companies,Electronic Technology,2026-09-09 00:00:00,27,5,4,8,34,18,5,11,24,0,17891645457.53
+HK,All Hong Kong Companies,Energy Minerals,2026-09-09 00:00:00,11,4,1,1,8,2,1,0,6,0,196193056.66
+HK,All Hong Kong Companies,Finance,2026-09-09 00:00:00,95,14,17,18,126,27,14,22,89,0,7624528948.73
+HK,All Hong Kong Companies,Health Services,2026-09-09 00:00:00,8,0,2,1,12,6,0,0,11,0,73256656.56
+HK,All Hong Kong Companies,Health Technology,2026-09-09 00:00:00,48,8,7,8,51,12,2,5,16,0,10432637011.43
+HK,All Hong Kong Companies,Industrial Services,2026-09-09 00:00:00,46,10,4,10,42,13,5,8,33,0,444061774.96
+HK,All Hong Kong Companies,Miscellaneous,2026-09-09 00:00:00,4,1,0,0,4,0,0,0,3,0,193394984.07
+HK,All Hong Kong Companies,Non-Energy Minerals,2026-09-09 00:00:00,22,4,1,4,16,8,3,3,14,0,4570456625.61
+HK,All Hong Kong Companies,Process Industries,2026-09-09 00:00:00,24,6,1,10,27,6,5,3,17,0,2339871488.45
+HK,All Hong Kong Companies,Producer Manufacturing,2026-09-09 00:00:00,29,8,4,10,54,13,7,9,24,0,5616891042.62
+HK,All Hong Kong Companies,Retail Trade,2026-09-09 00:00:00,18,3,2,3,28,14,6,5,19,0,996666523.51
+HK,All Hong Kong Companies,Technology Services,2026-09-09 00:00:00,34,9,7,5,61,23,6,15,22,0,26657888208.2
+HK,All Hong Kong Companies,Transportation,2026-09-09 00:00:00,17,5,0,2,20,4,3,1,14,0,1423591182.91
+HK,All Hong Kong Companies,Utilities,2026-09-09 00:00:00,25,4,1,1,12,2,1,0,12,0,1684094811.69
+HK,Hang Seng Index,Commercial Services,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,907942867.44
+HK,Hang Seng Index,Communications,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,1,0,1749029961.63
+HK,Hang Seng Index,Consumer Durables,2026-09-09 00:00:00,4,0,0,0,4,0,0,0,0,0,2806526132.39
+HK,Hang Seng Index,Consumer Non-Durables,2026-09-09 00:00:00,4,1,0,0,3,0,0,0,2,0,2735383662.75
+HK,Hang Seng Index,Consumer Services,2026-09-09 00:00:00,2,0,0,0,4,0,0,0,0,0,1678177923.46
+HK,Hang Seng Index,Distribution Services,2026-09-09 00:00:00,2,0,0,1,0,0,0,0,0,0,1578000662.44
+HK,Hang Seng Index,Electronic Technology,2026-09-09 00:00:00,0,0,0,0,1,3,2,0,0,0,16139880255.76
+HK,Hang Seng Index,Energy Minerals,2026-09-09 00:00:00,1,3,0,0,0,0,0,0,0,0,5254283781.71
+HK,Hang Seng Index,Finance,2026-09-09 00:00:00,9,1,0,0,9,1,0,0,1,0,11874455806.69
+HK,Hang Seng Index,Health Technology,2026-09-09 00:00:00,2,0,1,0,4,0,0,0,0,0,4905435804.6
+HK,Hang Seng Index,Non-Energy Minerals,2026-09-09 00:00:00,2,0,0,0,0,0,0,0,0,0,1805489444.64
+HK,Hang Seng Index,Producer Manufacturing,2026-09-09 00:00:00,0,0,0,0,3,1,0,0,0,0,4076848153.39
+HK,Hang Seng Index,Retail Trade,2026-09-09 00:00:00,1,0,0,0,3,0,0,0,0,0,5714066805.75
+HK,Hang Seng Index,Technology Services,2026-09-09 00:00:00,2,0,0,0,3,0,0,0,0,0,9316107390.57
+HK,Hang Seng Index,Transportation,2026-09-09 00:00:00,1,0,0,0,4,0,0,0,0,0,713454712.84
+HK,Hang Seng Index,Utilities,2026-09-09 00:00:00,5,1,0,0,0,0,0,0,0,0,1055538534.4
+HK,Hang Seng China Enterprises Index,Commercial Services,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,907942867.44
+HK,Hang Seng China Enterprises Index,Communications,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,1456685172.43
+HK,Hang Seng China Enterprises Index,Consumer Durables,2026-09-09 00:00:00,2,0,0,0,1,0,0,0,0,0,1508522391.06
+HK,Hang Seng China Enterprises Index,Consumer Non-Durables,2026-09-09 00:00:00,1,0,0,0,2,0,0,0,0,0,1003078116.45
+HK,Hang Seng China Enterprises Index,Consumer Services,2026-09-09 00:00:00,0,0,0,0,3,0,0,0,0,0,1205507862.3
+HK,Hang Seng China Enterprises Index,Electronic Technology,2026-09-09 00:00:00,0,0,0,0,1,1,1,0,0,0,13055354703.64
+HK,Hang Seng China Enterprises Index,Energy Minerals,2026-09-09 00:00:00,1,3,0,0,0,0,0,0,0,0,5254283781.71
+HK,Hang Seng China Enterprises Index,Finance,2026-09-09 00:00:00,5,0,0,0,7,1,0,0,1,0,8585533192.02
+HK,Hang Seng China Enterprises Index,Health Technology,2026-09-09 00:00:00,1,0,0,0,4,0,0,0,0,0,2899690552.5
+HK,Hang Seng China Enterprises Index,Non-Energy Minerals,2026-09-09 00:00:00,2,0,0,0,0,0,0,0,0,0,1805489444.64
+HK,Hang Seng China Enterprises Index,Producer Manufacturing,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,1409852726.1
+HK,Hang Seng China Enterprises Index,Retail Trade,2026-09-09 00:00:00,0,0,0,0,3,0,0,0,0,0,5387848358.7
+HK,Hang Seng China Enterprises Index,Technology Services,2026-09-09 00:00:00,3,0,0,0,2,0,0,0,0,0,9526616751.67
+HK,Hang Seng China Enterprises Index,Transportation,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,163900018.2
+HK,Hang Seng Tech Index,Commercial Services,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,907942867.44
+HK,Hang Seng Tech Index,Consumer Durables,2026-09-09 00:00:00,2,0,0,0,4,0,0,0,0,0,1646390686.21
+HK,Hang Seng Tech Index,Consumer Services,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,577217351.2
+HK,Hang Seng Tech Index,Electronic Technology,2026-09-09 00:00:00,0,0,0,0,2,3,2,0,0,0,16813932729.36
+HK,Hang Seng Tech Index,Producer Manufacturing,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,1409852726.1
+HK,Hang Seng Tech Index,Retail Trade,2026-09-09 00:00:00,0,0,0,0,3,0,0,0,0,0,5387848358.7
+HK,Hang Seng Tech Index,Technology Services,2026-09-09 00:00:00,5,0,0,0,4,0,1,1,0,0,25015571509.37
+SG,All Singapore Companies,Commercial Services,2026-09-09 00:00:00,6,1,2,2,3,3,0,2,10,0,40783013.1
+SG,All Singapore Companies,Communications,2026-09-09 00:00:00,0,0,0,0,2,0,0,0,1,0,64488143.0
+SG,All Singapore Companies,Consumer Durables,2026-09-09 00:00:00,1,0,0,2,1,3,0,1,2,0,4108058.5
+SG,All Singapore Companies,Consumer Non-Durables,2026-09-09 00:00:00,3,1,0,2,5,0,0,1,7,0,10013313.5
+SG,All Singapore Companies,Consumer Services,2026-09-09 00:00:00,5,0,1,4,10,2,0,1,16,0,14117123.0
+SG,All Singapore Companies,Distribution Services,2026-09-09 00:00:00,1,4,0,1,8,2,0,1,16,0,2670397.0
+SG,All Singapore Companies,Electronic Technology,2026-09-09 00:00:00,4,0,0,1,8,2,1,2,7,0,107709290.75
+SG,All Singapore Companies,Energy Minerals,2026-09-09 00:00:00,2,2,0,0,1,0,0,0,3,0,9113871.8
+SG,All Singapore Companies,Finance,2026-09-09 00:00:00,12,1,2,4,47,5,3,3,29,0,862296409.39
+SG,All Singapore Companies,Health Services,2026-09-09 00:00:00,1,2,0,3,3,0,1,0,4,0,5460810.3
+SG,All Singapore Companies,Health Technology,2026-09-09 00:00:00,0,0,1,0,2,0,1,0,4,0,23460221.3
+SG,All Singapore Companies,Industrial Services,2026-09-09 00:00:00,3,4,3,2,10,2,2,3,9,0,3769967.7
+SG,All Singapore Companies,Miscellaneous,2026-09-09 00:00:00,0,1,0,1,0,0,0,0,2,0,38388.3
+SG,All Singapore Companies,Non-Energy Minerals,2026-09-09 00:00:00,1,0,2,1,7,0,1,4,5,0,6681220.0
+SG,All Singapore Companies,Process Industries,2026-09-09 00:00:00,2,2,1,3,7,1,2,1,5,0,36946428.8
+SG,All Singapore Companies,Producer Manufacturing,2026-09-09 00:00:00,5,3,2,1,10,6,1,5,7,0,203341658.77
+SG,All Singapore Companies,Retail Trade,2026-09-09 00:00:00,4,1,0,4,3,0,0,3,4,0,9208499.61
+SG,All Singapore Companies,Technology Services,2026-09-09 00:00:00,1,0,0,0,4,1,0,1,6,0,8675451.4
+SG,All Singapore Companies,Transportation,2026-09-09 00:00:00,4,1,0,0,6,1,1,1,13,0,76985534.79
+SG,All Singapore Companies,Utilities,2026-09-09 00:00:00,3,0,0,1,0,2,1,1,4,0,102933889.8
+SG,Straits Times Index,Communications,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,59420882.0
+SG,Straits Times Index,Consumer Non-Durables,2026-09-09 00:00:00,0,0,0,0,0,0,0,0,1,0,2998530.0
+SG,Straits Times Index,Consumer Services,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,12402232.0
+SG,Straits Times Index,Electronic Technology,2026-09-09 00:00:00,0,0,0,0,2,0,0,0,0,0,38720742.0
+SG,Straits Times Index,Finance,2026-09-09 00:00:00,0,0,0,0,15,1,0,0,0,0,777122337.87
+SG,Straits Times Index,Process Industries,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,21493752.0
+SG,Straits Times Index,Producer Manufacturing,2026-09-09 00:00:00,1,1,0,0,1,0,0,0,0,0,192193694.47
+SG,Straits Times Index,Retail Trade,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,3922162.01
+SG,Straits Times Index,Transportation,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,1,0,63948078.0
+SG,Straits Times Index,Utilities,2026-09-09 00:00:00,2,0,0,0,0,0,0,0,0,0,101438784.0
+UK,All UK Companies,Commercial Services,2026-09-09 00:00:00,14,4,2,0,27,3,0,1,33,0,279061997.29
+UK,All UK Companies,Communications,2026-09-09 00:00:00,4,0,0,0,1,0,0,0,0,0,114439249.81
+UK,All UK Companies,Consumer Durables,2026-09-09 00:00:00,6,1,0,0,14,1,0,0,8,0,136178806.19
+UK,All UK Companies,Consumer Non-Durables,2026-09-09 00:00:00,8,1,0,2,18,1,0,0,9,0,539713385.49
+UK,All UK Companies,Consumer Services,2026-09-09 00:00:00,5,0,0,0,19,2,3,2,17,0,177285185.13
+UK,All UK Companies,Distribution Services,2026-09-09 00:00:00,5,1,0,1,12,3,0,0,6,0,320631401.95
+UK,All UK Companies,Electronic Technology,2026-09-09 00:00:00,13,2,1,3,17,2,1,0,23,0,340567172.08
+UK,All UK Companies,Energy Minerals,2026-09-09 00:00:00,18,5,1,1,6,4,2,3,19,0,360980462.33
+UK,All UK Companies,Finance,2026-09-09 00:00:00,48,6,4,2,65,8,0,6,66,0,1224185491.45
+UK,All UK Companies,Health Services,2026-09-09 00:00:00,1,0,0,0,3,1,0,0,6,0,80260192.41
+UK,All UK Companies,Health Technology,2026-09-09 00:00:00,7,1,1,2,15,4,2,2,20,0,520263875.73
+UK,All UK Companies,Industrial Services,2026-09-09 00:00:00,5,1,0,0,11,1,0,2,8,0,30735955.23
+UK,All UK Companies,Miscellaneous,2026-09-09 00:00:00,12,1,0,0,9,2,1,1,7,0,82541912.15
+UK,All UK Companies,Non-Energy Minerals,2026-09-09 00:00:00,17,11,4,10,18,12,6,5,44,0,513618947.09
+UK,All UK Companies,Process Industries,2026-09-09 00:00:00,12,1,0,2,12,1,0,0,8,0,52360079.78
+UK,All UK Companies,Producer Manufacturing,2026-09-09 00:00:00,15,2,3,0,21,0,1,3,16,0,143329885.09
+UK,All UK Companies,Retail Trade,2026-09-09 00:00:00,2,0,0,2,15,5,1,2,8,0,153938998.06
+UK,All UK Companies,Technology Services,2026-09-09 00:00:00,12,7,0,8,20,11,5,3,38,0,145820576.79
+UK,All UK Companies,Transportation,2026-09-09 00:00:00,1,0,1,0,6,0,0,0,3,0,51032667.95
+UK,All UK Companies,Utilities,2026-09-09 00:00:00,4,0,1,0,7,1,1,0,4,0,323820827.44
+UK,UK 100 Index,Commercial Services,2026-09-09 00:00:00,0,0,0,0,3,0,0,0,2,0,220113447.72
+UK,UK 100 Index,Communications,2026-09-09 00:00:00,2,0,0,0,1,0,0,0,0,0,106681643.44
+UK,UK 100 Index,Consumer Durables,2026-09-09 00:00:00,0,0,0,0,4,0,0,0,0,0,105180187.3
+UK,UK 100 Index,Consumer Non-Durables,2026-09-09 00:00:00,4,0,0,0,5,0,0,0,1,0,496328567.23
+UK,UK 100 Index,Consumer Services,2026-09-09 00:00:00,0,0,0,0,5,0,0,0,0,0,142281185.53
+UK,UK 100 Index,Distribution Services,2026-09-09 00:00:00,1,1,0,0,1,0,0,0,0,0,301477612.74
+UK,UK 100 Index,Electronic Technology,2026-09-09 00:00:00,2,0,0,0,2,0,0,0,0,0,277857227.05
+UK,UK 100 Index,Energy Minerals,2026-09-09 00:00:00,2,0,0,0,0,0,0,0,0,0,313019515.17
+UK,UK 100 Index,Finance,2026-09-09 00:00:00,9,0,0,0,14,0,0,0,1,0,1078785580.11
+UK,UK 100 Index,Health Technology,2026-09-09 00:00:00,0,0,0,0,4,1,0,0,0,0,503465264.29
+UK,UK 100 Index,Miscellaneous,2026-09-09 00:00:00,2,0,0,0,3,0,0,0,2,0,101343871.83
+UK,UK 100 Index,Non-Energy Minerals,2026-09-09 00:00:00,2,1,0,0,1,0,0,0,1,0,494303741.73
+UK,UK 100 Index,Process Industries,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,13933309.65
+UK,UK 100 Index,Producer Manufacturing,2026-09-09 00:00:00,2,1,0,0,2,0,0,0,0,0,83581127.77
+UK,UK 100 Index,Retail Trade,2026-09-09 00:00:00,1,0,0,0,4,0,0,0,0,0,93361019.99
+UK,UK 100 Index,Technology Services,2026-09-09 00:00:00,1,0,0,0,2,0,0,1,0,0,69384501.75
+UK,UK 100 Index,Transportation,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,28424666.07
+UK,UK 100 Index,Utilities,2026-09-09 00:00:00,1,0,0,0,6,0,0,0,0,0,310176435.67
+FR,All France Companies,Commercial Services,2026-09-09 00:00:00,13,3,1,3,23,2,0,1,7,0,142508895.09
+FR,All France Companies,Communications,2026-09-09 00:00:00,3,0,1,0,0,0,0,0,0,0,50669801.03
+FR,All France Companies,Consumer Durables,2026-09-09 00:00:00,6,1,0,1,5,1,0,0,4,0,79925989.17
+FR,All France Companies,Consumer Non-Durables,2026-09-09 00:00:00,7,1,0,1,15,1,1,1,6,0,586197802.45
+FR,All France Companies,Consumer Services,2026-09-09 00:00:00,8,2,0,1,13,1,0,1,6,0,54895393.92
+FR,All France Companies,Distribution Services,2026-09-09 00:00:00,8,1,0,1,5,1,0,1,3,0,47453121.65
+FR,All France Companies,Electronic Technology,2026-09-09 00:00:00,22,2,1,0,21,5,3,0,9,0,456470275.83
+FR,All France Companies,Energy Minerals,2026-09-09 00:00:00,3,0,0,0,1,0,0,0,0,0,162229631.45
+FR,All France Companies,Finance,2026-09-09 00:00:00,21,2,1,5,24,3,2,2,21,0,521316479.8
+FR,All France Companies,Health Services,2026-09-09 00:00:00,4,0,0,1,2,0,0,0,0,0,2274557.27
+FR,All France Companies,Health Technology,2026-09-09 00:00:00,17,3,1,3,26,4,0,1,3,0,275805565.72
+FR,All France Companies,Industrial Services,2026-09-09 00:00:00,5,0,1,2,6,1,0,1,3,0,155954458.44
+FR,All France Companies,Miscellaneous,2026-09-09 00:00:00,0,0,0,0,1,0,0,1,0,0,7881918.86
+FR,All France Companies,Non-Energy Minerals,2026-09-09 00:00:00,6,0,0,0,3,0,0,0,3,0,16917753.96
+FR,All France Companies,Process Industries,2026-09-09 00:00:00,6,1,1,2,9,1,0,0,6,1,128143834.09
+FR,All France Companies,Producer Manufacturing,2026-09-09 00:00:00,14,2,1,0,15,1,2,1,10,0,321301878.93
+FR,All France Companies,Retail Trade,2026-09-09 00:00:00,6,1,1,0,10,0,0,1,3,0,31822064.7
+FR,All France Companies,Technology Services,2026-09-09 00:00:00,10,3,1,2,24,8,1,5,6,0,112590805.06
+FR,All France Companies,Transportation,2026-09-09 00:00:00,4,2,0,1,1,0,0,0,2,0,31030583.1
+FR,All France Companies,Utilities,2026-09-09 00:00:00,6,0,1,1,5,0,2,0,1,0,120164984.48
+FR,CAC 40 Index,Commercial Services,2026-09-09 00:00:00,1,0,0,0,2,0,0,0,0,0,78200735.76
+FR,CAC 40 Index,Communications,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,45302629.27
+FR,CAC 40 Index,Consumer Durables,2026-09-09 00:00:00,2,0,0,0,1,0,0,0,0,0,75419259.67
+FR,CAC 40 Index,Consumer Non-Durables,2026-09-09 00:00:00,3,0,0,0,3,0,0,0,0,0,579449771.48
+FR,CAC 40 Index,Consumer Services,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,32559109.0
+FR,CAC 40 Index,Electronic Technology,2026-09-09 00:00:00,4,0,0,0,0,1,0,0,0,0,379775743.02
+FR,CAC 40 Index,Energy Minerals,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,159927707.0
+FR,CAC 40 Index,Finance,2026-09-09 00:00:00,1,0,0,0,5,0,0,0,0,0,472234946.52
+FR,CAC 40 Index,Health Technology,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,202761945.2
+FR,CAC 40 Index,Industrial Services,2026-09-09 00:00:00,3,0,0,0,0,0,0,0,0,0,140557123.5
+FR,CAC 40 Index,Process Industries,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,120253559.4
+FR,CAC 40 Index,Producer Manufacturing,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,257572182.8
+FR,CAC 40 Index,Retail Trade,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,29411647.43
+FR,CAC 40 Index,Technology Services,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,86242640.81
+FR,CAC 40 Index,Utilities,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,113159954.61
+FR,SBF 120 Index,Commercial Services,2026-09-09 00:00:00,4,0,0,0,7,1,0,0,0,0,139587890.17
+FR,SBF 120 Index,Communications,2026-09-09 00:00:00,2,0,1,0,0,0,0,0,0,0,53896269.03
+FR,SBF 120 Index,Consumer Durables,2026-09-09 00:00:00,4,0,0,0,1,0,0,0,0,0,78925834.87
+FR,SBF 120 Index,Consumer Non-Durables,2026-09-09 00:00:00,4,0,0,0,4,0,0,0,0,0,582956137.0
+FR,SBF 120 Index,Consumer Services,2026-09-09 00:00:00,3,0,0,0,3,0,0,0,0,0,52274386.7
+FR,SBF 120 Index,Distribution Services,2026-09-09 00:00:00,1,1,0,0,1,0,0,0,0,0,46781729.15
+FR,SBF 120 Index,Electronic Technology,2026-09-09 00:00:00,7,0,0,0,2,1,0,0,1,0,445876649.57
+FR,SBF 120 Index,Energy Minerals,2026-09-09 00:00:00,2,0,0,0,0,0,0,0,0,0,161454155.0
+FR,SBF 120 Index,Finance,2026-09-09 00:00:00,9,0,0,0,8,1,0,0,0,0,549574192.98
+FR,SBF 120 Index,Health Services,2026-09-09 00:00:00,2,0,0,0,0,0,0,0,0,0,1916687.87
+FR,SBF 120 Index,Health Technology,2026-09-09 00:00:00,5,1,0,0,5,0,0,0,0,0,259860403.22
+FR,SBF 120 Index,Industrial Services,2026-09-09 00:00:00,3,0,1,0,2,0,0,0,0,0,155329353.46
+FR,SBF 120 Index,Non-Energy Minerals,2026-09-09 00:00:00,2,0,0,0,2,0,0,0,0,0,16868019.58
+FR,SBF 120 Index,Process Industries,2026-09-09 00:00:00,2,0,0,0,1,0,0,0,0,0,127212514.05
+FR,SBF 120 Index,Producer Manufacturing,2026-09-09 00:00:00,5,0,0,0,5,0,0,0,0,0,320235230.87
+FR,SBF 120 Index,Retail Trade,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,30635086.46
+FR,SBF 120 Index,Technology Services,2026-09-09 00:00:00,2,0,0,0,3,0,0,0,0,0,103453868.77
+FR,SBF 120 Index,Transportation,2026-09-09 00:00:00,3,1,0,0,0,0,0,0,0,0,29667641.1
+FR,SBF 120 Index,Utilities,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,113159954.61
+DE,All Germany Companies,Commercial Services,2026-09-09 00:00:00,5,1,1,0,7,0,0,1,5,0,6670473.58
+DE,All Germany Companies,Communications,2026-09-09 00:00:00,4,0,0,0,0,0,0,0,1,0,121093740.08
+DE,All Germany Companies,Consumer Durables,2026-09-09 00:00:00,5,0,0,0,7,0,0,1,0,0,258956657.96
+DE,All Germany Companies,Consumer Non-Durables,2026-09-09 00:00:00,4,0,0,0,4,0,0,0,0,0,122045023.39
+DE,All Germany Companies,Consumer Services,2026-09-09 00:00:00,8,0,0,0,6,0,0,1,3,0,31407546.05
+DE,All Germany Companies,Distribution Services,2026-09-09 00:00:00,2,0,0,0,4,2,1,0,3,0,13633725.79
+DE,All Germany Companies,Electronic Technology,2026-09-09 00:00:00,10,3,0,0,10,4,0,1,5,0,565087086.98
+DE,All Germany Companies,Energy Minerals,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,521157.0
+DE,All Germany Companies,Finance,2026-09-09 00:00:00,23,2,3,1,21,4,0,4,25,0,759833707.39
+DE,All Germany Companies,Health Services,2026-09-09 00:00:00,1,1,0,0,5,1,0,0,2,0,96725414.58
+DE,All Germany Companies,Health Technology,2026-09-09 00:00:00,11,0,2,0,9,0,1,0,2,0,168103462.93
+DE,All Germany Companies,Industrial Services,2026-09-09 00:00:00,4,0,0,0,5,0,1,0,3,0,36788552.07
+DE,All Germany Companies,Miscellaneous,2026-09-09 00:00:00,0,0,0,0,0,1,0,0,0,0,437.76
+DE,All Germany Companies,Non-Energy Minerals,2026-09-09 00:00:00,1,1,0,0,5,0,0,0,2,0,125529718.47
+DE,All Germany Companies,Process Industries,2026-09-09 00:00:00,11,0,0,0,6,1,0,0,3,0,147242266.49
+DE,All Germany Companies,Producer Manufacturing,2026-09-09 00:00:00,25,3,2,0,17,1,0,3,7,0,459481959.88
+DE,All Germany Companies,Retail Trade,2026-09-09 00:00:00,3,0,1,0,8,0,0,1,2,0,22337943.76
+DE,All Germany Companies,Technology Services,2026-09-09 00:00:00,14,2,0,2,23,2,0,1,14,0,444983022.75
+DE,All Germany Companies,Transportation,2026-09-09 00:00:00,2,1,0,0,6,0,0,0,0,0,81578065.48
+DE,All Germany Companies,Utilities,2026-09-09 00:00:00,4,0,0,0,4,0,1,0,2,0,105495288.4
+DE,DAX Index,Communications,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,111967745.0
+DE,DAX Index,Consumer Durables,2026-09-09 00:00:00,2,0,0,0,3,0,0,0,0,0,373029211.09
+DE,DAX Index,Consumer Non-Durables,2026-09-09 00:00:00,2,0,0,0,0,0,0,0,0,0,95943779.55
+DE,DAX Index,Distribution Services,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,8116688.4
+DE,DAX Index,Electronic Technology,2026-09-09 00:00:00,2,1,0,0,0,1,0,0,0,0,528420732.1
+DE,DAX Index,Finance,2026-09-09 00:00:00,3,0,0,0,4,0,0,0,0,0,699459786.32
+DE,DAX Index,Health Services,2026-09-09 00:00:00,0,1,0,0,1,0,0,0,0,0,96429509.69
+DE,DAX Index,Health Technology,2026-09-09 00:00:00,3,0,0,0,1,0,0,0,0,0,167524945.66
+DE,DAX Index,Industrial Services,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,28549179.6
+DE,DAX Index,Non-Energy Minerals,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,73570969.9
+DE,DAX Index,Process Industries,2026-09-09 00:00:00,2,0,0,0,1,0,0,0,0,0,99639677.53
+DE,DAX Index,Producer Manufacturing,2026-09-09 00:00:00,3,0,0,0,0,0,0,0,0,0,334227067.74
+DE,DAX Index,Retail Trade,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,17241170.76
+DE,DAX Index,Technology Services,2026-09-09 00:00:00,0,0,0,0,2,0,0,0,0,0,401289060.45
+DE,DAX Index,Transportation,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,51022379.2
+DE,DAX Index,Utilities,2026-09-09 00:00:00,0,0,0,0,2,0,0,0,0,0,102022619.98
+EU,All European Companies,Commercial Services,2026-09-09 00:00:00,99,18,8,13,125,15,2,10,99,0,864588836.92
+EU,All European Companies,Communications,2026-09-09 00:00:00,33,5,1,2,18,2,0,0,8,0,806931652.71
+EU,All European Companies,Consumer Durables,2026-09-09 00:00:00,66,9,5,4,80,9,2,5,39,0,1309697872.44
+EU,All European Companies,Consumer Non-Durables,2026-09-09 00:00:00,108,9,2,14,111,6,5,7,46,0,2215703879.15
+EU,All European Companies,Consumer Services,2026-09-09 00:00:00,78,9,3,8,90,10,8,7,78,0,523916039.66
+EU,All European Companies,Distribution Services,2026-09-09 00:00:00,58,8,1,7,83,12,3,7,40,0,635273134.5
+EU,All European Companies,Electronic Technology,2026-09-09 00:00:00,107,21,6,13,116,22,8,9,61,0,3402697525.85
+EU,All European Companies,Energy Minerals,2026-09-09 00:00:00,51,13,2,4,25,6,2,5,23,0,2157567779.91
+EU,All European Companies,Finance,2026-09-09 00:00:00,391,43,12,22,375,46,11,36,316,0,7853904074.74
+EU,All European Companies,Government,2026-09-09 00:00:00,0,0,0,0,0,0,0,0,1,0,12040.5
+EU,All European Companies,Health Services,2026-09-09 00:00:00,17,2,0,1,21,4,1,2,16,0,274112586.15
+EU,All European Companies,Health Technology,2026-09-09 00:00:00,115,25,10,13,168,31,7,15,52,0,1812749028.4
+EU,All European Companies,Industrial Services,2026-09-09 00:00:00,97,10,5,7,88,7,3,9,52,0,805033713.67
+EU,All European Companies,Miscellaneous,2026-09-09 00:00:00,29,5,0,2,23,6,1,3,25,0,138488342.01
+EU,All European Companies,Non-Energy Minerals,2026-09-09 00:00:00,88,21,9,19,85,14,8,10,75,0,1966343177.1
+EU,All European Companies,Process Industries,2026-09-09 00:00:00,131,12,10,14,94,17,4,9,60,1,1385991936.6
+EU,All European Companies,Producer Manufacturing,2026-09-09 00:00:00,186,32,12,19,177,25,9,13,95,1,2573774450.81
+EU,All European Companies,Retail Trade,2026-09-09 00:00:00,63,7,7,5,82,7,3,8,25,0,947463337.44
+EU,All European Companies,Technology Services,2026-09-09 00:00:00,166,34,12,38,235,55,16,28,157,0,1421326647.65
+EU,All European Companies,Transportation,2026-09-09 00:00:00,52,9,2,2,51,0,1,2,31,0,914004432.74
+EU,All European Companies,Unknown,2026-09-09 00:00:00,25,0,2,5,32,4,2,2,7,0,128267692.62
+EU,All European Companies,Utilities,2026-09-09 00:00:00,101,7,5,9,81,9,6,5,27,0,1593904783.66
+EU,Euro Stoxx 50 Index,Commercial Services,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,94160571.32
+EU,Euro Stoxx 50 Index,Communications,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,130130032.92
+EU,Euro Stoxx 50 Index,Consumer Durables,2026-09-09 00:00:00,2,0,0,0,2,0,0,0,0,0,461719432.33
+EU,Euro Stoxx 50 Index,Consumer Non-Durables,2026-09-09 00:00:00,4,0,0,0,2,0,0,0,0,0,776054749.44
+EU,Euro Stoxx 50 Index,Electronic Technology,2026-09-09 00:00:00,3,1,0,0,0,1,0,0,0,0,1600065464.5
+EU,Euro Stoxx 50 Index,Energy Minerals,2026-09-09 00:00:00,2,0,0,0,0,0,0,0,0,0,419168757.3
+EU,Euro Stoxx 50 Index,Finance,2026-09-09 00:00:00,5,0,0,0,7,0,0,0,0,0,1911720541.6
+EU,Euro Stoxx 50 Index,Health Technology,2026-09-09 00:00:00,2,0,0,0,2,0,0,0,0,0,396776765.18
+EU,Euro Stoxx 50 Index,Industrial Services,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,90823550.87
+EU,Euro Stoxx 50 Index,Process Industries,2026-09-09 00:00:00,2,0,0,0,0,0,0,0,0,0,216619425.59
+EU,Euro Stoxx 50 Index,Producer Manufacturing,2026-09-09 00:00:00,3,0,0,0,1,0,0,0,0,0,666209844.31
+EU,Euro Stoxx 50 Index,Retail Trade,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,180684963.52
+EU,Euro Stoxx 50 Index,Technology Services,2026-09-09 00:00:00,0,0,0,0,3,0,0,0,0,0,603504168.42
+EU,Euro Stoxx 50 Index,Transportation,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,59298719.33
+EU,Euro Stoxx 50 Index,Utilities,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,313473290.6
+EU,STOXX 600,Commercial Services,2026-09-09 00:00:00,11,0,0,0,13,1,0,0,3,0,792235920.99
+EU,STOXX 600,Communications,2026-09-09 00:00:00,15,0,0,0,1,0,0,0,0,0,732604370.91
+EU,STOXX 600,Consumer Durables,2026-09-09 00:00:00,7,0,0,0,19,0,0,0,0,0,1246642816.48
+EU,STOXX 600,Consumer Non-Durables,2026-09-09 00:00:00,25,1,0,0,13,0,0,0,1,0,2436585737.91
+EU,STOXX 600,Consumer Services,2026-09-09 00:00:00,5,0,0,0,9,0,0,0,0,0,352058604.77
+EU,STOXX 600,Distribution Services,2026-09-09 00:00:00,6,3,0,0,5,0,0,0,1,0,541460123.43
+EU,STOXX 600,Electronic Technology,2026-09-09 00:00:00,15,3,0,0,9,2,0,0,1,0,2981580392.63
+EU,STOXX 600,Energy Minerals,2026-09-09 00:00:00,10,0,0,0,0,0,0,0,1,0,1064854261.89
+EU,STOXX 600,Finance,2026-09-09 00:00:00,61,0,0,0,80,1,0,0,3,0,6743495705.18
+EU,STOXX 600,Health Services,2026-09-09 00:00:00,0,1,0,0,2,0,0,0,0,0,140657994.84
+EU,STOXX 600,Health Technology,2026-09-09 00:00:00,15,1,0,0,22,1,0,1,0,0,3927816640.23
+EU,STOXX 600,Industrial Services,2026-09-09 00:00:00,17,0,0,0,4,0,0,0,0,0,531160773.61
+EU,STOXX 600,Miscellaneous,2026-09-09 00:00:00,0,0,0,0,2,0,0,0,0,0,64359873.51
+EU,STOXX 600,Non-Energy Minerals,2026-09-09 00:00:00,8,4,1,0,8,0,0,0,1,0,1298746752.46
+EU,STOXX 600,Process Industries,2026-09-09 00:00:00,22,0,0,0,3,0,0,0,1,0,649904976.33
+EU,STOXX 600,Producer Manufacturing,2026-09-09 00:00:00,37,3,1,0,14,1,0,0,2,0,2196138705.07
+EU,STOXX 600,Retail Trade,2026-09-09 00:00:00,7,2,0,0,9,0,0,0,0,0,582469413.35
+EU,STOXX 600,Technology Services,2026-09-09 00:00:00,12,1,0,0,11,1,0,1,0,0,1077403796.98
+EU,STOXX 600,Transportation,2026-09-09 00:00:00,7,1,0,0,5,0,0,0,1,0,457729127.21
+EU,STOXX 600,Utilities,2026-09-09 00:00:00,11,0,1,0,16,0,0,0,2,0,1303798349.83
+US,All US Companies,Commercial Services,2026-09-09 00:00:00,47,17,3,42,99,51,20,64,72,0,10880291793.6
+US,All US Companies,Communications,2026-09-09 00:00:00,14,2,2,3,13,3,1,10,11,0,17463412261.2
+US,All US Companies,Consumer Durables,2026-09-09 00:00:00,22,2,1,14,59,36,8,11,33,0,24819819185.69
+US,All US Companies,Consumer Non-Durables,2026-09-09 00:00:00,36,2,3,19,64,27,10,18,41,0,18178835054.33
+US,All US Companies,Consumer Services,2026-09-09 00:00:00,40,4,5,18,110,26,11,25,49,1,19407781907.19
+US,All US Companies,Distribution Services,2026-09-09 00:00:00,31,5,5,14,44,14,6,14,31,0,5363862095.93
+US,All US Companies,Electronic Technology,2026-09-09 00:00:00,128,39,28,29,111,20,6,32,46,0,214604258475.66
+US,All US Companies,Energy Minerals,2026-09-09 00:00:00,63,14,4,15,16,1,2,18,41,0,12657095090.72
+US,All US Companies,Finance,2026-09-09 00:00:00,415,25,17,73,815,98,33,67,248,5,61763127931.33
+US,All US Companies,Government,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,1,0,149778.58
+US,All US Companies,Health Services,2026-09-09 00:00:00,18,6,2,6,47,12,1,12,28,0,7755631774.2
+US,All US Companies,Health Technology,2026-09-09 00:00:00,173,47,32,86,366,121,58,111,151,2,49231951987.95
+US,All US Companies,Industrial Services,2026-09-09 00:00:00,59,13,4,11,50,5,9,17,34,0,12951321770.87
+US,All US Companies,Miscellaneous,2026-09-09 00:00:00,1380,149,53,177,3963,102,42,68,142,0,237393146294.43
+US,All US Companies,Non-Energy Minerals,2026-09-09 00:00:00,35,10,9,29,59,15,3,34,59,0,9819591732.76
+US,All US Companies,Process Industries,2026-09-09 00:00:00,41,10,3,20,83,15,9,23,69,0,8918922510.56
+US,All US Companies,Producer Manufacturing,2026-09-09 00:00:00,85,24,11,42,119,31,16,23,52,0,35962360836.04
+US,All US Companies,Retail Trade,2026-09-09 00:00:00,27,11,6,12,86,40,16,17,32,0,33981678706.58
+US,All US Companies,Technology Services,2026-09-09 00:00:00,106,44,27,90,257,105,58,91,131,0,119315262020.92
+US,All US Companies,Transportation,2026-09-09 00:00:00,20,4,7,14,75,20,4,14,14,0,10883128384.45
+US,All US Companies,Unknown,2026-09-09 00:00:00,1,0,0,1,3,0,0,0,3,0,3069538.82
+US,All US Companies,Utilities,2026-09-09 00:00:00,65,4,1,5,20,0,1,6,18,0,13186489920.79
+US,S&P 500 Index,Commercial Services,2026-09-09 00:00:00,2,0,0,0,5,7,0,0,0,0,5573009542.95
+US,S&P 500 Index,Communications,2026-09-09 00:00:00,2,1,0,0,1,0,0,0,0,0,2994118007.88
+US,S&P 500 Index,Consumer Durables,2026-09-09 00:00:00,0,1,0,0,6,4,0,0,0,0,21784636008.6
+US,S&P 500 Index,Consumer Non-Durables,2026-09-09 00:00:00,8,0,0,0,18,2,1,0,0,0,14774758718.74
+US,S&P 500 Index,Consumer Services,2026-09-09 00:00:00,2,0,1,0,20,2,1,1,1,0,13774517946.89
+US,S&P 500 Index,Distribution Services,2026-09-09 00:00:00,0,0,0,0,9,0,0,0,0,0,3049226941.23
+US,S&P 500 Index,Electronic Technology,2026-09-09 00:00:00,17,5,3,4,23,2,0,1,0,0,182989924691.45
+US,S&P 500 Index,Energy Minerals,2026-09-09 00:00:00,11,1,0,0,1,0,0,0,0,0,9192087203.72
+US,S&P 500 Index,Finance,2026-09-09 00:00:00,13,0,0,0,75,8,0,0,0,0,41698040525.66
+US,S&P 500 Index,Health Services,2026-09-09 00:00:00,3,0,0,0,7,1,0,0,0,0,5753850043.8
+US,S&P 500 Index,Health Technology,2026-09-09 00:00:00,0,0,0,0,23,15,1,2,0,0,29718120706.37
+US,S&P 500 Index,Industrial Services,2026-09-09 00:00:00,7,0,0,0,5,0,0,0,0,0,5309503473.04
+US,S&P 500 Index,Miscellaneous,2026-09-09 00:00:00,0,0,1,0,0,0,0,0,0,0,126858014.4
+US,S&P 500 Index,Non-Energy Minerals,2026-09-09 00:00:00,0,0,1,0,5,1,0,0,0,0,4327627702.87
+US,S&P 500 Index,Process Industries,2026-09-09 00:00:00,5,1,0,0,13,1,0,0,0,0,6478416319.63
+US,S&P 500 Index,Producer Manufacturing,2026-09-09 00:00:00,12,3,0,1,16,1,0,0,0,0,25024867928.99
+US,S&P 500 Index,Retail Trade,2026-09-09 00:00:00,4,0,0,0,15,4,1,0,0,0,24125926602.02
+US,S&P 500 Index,Technology Services,2026-09-09 00:00:00,4,0,0,0,22,15,4,2,0,0,70704211010.91
+US,S&P 500 Index,Transportation,2026-09-09 00:00:00,3,0,0,0,10,1,1,0,0,0,6957958361.15
+US,S&P 500 Index,Utilities,2026-09-09 00:00:00,27,2,0,0,3,0,0,0,0,0,11625807269.17
+US,Nasdaq 100 Index,Commercial Services,2026-09-09 00:00:00,1,0,0,0,0,1,0,1,0,0,2723652590.8
+US,Nasdaq 100 Index,Communications,2026-09-09 00:00:00,1,1,0,0,0,0,0,0,0,0,13937089321.98
+US,Nasdaq 100 Index,Consumer Durables,2026-09-09 00:00:00,0,1,0,0,0,0,0,0,0,0,18805026321.12
+US,Nasdaq 100 Index,Consumer Non-Durables,2026-09-09 00:00:00,4,0,0,0,2,0,0,0,0,0,3378442310.59
+US,Nasdaq 100 Index,Consumer Services,2026-09-09 00:00:00,0,0,0,0,4,1,1,0,0,0,5635264422.64
+US,Nasdaq 100 Index,Distribution Services,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,252383895.9
+US,Nasdaq 100 Index,Electronic Technology,2026-09-09 00:00:00,8,3,2,1,9,1,1,0,0,0,160523162758.81
+US,Nasdaq 100 Index,Energy Minerals,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,456106015.2
+US,Nasdaq 100 Index,Health Technology,2026-09-09 00:00:00,0,0,0,0,4,4,0,1,0,0,7486158451.38
+US,Nasdaq 100 Index,Industrial Services,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,489205649.17
+US,Nasdaq 100 Index,Process Industries,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,1208865829.38
+US,Nasdaq 100 Index,Producer Manufacturing,2026-09-09 00:00:00,0,2,0,1,2,0,0,0,0,0,13827008473.62
+US,Nasdaq 100 Index,Retail Trade,2026-09-09 00:00:00,0,0,0,0,7,1,0,0,0,0,15053160023.79
+US,Nasdaq 100 Index,Technology Services,2026-09-09 00:00:00,2,0,0,2,13,6,1,0,0,0,64404176907.82
+US,Nasdaq 100 Index,Transportation,2026-09-09 00:00:00,1,0,0,0,1,0,1,0,0,0,1577155195.19
+US,Nasdaq 100 Index,Utilities,2026-09-09 00:00:00,4,0,0,0,0,0,0,0,0,0,2625554890.84
+US,Nasdaq Composite Index,Commercial Services,2026-09-09 00:00:00,26,10,4,8,60,26,11,19,4,0,5244260390.46
+US,Nasdaq Composite Index,Communications,2026-09-09 00:00:00,12,3,2,0,5,3,0,0,0,0,15503076293.61
+US,Nasdaq Composite Index,Consumer Durables,2026-09-09 00:00:00,15,2,1,2,40,13,6,5,1,0,20123772005.3
+US,Nasdaq Composite Index,Consumer Non-Durables,2026-09-09 00:00:00,17,0,1,3,28,11,5,5,1,0,6255557789.32
+US,Nasdaq Composite Index,Consumer Services,2026-09-09 00:00:00,24,1,1,2,59,15,6,6,4,0,9870177590.03
+US,Nasdaq Composite Index,Distribution Services,2026-09-09 00:00:00,9,2,2,3,19,12,3,4,1,0,946257151.77
+US,Nasdaq Composite Index,Electronic Technology,2026-09-09 00:00:00,89,26,21,10,68,14,3,8,2,0,183077439174.59
+US,Nasdaq Composite Index,Energy Minerals,2026-09-09 00:00:00,14,3,1,0,3,0,2,1,0,0,1252062922.66
+US,Nasdaq Composite Index,Finance,2026-09-09 00:00:00,179,8,4,17,370,37,14,25,72,0,16190751316.67
+US,Nasdaq Composite Index,Health Services,2026-09-09 00:00:00,10,2,1,0,24,7,1,3,1,0,913562228.14
+US,Nasdaq Composite Index,Health Technology,2026-09-09 00:00:00,164,38,20,35,324,97,45,52,14,0,28320223558.08
+US,Nasdaq Composite Index,Industrial Services,2026-09-09 00:00:00,20,6,2,3,21,1,3,6,3,0,1964813604.72
+US,Nasdaq Composite Index,Miscellaneous,2026-09-09 00:00:00,3,0,1,0,4,2,0,1,0,0,66675974.19
+US,Nasdaq Composite Index,Non-Energy Minerals,2026-09-09 00:00:00,16,2,1,3,18,5,2,5,2,0,1242318001.25
+US,Nasdaq Composite Index,Process Industries,2026-09-09 00:00:00,16,3,1,3,34,6,4,3,0,0,1715674832.2
+US,Nasdaq Composite Index,Producer Manufacturing,2026-09-09 00:00:00,40,19,9,11,34,19,10,7,3,0,18495869075.76
+US,Nasdaq Composite Index,Retail Trade,2026-09-09 00:00:00,13,5,1,1,41,13,10,3,1,0,19018216872.03
+US,Nasdaq Composite Index,Technology Services,2026-09-09 00:00:00,71,35,24,20,179,77,34,23,10,0,90909602189.96
+US,Nasdaq Composite Index,Transportation,2026-09-09 00:00:00,10,3,5,6,34,11,2,7,1,0,4386987060.2
+US,Nasdaq Composite Index,Utilities,2026-09-09 00:00:00,16,2,1,0,10,0,1,0,0,0,3465445144.59
+US,Russell 2000 Index,Commercial Services,2026-09-09 00:00:00,17,2,0,3,32,18,7,3,1,0,1522496652.01
+US,Russell 2000 Index,Communications,2026-09-09 00:00:00,4,0,0,0,6,3,1,0,0,0,297150082.63
+US,Russell 2000 Index,Consumer Durables,2026-09-09 00:00:00,5,0,0,1,27,18,2,1,1,0,1160969067.42
+US,Russell 2000 Index,Consumer Non-Durables,2026-09-09 00:00:00,8,0,0,0,19,10,4,0,1,0,923054462.34
+US,Russell 2000 Index,Consumer Services,2026-09-09 00:00:00,18,2,0,0,38,10,6,2,4,0,2356232788.85
+US,Russell 2000 Index,Distribution Services,2026-09-09 00:00:00,7,0,1,0,11,3,1,1,1,0,493453614.72
+US,Russell 2000 Index,Electronic Technology,2026-09-09 00:00:00,47,16,12,7,30,5,0,1,1,0,7599899534.86
+US,Russell 2000 Index,Energy Minerals,2026-09-09 00:00:00,25,8,1,0,8,1,2,0,1,0,2025576442.57
+US,Russell 2000 Index,Finance,2026-09-09 00:00:00,70,2,0,4,356,35,6,1,4,0,8065907795.64
+US,Russell 2000 Index,Health Services,2026-09-09 00:00:00,11,4,0,0,18,4,1,0,0,0,1397554192.29
+US,Russell 2000 Index,Health Technology,2026-09-09 00:00:00,83,10,9,4,166,48,18,17,1,0,10182692160.19
+US,Russell 2000 Index,Industrial Services,2026-09-09 00:00:00,22,7,1,3,19,1,1,0,0,0,2486696678.22
+US,Russell 2000 Index,Non-Energy Minerals,2026-09-09 00:00:00,20,2,1,1,20,3,0,0,1,0,1117504466.43
+US,Russell 2000 Index,Process Industries,2026-09-09 00:00:00,20,4,0,1,33,4,2,0,1,0,765345251.07
+US,Russell 2000 Index,Producer Manufacturing,2026-09-09 00:00:00,27,12,5,7,46,14,5,0,0,0,3754833541.93
+US,Russell 2000 Index,Retail Trade,2026-09-09 00:00:00,7,2,0,0,32,15,7,1,0,0,2233434357.89
+US,Russell 2000 Index,Technology Services,2026-09-09 00:00:00,22,11,5,2,85,31,13,11,5,0,8758543869.65
+US,Russell 2000 Index,Transportation,2026-09-09 00:00:00,5,0,0,0,29,7,0,1,0,0,923447538.33
+US,Russell 2000 Index,Utilities,2026-09-09 00:00:00,23,0,0,0,8,0,0,0,0,0,728252216.1
+US,Dow Jones Composite Index,Consumer Non-Durables,2026-09-09 00:00:00,1,0,0,0,2,0,0,0,0,0,4135707276.84
+US,Dow Jones Composite Index,Consumer Services,2026-09-09 00:00:00,1,0,0,0,1,0,0,0,0,0,1853193037.59
+US,Dow Jones Composite Index,Electronic Technology,2026-09-09 00:00:00,0,0,0,0,4,0,0,0,0,0,41499853120.73
+US,Dow Jones Composite Index,Energy Minerals,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,1616819504.0
+US,Dow Jones Composite Index,Finance,2026-09-09 00:00:00,0,0,0,0,5,1,0,0,0,0,6468638467.96
+US,Dow Jones Composite Index,Health Services,2026-09-09 00:00:00,1,0,0,0,0,0,0,0,0,0,2826010585.64
+US,Dow Jones Composite Index,Health Technology,2026-09-09 00:00:00,0,0,0,0,2,0,0,1,0,0,6522973221.37
+US,Dow Jones Composite Index,Process Industries,2026-09-09 00:00:00,0,0,0,0,1,0,0,0,0,0,393980633.64
+US,Dow Jones Composite Index,Producer Manufacturing,2026-09-09 00:00:00,1,0,0,0,2,0,0,0,0,0,2850086954.48
+US,Dow Jones Composite Index,Retail Trade,2026-09-09 00:00:00,0,0,0,0,3,0,0,0,0,0,11733555015.96
+US,Dow Jones Composite Index,Technology Services,2026-09-09 00:00:00,0,0,0,0,3,1,0,0,0,0,22547152068.17
+US,Dow Jones Composite Index,Transportation,2026-09-09 00:00:00,3,0,0,0,14,2,0,0,0,0,6357010571.81
+US,Dow Jones Composite Index,Utilities,2026-09-09 00:00:00,12,1,0,0,2,0,0,0,0,0,6287829311.61
