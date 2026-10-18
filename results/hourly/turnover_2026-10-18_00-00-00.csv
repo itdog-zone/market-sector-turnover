@@ -1,0 +1,85 @@
+﻿Market,MarketName,Sector,Fetch_Time,up_0_3,up_3_5,up_5_7,up_7_plus,down_0_3,down_3_5,down_5_7,down_7_plus,unchanged,no_trade,total_turnover
+KR,All South Korean Companies,Commercial Services,2026-10-18 00:00:00,51,10,7,12,13,2,1,3,4,0,343661199365.0
+KR,All South Korean Companies,Communications,2026-10-18 00:00:00,7,4,0,0,3,0,0,0,0,0,91187962868.0
+KR,All South Korean Companies,Consumer Durables,2026-10-18 00:00:00,46,13,4,3,13,0,0,1,1,0,757563639991.0
+KR,All South Korean Companies,Consumer Non-Durables,2026-10-18 00:00:00,77,16,16,14,20,2,0,2,7,0,676122090055.0
+KR,All South Korean Companies,Consumer Services,2026-10-18 00:00:00,35,13,6,4,13,1,2,1,1,0,117439041692.0
+KR,All South Korean Companies,Distribution Services,2026-10-18 00:00:00,27,8,3,7,9,0,1,3,1,0,82776557210.0
+KR,All South Korean Companies,Electronic Technology,2026-10-18 00:00:00,145,110,48,61,42,3,4,2,6,0,13889953608910.0
+KR,All South Korean Companies,Energy Minerals,2026-10-18 00:00:00,5,0,0,2,1,1,0,0,0,0,198310550651.0
+KR,All South Korean Companies,Finance,2026-10-18 00:00:00,111,27,11,2,18,0,0,0,16,0,1459127311313.0
+KR,All South Korean Companies,Health Services,2026-10-18 00:00:00,1,2,2,3,1,0,0,0,1,0,33689848705.0
+KR,All South Korean Companies,Health Technology,2026-10-18 00:00:00,96,68,53,52,26,3,1,1,7,0,1413465175640.0
+KR,All South Korean Companies,Industrial Services,2026-10-18 00:00:00,30,11,3,2,7,1,0,1,1,0,242933589658.0
+KR,All South Korean Companies,Miscellaneous,2026-10-18 00:00:00,5,1,0,0,0,0,0,0,3,0,9578328571.0
+KR,All South Korean Companies,Non-Energy Minerals,2026-10-18 00:00:00,49,23,10,9,9,2,3,0,2,0,373739778587.0
+KR,All South Korean Companies,Process Industries,2026-10-18 00:00:00,107,41,18,11,40,4,2,1,5,0,486476419247.0
+KR,All South Korean Companies,Producer Manufacturing,2026-10-18 00:00:00,195,120,50,37,40,7,4,5,6,0,3997686164432.0
+KR,All South Korean Companies,Retail Trade,2026-10-18 00:00:00,18,11,4,2,4,0,0,0,2,0,166489558769.0
+KR,All South Korean Companies,Technology Services,2026-10-18 00:00:00,98,65,22,12,31,2,1,5,6,0,590830548546.0
+KR,All South Korean Companies,Transportation,2026-10-18 00:00:00,23,0,1,0,6,3,0,2,1,0,434055348043.0
+KR,All South Korean Companies,Utilities,2026-10-18 00:00:00,14,2,1,1,4,1,0,0,0,0,96937593138.0
+HK,All Hong Kong Companies,Commercial Services,2026-10-18 00:00:00,35,8,6,11,32,7,7,4,32,0,3166808627.19
+HK,All Hong Kong Companies,Communications,2026-10-18 00:00:00,3,1,1,2,6,1,0,1,1,0,487131118.52
+HK,All Hong Kong Companies,Consumer Durables,2026-10-18 00:00:00,36,9,8,6,18,8,1,6,14,0,2424161244.45
+HK,All Hong Kong Companies,Consumer Non-Durables,2026-10-18 00:00:00,48,13,5,7,37,8,6,3,28,0,5079289276.28
+HK,All Hong Kong Companies,Consumer Services,2026-10-18 00:00:00,49,8,2,16,33,9,5,7,32,0,3452886769.48
+HK,All Hong Kong Companies,Distribution Services,2026-10-18 00:00:00,28,9,4,7,19,6,3,8,27,0,341707645.47
+HK,All Hong Kong Companies,Electronic Technology,2026-10-18 00:00:00,34,10,7,8,31,11,7,8,22,0,13730138188.22
+HK,All Hong Kong Companies,Energy Minerals,2026-10-18 00:00:00,8,0,2,1,10,4,1,2,5,0,80716529.83
+HK,All Hong Kong Companies,Finance,2026-10-18 00:00:00,118,36,17,27,98,25,11,20,76,0,10247142941.59
+HK,All Hong Kong Companies,Health Services,2026-10-18 00:00:00,8,2,4,2,13,4,1,1,6,0,103520301.35
+HK,All Hong Kong Companies,Health Technology,2026-10-18 00:00:00,49,17,10,6,44,4,6,6,11,0,12683905207.52
+HK,All Hong Kong Companies,Industrial Services,2026-10-18 00:00:00,40,10,12,16,36,10,7,3,38,0,764056483.01
+HK,All Hong Kong Companies,Miscellaneous,2026-10-18 00:00:00,5,0,1,0,3,0,0,0,2,0,71470434.87
+HK,All Hong Kong Companies,Non-Energy Minerals,2026-10-18 00:00:00,17,12,4,3,21,2,3,4,9,0,5294483813.43
+HK,All Hong Kong Companies,Process Industries,2026-10-18 00:00:00,26,8,4,4,16,9,2,3,26,0,1228425528.57
+HK,All Hong Kong Companies,Producer Manufacturing,2026-10-18 00:00:00,54,19,8,5,24,10,3,13,28,0,4001116910.24
+HK,All Hong Kong Companies,Retail Trade,2026-10-18 00:00:00,28,9,2,3,31,6,4,1,14,0,1332987220.3
+HK,All Hong Kong Companies,Technology Services,2026-10-18 00:00:00,57,18,6,6,41,12,7,10,22,1,15948605904.12
+HK,All Hong Kong Companies,Transportation,2026-10-18 00:00:00,17,7,1,3,21,4,5,2,7,0,1748234199.87
+HK,All Hong Kong Companies,Utilities,2026-10-18 00:00:00,19,2,1,0,22,1,2,1,10,0,1695003460.89
+EU,All European Companies,Commercial Services,2026-10-18 00:00:00,113,27,6,17,94,22,9,10,94,0,1524480589.13
+EU,All European Companies,Communications,2026-10-18 00:00:00,38,2,0,2,13,4,0,1,12,0,940805050.33
+EU,All European Companies,Consumer Durables,2026-10-18 00:00:00,86,13,4,9,55,12,5,4,33,0,1378605506.7
+EU,All European Companies,Consumer Non-Durables,2026-10-18 00:00:00,126,6,2,9,78,26,6,8,50,0,3486944717.35
+EU,All European Companies,Consumer Services,2026-10-18 00:00:00,105,13,7,6,65,11,6,11,76,0,548211545.12
+EU,All European Companies,Distribution Services,2026-10-18 00:00:00,88,11,6,6,48,14,5,6,38,0,777568082.3
+EU,All European Companies,Electronic Technology,2026-10-18 00:00:00,118,24,17,14,87,28,8,10,58,0,4488272629.92
+EU,All European Companies,Energy Minerals,2026-10-18 00:00:00,58,11,1,8,14,3,3,2,33,0,2489474148.64
+EU,All European Companies,Finance,2026-10-18 00:00:00,458,39,14,39,288,63,24,43,308,0,9129621206.38
+EU,All European Companies,Government,2026-10-18 00:00:00,0,0,0,0,1,0,0,0,0,0,3453.73
+EU,All European Companies,Health Services,2026-10-18 00:00:00,21,4,2,2,19,2,2,1,15,0,227008343.27
+EU,All European Companies,Health Technology,2026-10-18 00:00:00,125,27,12,12,135,40,15,17,59,0,3643275542.42
+EU,All European Companies,Industrial Services,2026-10-18 00:00:00,115,15,3,9,58,11,6,12,57,0,981492479.62
+EU,All European Companies,Miscellaneous,2026-10-18 00:00:00,36,2,1,0,23,3,1,1,28,0,116568205.88
+EU,All European Companies,Non-Energy Minerals,2026-10-18 00:00:00,104,12,3,13,67,34,17,10,69,0,1434953715.54
+EU,All European Companies,Process Industries,2026-10-18 00:00:00,106,15,8,7,95,35,11,20,60,0,971764874.62
+EU,All European Companies,Producer Manufacturing,2026-10-18 00:00:00,206,36,15,22,132,31,21,21,97,0,3956947337.94
+EU,All European Companies,Retail Trade,2026-10-18 00:00:00,91,9,5,6,45,10,7,7,30,0,1152030817.0
+EU,All European Companies,Technology Services,2026-10-18 00:00:00,208,42,19,34,195,30,18,22,167,0,1880804296.18
+EU,All European Companies,Transportation,2026-10-18 00:00:00,55,7,3,3,42,7,1,7,26,0,865608334.76
+EU,All European Companies,Unknown,2026-10-18 00:00:00,20,2,0,3,6,2,0,2,3,0,21047074.09
+EU,All European Companies,Utilities,2026-10-18 00:00:00,118,7,3,8,58,17,7,10,31,0,2326069989.83
+US,All US Companies,Commercial Services,2026-10-18 00:00:00,61,11,6,54,95,32,27,67,92,0,12009399225.75
+US,All US Companies,Communications,2026-10-18 00:00:00,7,0,0,8,18,6,4,10,14,0,17498714739.17
+US,All US Companies,Consumer Durables,2026-10-18 00:00:00,28,4,2,7,66,13,8,28,31,0,28350046550.09
+US,All US Companies,Consumer Non-Durables,2026-10-18 00:00:00,65,9,4,24,45,18,7,23,46,0,19743418806.79
+US,All US Companies,Consumer Services,2026-10-18 00:00:00,44,7,2,20,97,26,13,35,48,1,19379991738.72
+US,All US Companies,Distribution Services,2026-10-18 00:00:00,34,3,2,14,41,15,6,17,35,1,5532192579.92
+US,All US Companies,Electronic Technology,2026-10-18 00:00:00,53,16,2,27,108,69,55,77,49,0,196816718832.54
+US,All US Companies,Energy Minerals,2026-10-18 00:00:00,44,26,7,15,18,3,6,18,45,0,15488419066.71
+US,All US Companies,Finance,2026-10-18 00:00:00,620,29,8,57,633,63,34,87,274,6,83286572339.83
+US,All US Companies,Government,2026-10-18 00:00:00,1,0,0,1,0,0,0,0,0,0,423658.12
+US,All US Companies,Health Services,2026-10-18 00:00:00,8,2,1,10,39,16,8,26,29,0,8738531800.98
+US,All US Companies,Health Technology,2026-10-18 00:00:00,91,13,8,60,292,175,142,217,149,1,51345358993.89
+US,All US Companies,Industrial Services,2026-10-18 00:00:00,52,8,1,10,49,14,9,26,35,1,11766211695.95
+US,All US Companies,Miscellaneous,2026-10-18 00:00:00,1578,45,19,55,3579,353,121,337,99,18,335793864345.78
+US,All US Companies,Non-Energy Minerals,2026-10-18 00:00:00,51,7,6,20,47,12,10,28,61,0,8931090408.52
+US,All US Companies,Process Industries,2026-10-18 00:00:00,47,6,2,18,78,12,7,31,86,0,8630461473.24
+US,All US Companies,Producer Manufacturing,2026-10-18 00:00:00,61,4,3,25,133,40,32,63,57,0,34458742343.93
+US,All US Companies,Retail Trade,2026-10-18 00:00:00,54,1,1,15,73,30,10,26,44,1,36651385930.6
+US,All US Companies,Technology Services,2026-10-18 00:00:00,91,14,6,72,204,129,84,170,156,1,127728748760.42
+US,All US Companies,Transportation,2026-10-18 00:00:00,27,3,2,11,69,18,10,12,13,0,10677760278.16
+US,All US Companies,Unknown,2026-10-18 00:00:00,0,0,0,0,2,0,0,1,0,0,156993.03
+US,All US Companies,Utilities,2026-10-18 00:00:00,65,3,0,9,23,3,4,9,18,0,13676624719.75
