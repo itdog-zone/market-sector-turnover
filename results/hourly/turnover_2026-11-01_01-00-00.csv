@@ -1,0 +1,84 @@
+﻿Market,MarketName,Sector,Fetch_Time,up_0_3,up_3_5,up_5_7,up_7_plus,down_0_3,down_3_5,down_5_7,down_7_plus,unchanged,no_trade,total_turnover
+HK,All Hong Kong Companies,Commercial Services,2026-11-01 01:00:00,31,5,2,8,33,16,11,11,25,0,2093098406.68
+HK,All Hong Kong Companies,Communications,2026-11-01 01:00:00,10,1,0,0,1,1,1,0,2,0,714903448.62
+HK,All Hong Kong Companies,Consumer Durables,2026-11-01 01:00:00,25,9,5,6,29,8,6,8,12,0,3975833751.64
+HK,All Hong Kong Companies,Consumer Non-Durables,2026-11-01 01:00:00,39,18,7,6,36,8,4,11,24,0,5790794653.95
+HK,All Hong Kong Companies,Consumer Services,2026-11-01 01:00:00,41,18,4,12,31,13,10,13,22,0,4003978182.84
+HK,All Hong Kong Companies,Distribution Services,2026-11-01 01:00:00,16,3,6,9,29,16,5,9,18,0,892614387.46
+HK,All Hong Kong Companies,Electronic Technology,2026-11-01 01:00:00,22,9,3,7,39,18,13,13,12,0,17630466597.87
+HK,All Hong Kong Companies,Energy Minerals,2026-11-01 01:00:00,5,1,2,0,11,5,0,2,7,0,124329347.31
+HK,All Hong Kong Companies,Finance,2026-11-01 01:00:00,114,23,9,23,109,31,22,32,60,0,11981810781.98
+HK,All Hong Kong Companies,Health Services,2026-11-01 01:00:00,7,4,2,0,7,3,2,3,13,0,134155066.08
+HK,All Hong Kong Companies,Health Technology,2026-11-01 01:00:00,30,11,3,6,59,18,9,10,8,0,9943513890.97
+HK,All Hong Kong Companies,Industrial Services,2026-11-01 01:00:00,42,10,8,10,32,15,11,10,32,0,438122186.84
+HK,All Hong Kong Companies,Miscellaneous,2026-11-01 01:00:00,3,0,0,0,4,1,0,1,2,0,68244233.0
+HK,All Hong Kong Companies,Non-Energy Minerals,2026-11-01 01:00:00,12,2,2,2,22,9,4,7,15,0,3483676392.62
+HK,All Hong Kong Companies,Process Industries,2026-11-01 01:00:00,22,3,2,3,26,11,3,2,24,0,1133923392.62
+HK,All Hong Kong Companies,Producer Manufacturing,2026-11-01 01:00:00,31,5,4,8,52,15,7,13,24,0,5265735188.49
+HK,All Hong Kong Companies,Retail Trade,2026-11-01 01:00:00,25,9,3,5,23,7,3,6,15,0,1699419055.35
+HK,All Hong Kong Companies,Technology Services,2026-11-01 01:00:00,31,5,1,14,47,28,7,21,24,0,20369744816.4
+HK,All Hong Kong Companies,Transportation,2026-11-01 01:00:00,16,5,2,7,16,5,2,2,12,0,1879695439.04
+HK,All Hong Kong Companies,Utilities,2026-11-01 01:00:00,25,4,3,1,11,1,1,3,9,0,2064469015.73
+EU,All European Companies,Commercial Services,2026-11-01 01:00:00,103,9,10,11,111,22,8,16,96,0,1237035041.61
+EU,All European Companies,Communications,2026-11-01 01:00:00,29,1,1,1,21,1,3,2,12,0,867879763.84
+EU,All European Companies,Consumer Durables,2026-11-01 01:00:00,59,7,3,1,82,17,5,8,37,0,1450834977.68
+EU,All European Companies,Consumer Non-Durables,2026-11-01 01:00:00,96,9,8,11,75,29,15,20,41,0,3605325311.97
+EU,All European Companies,Consumer Services,2026-11-01 01:00:00,70,9,5,8,85,25,10,16,70,0,516779813.73
+EU,All European Companies,Distribution Services,2026-11-01 01:00:00,50,7,3,4,79,27,7,5,33,0,628667814.39
+EU,All European Companies,Electronic Technology,2026-11-01 01:00:00,53,10,3,10,128,50,22,28,48,0,4386724524.35
+EU,All European Companies,Energy Minerals,2026-11-01 01:00:00,33,8,4,2,42,10,2,6,23,0,2180014292.79
+EU,All European Companies,Finance,2026-11-01 01:00:00,261,32,12,17,413,95,32,62,315,7,9037149216.21
+EU,All European Companies,Government,2026-11-01 01:00:00,0,0,0,0,1,0,0,0,0,0,50986.49
+EU,All European Companies,Health Services,2026-11-01 01:00:00,18,1,1,1,23,8,3,2,9,0,169517339.48
+EU,All European Companies,Health Technology,2026-11-01 01:00:00,95,14,9,14,137,46,17,22,65,0,5307959467.39
+EU,All European Companies,Industrial Services,2026-11-01 01:00:00,48,7,3,3,123,23,11,18,45,0,870196116.36
+EU,All European Companies,Miscellaneous,2026-11-01 01:00:00,13,4,3,0,29,6,2,3,31,0,86934201.47
+EU,All European Companies,Non-Energy Minerals,2026-11-01 01:00:00,43,9,6,9,91,41,27,25,73,0,1817768522.76
+EU,All European Companies,Process Industries,2026-11-01 01:00:00,76,10,2,8,120,37,20,29,51,0,1117459791.5
+EU,All European Companies,Producer Manufacturing,2026-11-01 01:00:00,95,14,7,14,206,77,29,36,88,0,3523444956.64
+EU,All European Companies,Retail Trade,2026-11-01 01:00:00,52,3,6,4,82,14,9,5,32,0,898543722.99
+EU,All European Companies,Technology Services,2026-11-01 01:00:00,156,39,13,22,202,61,26,39,157,1,1581315822.92
+EU,All European Companies,Transportation,2026-11-01 01:00:00,34,6,1,2,68,14,3,4,21,0,965552121.28
+EU,All European Companies,Unknown,2026-11-01 01:00:00,17,1,0,2,8,1,0,1,6,0,21461882.97
+EU,All European Companies,Utilities,2026-11-01 01:00:00,79,11,2,7,93,15,12,11,26,0,1321543543.39
+EU,STOXX 600,Commercial Services,2026-11-01 01:00:00,19,2,0,1,6,0,0,0,0,0,1129045183.88
+EU,STOXX 600,Communications,2026-11-01 01:00:00,11,1,1,0,0,0,1,0,0,0,736632951.91
+EU,STOXX 600,Consumer Durables,2026-11-01 01:00:00,10,1,0,0,13,0,0,0,0,0,1290109667.99
+EU,STOXX 600,Consumer Non-Durables,2026-11-01 01:00:00,32,5,1,0,0,0,0,0,1,0,3540247104.27
+EU,STOXX 600,Consumer Services,2026-11-01 01:00:00,8,0,0,0,6,0,0,0,0,0,316982805.7
+EU,STOXX 600,Distribution Services,2026-11-01 01:00:00,9,0,0,0,6,0,0,0,0,0,377143407.95
+EU,STOXX 600,Electronic Technology,2026-11-01 01:00:00,2,0,0,0,17,4,4,3,1,0,3899376343.65
+EU,STOXX 600,Energy Minerals,2026-11-01 01:00:00,8,1,0,0,2,0,0,0,0,0,1601268528.42
+EU,STOXX 600,Finance,2026-11-01 01:00:00,48,1,0,0,76,13,2,2,2,0,8078115149.76
+EU,STOXX 600,Health Services,2026-11-01 01:00:00,1,0,0,0,2,0,0,0,0,0,136103096.88
+EU,STOXX 600,Health Technology,2026-11-01 01:00:00,26,3,2,0,6,1,0,1,2,0,5709647074.01
+EU,STOXX 600,Industrial Services,2026-11-01 01:00:00,4,0,0,0,16,1,0,0,0,0,601924913.54
+EU,STOXX 600,Miscellaneous,2026-11-01 01:00:00,1,0,0,0,1,0,0,0,0,0,58420815.23
+EU,STOXX 600,Non-Energy Minerals,2026-11-01 01:00:00,0,0,0,0,11,6,5,1,0,0,1540667446.49
+EU,STOXX 600,Process Industries,2026-11-01 01:00:00,10,0,0,0,13,0,0,0,1,0,897645507.9
+EU,STOXX 600,Producer Manufacturing,2026-11-01 01:00:00,5,0,0,0,32,12,4,2,0,0,3091150194.23
+EU,STOXX 600,Retail Trade,2026-11-01 01:00:00,11,0,0,0,7,0,0,0,0,0,612632207.29
+EU,STOXX 600,Technology Services,2026-11-01 01:00:00,12,2,0,0,7,2,2,0,1,0,1318918910.13
+EU,STOXX 600,Transportation,2026-11-01 01:00:00,4,0,0,0,10,0,0,0,0,0,609597628.71
+EU,STOXX 600,Utilities,2026-11-01 01:00:00,12,0,0,0,14,0,0,0,3,0,1129840830.1
+US,All US Companies,Commercial Services,2026-11-01 01:00:00,80,9,8,33,74,33,24,75,86,1,13944602080.23
+US,All US Companies,Communications,2026-11-01 01:00:00,11,4,1,9,11,1,7,8,17,0,22150355133.55
+US,All US Companies,Consumer Durables,2026-11-01 01:00:00,30,7,4,17,56,18,9,18,22,0,24061823173.81
+US,All US Companies,Consumer Non-Durables,2026-11-01 01:00:00,69,9,4,17,47,11,7,23,48,0,24971975914.57
+US,All US Companies,Consumer Services,2026-11-01 01:00:00,61,14,2,19,84,20,12,38,42,0,20531507829.12
+US,All US Companies,Distribution Services,2026-11-01 01:00:00,26,2,1,16,47,12,9,20,37,0,5817967680.31
+US,All US Companies,Electronic Technology,2026-11-01 01:00:00,26,4,3,18,75,77,63,131,52,0,268280512003.27
+US,All US Companies,Energy Minerals,2026-11-01 01:00:00,49,8,3,10,30,5,2,21,52,0,17565817769.15
+US,All US Companies,Finance,2026-11-01 01:00:00,449,38,18,63,729,83,53,102,262,1,86578060128.64
+US,All US Companies,Government,2026-11-01 01:00:00,1,0,0,0,0,0,0,0,0,0,298363.5
+US,All US Companies,Health Services,2026-11-01 01:00:00,13,2,3,13,42,10,9,17,21,0,8224876064.69
+US,All US Companies,Health Technology,2026-11-01 01:00:00,116,36,10,77,283,163,110,197,149,2,65007946242.57
+US,All US Companies,Industrial Services,2026-11-01 01:00:00,37,9,2,12,54,19,14,30,31,0,14377352105.0
+US,All US Companies,Miscellaneous,2026-11-01 01:00:00,1389,33,20,77,3362,553,227,472,64,1,392880164130.53
+US,All US Companies,Non-Energy Minerals,2026-11-01 01:00:00,21,1,6,20,35,17,30,58,65,0,9339881876.83
+US,All US Companies,Process Industries,2026-11-01 01:00:00,52,12,5,23,49,21,12,25,77,0,10129670700.75
+US,All US Companies,Producer Manufacturing,2026-11-01 01:00:00,49,7,4,23,93,61,44,68,61,0,46515778226.3
+US,All US Companies,Retail Trade,2026-11-01 01:00:00,47,3,3,13,84,12,10,34,36,0,53629018424.41
+US,All US Companies,Technology Services,2026-11-01 01:00:00,90,33,16,77,202,85,79,192,130,0,146230351718.25
+US,All US Companies,Transportation,2026-11-01 01:00:00,27,6,1,11,75,4,7,18,17,0,14138947506.59
+US,All US Companies,Utilities,2026-11-01 01:00:00,55,0,1,9,29,5,3,9,21,0,16053657317.1
