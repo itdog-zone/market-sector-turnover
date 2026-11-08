@@ -1,0 +1,106 @@
+﻿Market,MarketName,Sector,Fetch_Time,up_0_3,up_3_5,up_5_7,up_7_plus,down_0_3,down_3_5,down_5_7,down_7_plus,unchanged,no_trade,total_turnover
+KR,All South Korean Companies,Commercial Services,2026-11-08 01:00:00,16,1,0,2,42,15,14,8,5,0,179707251924.0
+KR,All South Korean Companies,Communications,2026-11-08 01:00:00,6,0,1,0,6,0,0,1,0,0,262879122918.0
+KR,All South Korean Companies,Consumer Durables,2026-11-08 01:00:00,8,1,1,1,33,20,6,9,3,0,747791981787.0
+KR,All South Korean Companies,Consumer Non-Durables,2026-11-08 01:00:00,22,4,1,2,79,25,8,7,7,0,575490363754.0
+KR,All South Korean Companies,Consumer Services,2026-11-08 01:00:00,11,3,1,1,31,13,5,4,4,0,364192868442.0
+KR,All South Korean Companies,Distribution Services,2026-11-08 01:00:00,8,2,0,1,23,13,7,5,1,0,108273646968.0
+KR,All South Korean Companies,Electronic Technology,2026-11-08 01:00:00,26,7,1,2,114,74,86,109,3,0,19391897531597.0
+KR,All South Korean Companies,Energy Minerals,2026-11-08 01:00:00,1,0,0,0,5,2,0,1,0,0,113897633832.0
+KR,All South Korean Companies,Finance,2026-11-08 01:00:00,23,2,2,2,80,34,12,10,21,0,2020665832411.0
+KR,All South Korean Companies,Health Services,2026-11-08 01:00:00,1,0,0,1,2,0,3,1,2,0,25036078580.0
+KR,All South Korean Companies,Health Technology,2026-11-08 01:00:00,26,9,4,3,125,65,32,35,11,0,1366048857690.0
+KR,All South Korean Companies,Industrial Services,2026-11-08 01:00:00,4,1,0,0,21,14,9,3,3,0,403906032318.0
+KR,All South Korean Companies,Miscellaneous,2026-11-08 01:00:00,2,1,0,0,3,0,2,1,0,0,6541631035.0
+KR,All South Korean Companies,Non-Energy Minerals,2026-11-08 01:00:00,13,0,0,2,60,17,8,3,4,0,206075936407.0
+KR,All South Korean Companies,Process Industries,2026-11-08 01:00:00,25,3,1,3,102,38,27,25,5,0,647741966350.0
+KR,All South Korean Companies,Producer Manufacturing,2026-11-08 01:00:00,37,5,2,6,141,109,68,89,8,0,4009858384497.0
+KR,All South Korean Companies,Retail Trade,2026-11-08 01:00:00,5,0,0,1,23,12,0,0,0,0,128599579402.0
+KR,All South Korean Companies,Technology Services,2026-11-08 01:00:00,38,7,4,5,91,41,25,24,8,0,1396280962373.0
+KR,All South Korean Companies,Transportation,2026-11-08 01:00:00,1,0,0,1,22,8,3,1,1,0,209980231745.0
+KR,All South Korean Companies,Utilities,2026-11-08 01:00:00,2,1,1,1,15,3,0,0,0,0,186783072495.0
+DE,All Germany Companies,Commercial Services,2026-11-08 01:00:00,2,0,0,0,8,4,0,1,5,0,8947762.29
+DE,All Germany Companies,Communications,2026-11-08 01:00:00,2,0,0,0,3,0,0,0,0,0,215572911.76
+DE,All Germany Companies,Consumer Durables,2026-11-08 01:00:00,0,1,0,0,6,4,0,0,2,0,340806509.74
+DE,All Germany Companies,Consumer Non-Durables,2026-11-08 01:00:00,1,0,0,0,6,0,0,0,1,0,163507246.73
+DE,All Germany Companies,Consumer Services,2026-11-08 01:00:00,6,1,1,1,2,2,0,1,4,0,34994285.83
+DE,All Germany Companies,Distribution Services,2026-11-08 01:00:00,4,0,0,1,4,1,1,1,1,0,24507892.68
+DE,All Germany Companies,Electronic Technology,2026-11-08 01:00:00,9,3,1,0,12,1,3,1,3,0,851322329.12
+DE,All Germany Companies,Energy Minerals,2026-11-08 01:00:00,0,0,0,0,1,0,0,0,0,0,1343477.2
+DE,All Germany Companies,Finance,2026-11-08 01:00:00,20,0,0,3,27,7,5,0,20,0,1251315679.94
+DE,All Germany Companies,Health Services,2026-11-08 01:00:00,3,0,1,0,3,0,0,0,3,0,148534311.56
+DE,All Germany Companies,Health Technology,2026-11-08 01:00:00,2,2,0,0,16,1,1,0,2,0,373342433.66
+DE,All Germany Companies,Industrial Services,2026-11-08 01:00:00,3,0,1,1,4,0,1,0,2,0,68955197.98
+DE,All Germany Companies,Miscellaneous,2026-11-08 01:00:00,1,0,0,0,0,0,0,0,0,0,13007.2
+DE,All Germany Companies,Non-Energy Minerals,2026-11-08 01:00:00,1,0,0,0,6,0,0,0,2,0,122877983.44
+DE,All Germany Companies,Process Industries,2026-11-08 01:00:00,6,0,0,0,11,2,0,1,2,0,237469586.3
+DE,All Germany Companies,Producer Manufacturing,2026-11-08 01:00:00,14,6,1,0,24,4,0,2,6,0,1024011155.02
+DE,All Germany Companies,Retail Trade,2026-11-08 01:00:00,2,1,0,1,7,2,0,2,0,0,47727796.74
+DE,All Germany Companies,Technology Services,2026-11-08 01:00:00,12,3,1,0,21,5,3,1,11,0,551774734.69
+DE,All Germany Companies,Transportation,2026-11-08 01:00:00,4,1,0,0,3,1,0,0,0,0,222647819.88
+DE,All Germany Companies,Utilities,2026-11-08 01:00:00,6,1,0,0,3,1,0,0,0,0,137813677.32
+EU,All European Companies,Commercial Services,2026-11-08 01:00:00,70,11,8,19,135,30,12,18,81,0,1313148721.3
+EU,All European Companies,Communications,2026-11-08 01:00:00,22,4,1,1,32,2,1,1,6,0,985012595.97
+EU,All European Companies,Consumer Durables,2026-11-08 01:00:00,57,6,1,7,88,15,3,4,36,0,1640511757.52
+EU,All European Companies,Consumer Non-Durables,2026-11-08 01:00:00,88,14,6,7,120,13,4,5,49,0,3640592865.15
+EU,All European Companies,Consumer Services,2026-11-08 01:00:00,61,13,11,5,107,17,1,9,73,0,578622729.05
+EU,All European Companies,Distribution Services,2026-11-08 01:00:00,45,8,5,9,90,5,5,7,43,0,662239275.64
+EU,All European Companies,Electronic Technology,2026-11-08 01:00:00,102,28,12,7,115,24,9,9,47,0,5439468202.49
+EU,All European Companies,Energy Minerals,2026-11-08 01:00:00,34,4,1,5,39,14,2,4,27,0,2859528304.72
+EU,All European Companies,Finance,2026-11-08 01:00:00,292,39,17,38,458,48,14,31,317,0,10275032246.69
+EU,All European Companies,Government,2026-11-08 01:00:00,0,0,0,0,1,0,0,0,0,0,9779.33
+EU,All European Companies,Health Services,2026-11-08 01:00:00,15,3,3,3,16,3,4,1,18,0,347934343.49
+EU,All European Companies,Health Technology,2026-11-08 01:00:00,95,12,14,14,162,30,13,18,62,0,4345388652.95
+EU,All European Companies,Industrial Services,2026-11-08 01:00:00,81,10,4,9,101,11,7,7,43,0,1042807794.5
+EU,All European Companies,Miscellaneous,2026-11-08 01:00:00,15,0,1,0,32,1,1,5,37,0,90233778.28
+EU,All European Companies,Non-Energy Minerals,2026-11-08 01:00:00,80,10,6,14,85,17,10,23,81,0,1514870862.32
+EU,All European Companies,Process Industries,2026-11-08 01:00:00,96,11,8,16,115,36,4,11,56,0,1279226917.88
+EU,All European Companies,Producer Manufacturing,2026-11-08 01:00:00,147,34,10,15,205,31,8,20,94,0,4211683910.5
+EU,All European Companies,Retail Trade,2026-11-08 01:00:00,66,5,7,3,81,11,3,6,23,0,1167976206.38
+EU,All European Companies,Technology Services,2026-11-08 01:00:00,165,32,21,28,221,56,22,30,137,0,1672939309.2
+EU,All European Companies,Transportation,2026-11-08 01:00:00,43,8,2,3,54,13,4,4,20,0,1261808077.13
+EU,All European Companies,Unknown,2026-11-08 01:00:00,22,0,0,0,7,2,1,2,4,0,25971793.96
+EU,All European Companies,Utilities,2026-11-08 01:00:00,96,17,6,11,75,10,7,7,27,0,1914508723.18
+US,All US Companies,Commercial Services,2026-11-08 01:00:00,75,26,8,63,82,25,16,55,82,0,11254931457.0
+US,All US Companies,Communications,2026-11-08 01:00:00,12,3,4,13,7,1,0,8,19,0,20592298930.52
+US,All US Companies,Consumer Durables,2026-11-08 01:00:00,32,10,6,17,43,22,9,17,22,0,19718244118.77
+US,All US Companies,Consumer Non-Durables,2026-11-08 01:00:00,33,12,5,25,68,11,4,28,43,0,18406192993.29
+US,All US Companies,Consumer Services,2026-11-08 01:00:00,45,17,7,35,77,22,10,33,37,0,24178842459.44
+US,All US Companies,Distribution Services,2026-11-08 01:00:00,29,5,4,26,41,14,5,13,31,0,6107140099.82
+US,All US Companies,Electronic Technology,2026-11-08 01:00:00,81,51,47,124,51,7,9,33,43,0,224774070536.8
+US,All US Companies,Energy Minerals,2026-11-08 01:00:00,34,14,4,16,33,7,0,19,52,0,14980326475.31
+US,All US Companies,Finance,2026-11-08 01:00:00,554,58,27,85,648,70,22,75,248,0,72526415051.2
+US,All US Companies,Government,2026-11-08 01:00:00,0,0,0,0,1,0,0,0,0,0,62055.52
+US,All US Companies,Health Services,2026-11-08 01:00:00,22,7,6,13,25,7,4,19,23,0,10177544016.41
+US,All US Companies,Health Technology,2026-11-08 01:00:00,231,134,100,194,146,60,22,103,131,0,57673745868.95
+US,All US Companies,Industrial Services,2026-11-08 01:00:00,46,18,14,37,37,3,2,19,29,0,14518301918.1
+US,All US Companies,Miscellaneous,2026-11-08 01:00:00,3137,191,89,272,2258,55,24,56,112,0,341286981185.15
+US,All US Companies,Non-Energy Minerals,2026-11-08 01:00:00,39,19,14,45,29,6,3,24,72,0,9384830184.79
+US,All US Companies,Process Industries,2026-11-08 01:00:00,42,15,10,35,55,12,8,24,69,0,8909797425.44
+US,All US Companies,Producer Manufacturing,2026-11-08 01:00:00,81,37,26,75,82,18,5,29,53,0,42038575009.34
+US,All US Companies,Retail Trade,2026-11-08 01:00:00,31,10,6,24,79,27,8,18,38,0,37200489666.28
+US,All US Companies,Technology Services,2026-11-08 01:00:00,157,42,48,156,178,65,27,99,131,0,122197712415.54
+US,All US Companies,Transportation,2026-11-08 01:00:00,46,6,8,16,46,13,5,9,16,0,12790586286.89
+US,All US Companies,Unknown,2026-11-08 01:00:00,0,0,0,1,0,0,0,0,0,1,423822.24
+US,All US Companies,Utilities,2026-11-08 01:00:00,31,5,2,14,51,1,0,5,21,0,17865650367.54
+US,Nasdaq Composite Index,Commercial Services,2026-11-08 01:00:00,50,20,5,15,41,13,9,9,4,0,4539012143.95
+US,Nasdaq Composite Index,Communications,2026-11-08 01:00:00,10,1,4,5,4,0,0,1,1,0,18633622034.2
+US,Nasdaq Composite Index,Consumer Durables,2026-11-08 01:00:00,19,9,5,10,20,10,3,6,1,0,14617240109.19
+US,Nasdaq Composite Index,Consumer Non-Durables,2026-11-08 01:00:00,17,4,1,8,27,6,0,6,0,0,5690697598.76
+US,Nasdaq Composite Index,Consumer Services,2026-11-08 01:00:00,25,8,2,4,39,15,9,11,1,0,14004336067.98
+US,Nasdaq Composite Index,Distribution Services,2026-11-08 01:00:00,13,4,3,6,15,6,3,4,0,0,1016170429.42
+US,Nasdaq Composite Index,Electronic Technology,2026-11-08 01:00:00,52,30,39,69,26,4,5,10,4,0,195430272275.86
+US,Nasdaq Composite Index,Energy Minerals,2026-11-08 01:00:00,6,3,2,1,6,2,0,3,1,0,1359234719.83
+US,Nasdaq Composite Index,Finance,2026-11-08 01:00:00,265,22,16,23,281,20,9,17,91,0,17102220858.77
+US,Nasdaq Composite Index,Health Services,2026-11-08 01:00:00,16,3,5,3,10,2,2,7,1,0,1390413726.4
+US,Nasdaq Composite Index,Health Technology,2026-11-08 01:00:00,188,125,92,140,122,47,18,39,12,0,33947582831.39
+US,Nasdaq Composite Index,Industrial Services,2026-11-08 01:00:00,17,9,3,14,15,1,1,5,0,0,2787485296.71
+US,Nasdaq Composite Index,Miscellaneous,2026-11-08 01:00:00,4,2,0,0,5,0,0,0,0,0,139455128.5
+US,Nasdaq Composite Index,Non-Energy Minerals,2026-11-08 01:00:00,17,4,4,15,11,5,3,2,0,0,1120614376.24
+US,Nasdaq Composite Index,Process Industries,2026-11-08 01:00:00,19,5,6,9,15,4,4,6,2,0,1990441367.24
+US,Nasdaq Composite Index,Producer Manufacturing,2026-11-08 01:00:00,27,24,17,39,32,5,3,7,2,0,14598493729.0
+US,Nasdaq Composite Index,Retail Trade,2026-11-08 01:00:00,13,7,2,5,39,13,1,2,5,0,23055206205.86
+US,Nasdaq Composite Index,Technology Services,2026-11-08 01:00:00,111,33,38,81,103,46,14,38,7,0,93644801903.22
+US,Nasdaq Composite Index,Transportation,2026-11-08 01:00:00,16,2,7,8,22,11,5,4,4,0,5297097979.12
+US,Nasdaq Composite Index,Unknown,2026-11-08 01:00:00,0,0,0,1,0,0,0,0,0,0,422516.24
+US,Nasdaq Composite Index,Utilities,2026-11-08 01:00:00,11,2,1,7,7,1,0,1,1,0,4130292282.67
